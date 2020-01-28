@@ -21,7 +21,7 @@ public class ActivarDropCofre : MonoBehaviour
     }
     void Update()
     {
-        if(contactoPlayer && Input.GetButtonDown("Interactuar"))
+        if(contactoPlayer && Input.GetButtonDown("Interaztuar"))
         {
             activarDrop.drop = true;
             colliderDetector.enabled = false;
