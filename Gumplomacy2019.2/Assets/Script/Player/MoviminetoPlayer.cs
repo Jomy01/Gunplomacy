@@ -8,6 +8,8 @@ using UnityEngine;
 public class MoviminetoPlayer : MonoBehaviour
 {
     Rigidbody2D mRb;
+    Animator mA;
+    SpriteRenderer mSr;
 
     [Tooltip("Velocidad a la que se moverá el personaje")]
     public float velocidad;
@@ -20,12 +22,34 @@ public class MoviminetoPlayer : MonoBehaviour
     {
         //Llamamos a nuestro rigidbody
         mRb = GetComponent<Rigidbody2D>();
+        mA = GetComponent<Animator>();
+        mSr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
+        Animacion();
+        FlipPersonaje();
         LeerInput();
         Movimineto(input,velocidad);
+    }
+
+    void Animacion()
+    {
+        if (input.x != 0 || input.y != 0)
+        {
+            mA.SetBool("Andando", true);
+        }
+        else
+        {
+            mA.SetBool("Andando", false);
+        }
+            
+    }
+
+    void FlipPersonaje()
+    {
+        mSr.flipX = (input.x < 0) ?true: false;
     }
     /// <summary>
     /// Recoje la entrade del teclado tanto vertical como horizontal
