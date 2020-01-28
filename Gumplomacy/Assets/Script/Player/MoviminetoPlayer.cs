@@ -35,6 +35,7 @@ public class MoviminetoPlayer : MonoBehaviour
         input.x = Input.GetAxis("Horizontal");
         input.y = Input.GetAxis("Vertical");
     }
+
     /// <summary>
     /// Aplica una velocidad al personaje que depende de la dirección y la velocidad
     /// </summary>
