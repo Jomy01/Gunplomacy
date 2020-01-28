@@ -1,64 +1,58 @@
 fileFormatVersion: 2
-guid: a9da371a514d7e9499acef126ea6bfa9
+guid: 62b77a740ded1e24a943d488d80c9ea9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2132892554861678794
-    second: GeneralIddle_0
+      213: 7144499059177412579
+    second: SoldadoIddle_0
   - first:
-      213: 703987834918162881
-    second: GeneralIddle_1
+      213: -5020978756137399082
+    second: SoldadoIddle_1
   - first:
-      213: -5377940645136719113
-    second: GeneralIddle_2
+      213: 6504759848419404321
+    second: SoldadoIddle_2
   - first:
-      213: 5885710948500283252
-    second: GeneralIddle_3
+      213: 4556095058407402693
+    second: SoldadoIddle_3
   - first:
-      213: -6743593280234486226
-    second: GeneralIddle_4
+      213: 4767604341874448287
+    second: SoldadoIddle_4
   - first:
-      213: 3900900885691984793
-    second: GeneralIddle_5
+      213: -2483942683561254331
+    second: SoldadoIddle_5
   - first:
-      213: 3261547438770225138
-    second: GeneralIddle_6
+      213: -1512545607230807388
+    second: SoldadoIddle_6
   - first:
-      213: 6420796887372218846
-    second: GeneralIddle_7
+      213: -8317990125935239576
+    second: SoldadoIddle_7
   - first:
-      213: -2996311057050072410
-    second: GeneralIddle_8
+      213: 7648175801377411808
+    second: SoldadoIddle_8
   - first:
-      213: -5862340830463578423
-    second: GeneralIddle_9
+      213: -8288337510924260605
+    second: SoldadoIddle_9
   - first:
-      213: -2588549688452359364
-    second: GeneralIddle_10
+      213: 7649213063597276458
+    second: SoldadoIddle_10
   - first:
-      213: -7183472681961403559
-    second: GeneralIddle_11
+      213: -3154387145452467978
+    second: SoldadoIddle_11
   - first:
-      213: -5269001128909557703
-    second: GeneralIddle_12
+      213: 7432247851773959956
+    second: SoldadoIddle_12
   - first:
-      213: -8976128890209277864
-    second: GeneralIddle_13
+      213: -8766792495657911244
+    second: SoldadoIddle_13
   - first:
-      213: -1602824668865515014
-    second: GeneralIddle_14
+      213: 3950096194202073104
+    second: SoldadoIddle_14
   - first:
-      213: 7562577523059733018
-    second: GeneralIddle_15
+      213: -3752591531538090954
+    second: SoldadoIddle_15
   - first:
-      213: 6809545370850771043
-    second: GeneralIddle_16
-  - first:
-      213: -5213449697608130857
-    second: GeneralIddle_17
-  - first:
-      213: 8881540210100805648
-    second: GeneralIddle_18
+      213: 5737642697679191209
+    second: SoldadoIddle_16
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -155,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GeneralIddle_0
+      name: SoldadoIddle_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 12
         y: 0
-        width: 48
-        height: 60
+        width: 42
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8829ebf6c160ef347a737abfb714692d
-      internalID: -2132892554861678794
+      spriteID: 7f7e37bc6a39f2c4cbec8dd32d5ebece
+      internalID: 7144499059177412579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_1
+      name: SoldadoIddle_1
       rect:
         serializedVersion: 2
-        x: 73
+        x: 76
         y: 0
-        width: 48
-        height: 60
+        width: 42
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25c18630b2051d941b69060c42e92b85
-      internalID: 703987834918162881
+      spriteID: ca9cb4067aede8d47aaf439b4255725e
+      internalID: -5020978756137399082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_2
+      name: SoldadoIddle_2
       rect:
         serializedVersion: 2
-        x: 137
+        x: 140
         y: 0
-        width: 48
-        height: 60
+        width: 42
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66c074335e96c94469516002ea0f37e4
-      internalID: -5377940645136719113
+      spriteID: 52f943f5172cff647ada24d80a13dcd8
+      internalID: 6504759848419404321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_3
+      name: SoldadoIddle_3
       rect:
         serializedVersion: 2
-        x: 201
+        x: 204
         y: 0
-        width: 48
-        height: 60
+        width: 42
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 542d572bdf693e645b95dd8d72441875
-      internalID: 5885710948500283252
+      spriteID: 44935b03084da9847952c1caa15f715e
+      internalID: 4556095058407402693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_4
+      name: SoldadoIddle_4
       rect:
         serializedVersion: 2
-        x: 265
+        x: 268
         y: 0
-        width: 48
-        height: 60
+        width: 42
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c4052b1ab5c7dc4fa7f7d186c689df1
-      internalID: -6743593280234486226
+      spriteID: c449430944e5ce2408e0113065d494d5
+      internalID: 4767604341874448287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_5
+      name: SoldadoIddle_5
       rect:
         serializedVersion: 2
-        x: 329
+        x: 332
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd92898a9b7eafe438e5a085037d8505
-      internalID: 3900900885691984793
+      spriteID: b630d805feea2f040ad56c61231f296b
+      internalID: -2483942683561254331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_6
+      name: SoldadoIddle_6
       rect:
         serializedVersion: 2
-        x: 393
+        x: 396
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47906e2e497921d4eb4fe8fff01381f4
-      internalID: 3261547438770225138
+      spriteID: 2c84daf470e1a894d984ac82ede1797f
+      internalID: -1512545607230807388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_7
+      name: SoldadoIddle_7
       rect:
         serializedVersion: 2
-        x: 457
+        x: 460
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6007e9c50b0613c4bbe5c4cbe15d3a72
-      internalID: 6420796887372218846
+      spriteID: 6007a8ccf03da3b4281a5644b05b6019
+      internalID: -8317990125935239576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_8
+      name: SoldadoIddle_8
       rect:
         serializedVersion: 2
-        x: 521
+        x: 524
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,20 +331,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67c4a36893ff66e4194d4de11b912ce6
-      internalID: -2996311057050072410
+      spriteID: 8a60180328a5cb046a0f87bc399f4859
+      internalID: 7648175801377411808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_9
+      name: SoldadoIddle_9
       rect:
         serializedVersion: 2
-        x: 585
+        x: 588
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,20 +352,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7669bd5167fb274196ff4463d17eff7
-      internalID: -5862340830463578423
+      spriteID: 53900eea3535c4c4d84889e46159bed0
+      internalID: -8288337510924260605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_10
+      name: SoldadoIddle_10
       rect:
         serializedVersion: 2
-        x: 649
+        x: 652
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,20 +373,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80a1f65f55f6840428788e96a8b7e2b5
-      internalID: -2588549688452359364
+      spriteID: 35caa8d701701fd4f962310a9f9d17e6
+      internalID: 7649213063597276458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_11
+      name: SoldadoIddle_11
       rect:
         serializedVersion: 2
-        x: 713
+        x: 716
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,20 +394,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01acfbe4260dc9a4c8d7f3c3fb48b36a
-      internalID: -7183472681961403559
+      spriteID: 9ed3241ee70acc34ca268c8c2ccace52
+      internalID: -3154387145452467978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_12
+      name: SoldadoIddle_12
       rect:
         serializedVersion: 2
-        x: 777
+        x: 780
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,20 +415,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0112fb548b0e2942a5f7c6e3c30c88b
-      internalID: -5269001128909557703
+      spriteID: 0b92f03e5fcad3a4da8bde843c13d3ce
+      internalID: 7432247851773959956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_13
+      name: SoldadoIddle_13
       rect:
         serializedVersion: 2
-        x: 841
+        x: 844
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,20 +436,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b233cce4012519b42a1f4a5a0165eee0
-      internalID: -8976128890209277864
+      spriteID: 7ff0a93a44bc3024784da79ac94642fb
+      internalID: -8766792495657911244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_14
+      name: SoldadoIddle_14
       rect:
         serializedVersion: 2
-        x: 905
+        x: 908
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,20 +457,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3b6da5ab337b6b429ba150fe188390a
-      internalID: -1602824668865515014
+      spriteID: 07cd2a68c6311c64d874be532c1129d8
+      internalID: 3950096194202073104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_15
+      name: SoldadoIddle_15
       rect:
         serializedVersion: 2
-        x: 969
+        x: 972
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,20 +478,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222bb4b605a848c44b94102cdc6b3cdd
-      internalID: 7562577523059733018
+      spriteID: ca0003210658702489e7b5981d539e59
+      internalID: -3752591531538090954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GeneralIddle_16
+      name: SoldadoIddle_16
       rect:
         serializedVersion: 2
-        x: 1033
+        x: 1036
         y: 0
-        width: 48
-        height: 58
+        width: 42
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,50 +499,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 506fdb1e2ab282e4bb0337b5c2facce1
-      internalID: 6809545370850771043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GeneralIddle_17
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 951
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef6028604786e63439e007c0dd00b6e1
-      internalID: -5213449697608130857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GeneralIddle_18
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 0
-        width: 1025
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d189fb1a6bb6a149ad9bacab725b421
-      internalID: 8881540210100805648
+      spriteID: e206a6ffea4bfec44a79439722a4527b
+      internalID: 5737642697679191209
       vertices: []
       indices: 
       edges: []
