@@ -13,7 +13,10 @@ public class MoviminetoPlayer : MonoBehaviour
 
     [Tooltip("Velocidad a la que se moverá el personaje")]
     public float velocidad;
+    [Tooltip("Busca el puntero para hacer flip")]
+    public Transform puntero;
 
+    bool m_FacingRight = false;
     //Para tener por separado la entrada del teclado para si necesitamos añadir más cosas a las mismas, 
     //como el flip del sprite por ejemplo
     Vector2 input;
@@ -29,7 +32,14 @@ public class MoviminetoPlayer : MonoBehaviour
     void Update()
     {
         Animacion();
-        FlipPersonaje();
+        if(puntero.position.x < transform.position.x && m_FacingRight)
+        {
+            Flip();
+        }
+        if (puntero.position.x > transform.position.x && !m_FacingRight)
+        {
+            Flip();
+        }
         LeerInput();
         Movimineto(input,velocidad);
     }
@@ -46,13 +56,17 @@ public class MoviminetoPlayer : MonoBehaviour
         }
             
     }
-    /// <summary>
-    /// 
-    /// </summary>
-    void FlipPersonaje()
+
+    void Flip()
     {
-        mSr.flipX = (input.x < 0) ?true: false;
+        m_FacingRight = !m_FacingRight;
+
+        //Vector3 theScale = transform.localScale;
+        //theScale.x *= -1;
+        //transform.localScale = theScale;
+        mSr.flipX = !m_FacingRight;
     }
+
     /// <summary>
     /// Recoje la entrade del teclado tanto vertical como horizontal
     /// </summary>
