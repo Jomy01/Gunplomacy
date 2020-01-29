@@ -17,6 +17,8 @@ public class Armas : MonoBehaviour
     [Tooltip("Cuánto daño hace cada bala")]
     public int daño = 2;
 
+    float proximoDisparo = 0;
+
     [Tooltip("Salida de la bala del arma")]
     public Transform _puntoSalida;
 
@@ -35,7 +37,10 @@ public class Armas : MonoBehaviour
     }
     public void Disparar()
     {
-        if(Time.time>cadencia)
+        if (Time.time >proximoDisparo)
+        { 
         Instantiate(bala, _puntoSalida.position, _puntoSalida.rotation);
+            proximoDisparo = Time.time + cadencia;
+        }
     }
 }
