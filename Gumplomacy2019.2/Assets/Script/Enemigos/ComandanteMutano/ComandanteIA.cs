@@ -10,20 +10,22 @@ public class ComandanteIA : MonoBehaviour
     public bool detectandoPlayer;
     public float vision;
     public float vida;
+    public bool atacando;
 
 
     Animator MyAnimator;
     SpriteRenderer MySprite;
     public Transform player;
-
+    DisparoIAEnemiga scriptDisparo;
 
 
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        //MyAnimator = GetComponent<Animator>();
+        MyAnimator = GetComponent<Animator>();
         MySprite = GetComponent<SpriteRenderer>();
+        scriptDisparo = GetComponent<DisparoIAEnemiga>();
     }
 
     // Update is called once per frame
@@ -33,15 +35,16 @@ public class ComandanteIA : MonoBehaviour
         Vida();
         if (detectandoPlayer)
         {
+            scriptDisparo.Disparar();
             Movimiento();
             Flip();
         }
         if (!detectandoPlayer)
         {
-            //MyAnimator.SetBool("Corriendo", false);
+            MyAnimator.SetBool("Corriendo", false);
         }
     }
-
+    
     void DetectarPlayer()
     {
         if (Vector2.Distance(transform.position, player.position) < vision)
@@ -77,21 +80,25 @@ public class ComandanteIA : MonoBehaviour
         }
     }
 
+    void Atacando()
+    {
+
+    }
     void Movimiento()
     {
         if (Vector2.Distance(transform.position, player.position) > distanciaStop)
         {
-            //MyAnimator.SetBool("Corriendo", true);
+            MyAnimator.SetBool("Corriendo", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, velocidad * Time.deltaTime);
         }
         else if (Vector2.Distance(transform.position, player.position) < distanciaRetirada)
         {
-            //MyAnimator.SetBool("Corriendo", true);
+            MyAnimator.SetBool("Corriendo", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, -velocidad * Time.deltaTime);
         }
         else
         {
-            //MyAnimator.SetBool("Corriendo", false);
+            MyAnimator.SetBool("Corriendo", false);
         }
     }
 
