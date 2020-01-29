@@ -8,6 +8,7 @@ TagManager:
   - EterMecanos
   - EterIctioniclos
   - EterBotaniclos
+  - Arma
   layers:
   - Default
   - TransparentFX
