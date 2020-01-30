@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 278306619}
   - component: {fileID: 278306616}
   - component: {fileID: 278306621}
+  - component: {fileID: 278306622}
   - component: {fileID: 278306620}
   m_Layer: 0
   m_Name: Comandante
@@ -158,8 +159,6 @@ MonoBehaviour:
   distanciaRetirada: 3
   detectandoPlayer: 0
   vision: 10
-  vida: 5
-  atacando: 0
   player: {fileID: 1847306677}
 --- !u!212 &278306617
 SpriteRenderer:
@@ -278,6 +277,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arma: {fileID: 1460487955}
+--- !u!114 &278306622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278306615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91847f701965c55409d956f5625b294c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaEnemigo: 50
+  vidaEnemigoActual: 0
 --- !u!1 &394517788
 GameObject:
   m_ObjectHideFlags: 0
