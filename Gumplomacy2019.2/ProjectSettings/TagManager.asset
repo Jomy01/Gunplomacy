@@ -9,6 +9,9 @@ TagManager:
   - EterIctioniclos
   - EterBotaniclos
   - Arma
+  - Cofre
+  - enemigo
+  - boss
   layers:
   - Default
   - TransparentFX
