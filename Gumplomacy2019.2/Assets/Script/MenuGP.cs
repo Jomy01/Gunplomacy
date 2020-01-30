@@ -16,7 +16,7 @@ public class MenuGP : MonoBehaviour
     public void NuevaPartida()
     {
         SceneManager.LoadScene("Partida");
-
+        Debug.Log("Comenzar partida");
     }
 
     //¿cómo funciona el sistema de guardado y cómo se llama a la partida salvada?
