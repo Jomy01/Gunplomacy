@@ -42,6 +42,7 @@ public class ComandanteIA : MonoBehaviour
         if (!detectandoPlayer)
         {
             MyAnimator.SetBool("Corriendo", false);
+            scriptDisparo.DejarDeDisparar();
         }
     }
     

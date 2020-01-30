@@ -19,4 +19,9 @@ public class DisparoIAEnemiga : MonoBehaviour
     {
         puedoDisparar = true;
     }
+
+    public void DejarDeDisparar()
+    {
+        puedoDisparar = false;
+    }
 }
