@@ -1,14 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/// <summary>
-/// IA del comandante
-/// Hecho por Jose Antonio Diaz 30/01
-/// </summary>
-public class ComandanteIA : MonoBehaviour
+
+public class SoldadoReclutaIA : MonoBehaviour
 {
-    [Tooltip("Velocidad a la que se mueve el enemigo")]
+    Rigidbody2D mRb;
+    SpriteRenderer mSr;
+
+    [Tooltip("Velocidad a la que se mueve el enemigo mientras te persigue")]
     public float velocidad;
+    [Tooltip("Velocidad a la que se mueve el enemigo mientras patrulla")]
+    public float velocidadPatrulla;
     [Tooltip("Distancia a la que el personaje se para delante del player")]
     public float distanciaStop;
     [Tooltip("Distancia a la que el enemigo empieza a huir del player")]
@@ -20,38 +22,47 @@ public class ComandanteIA : MonoBehaviour
     [Tooltip("Ponemos el player")]
     public Transform player;
 
-    Vector3 posicionInicial;
-    Animator MyAnimator;
-    public SpriteRenderer MySprite;
+    public Transform[] puntosDeGuardia;
+    bool heLlegado = false;
+
     DisparoIAEnemiga scriptDisparo;
-
-
 
     void Start()
     {
-        posicionInicial = transform.position;
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        MyAnimator = GetComponent<Animator>();
-        MySprite = GetComponent<SpriteRenderer>();
+        mRb = GetComponent<Rigidbody2D>();
+        mSr = GetComponent<SpriteRenderer>();
         scriptDisparo = GetComponent<DisparoIAEnemiga>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         DetectarPlayer();
-        if (detectandoPlayer)
+        if(!detectandoPlayer)
         {
-            scriptDisparo.Disparar();
+            Patrullando();
+        }
+        if(detectandoPlayer)
+        {
+            //scriptDisparo.Disparar();
             Movimiento();
             Flip();
         }
-        if (!detectandoPlayer)
+    }
+    void Patrullando()
+    {
+        for(int pG = 0; pG < puntosDeGuardia.Length; pG++)
         {
-            MovimientoInicio();
-            MyAnimator.SetBool("Corriendo", false);
-            scriptDisparo.DejarDeDisparar();
+            Vector3 siguientePunto = puntosDeGuardia[pG].position;
+            if (transform.position != siguientePunto)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, siguientePunto, velocidadPatrulla * Time.deltaTime);
+            }
+            else if(transform.position == siguientePunto)
+            {
+                pG++;
+            }
         }
+        
     }
     /// <summary>
     /// Detectaremos al player comparando la distancia que hay entre el enemigo y el player y usando la visión, esto activará un booleano para activar el estado de èrsecución.
@@ -87,11 +98,11 @@ public class ComandanteIA : MonoBehaviour
     {
         if (player.position.x > transform.position.x)
         {
-            MySprite.flipX = false;
+            mSr.flipX = false;
         }
         if (player.position.x < transform.position.x)
         {
-            MySprite.flipX = true;
+            mSr.flipX = true;
         }
     }
     /// <summary>
@@ -102,24 +113,19 @@ public class ComandanteIA : MonoBehaviour
         //Persigue
         if (Vector2.Distance(transform.position, player.position) > distanciaStop)
         {
-            MyAnimator.SetBool("Corriendo", true);
+            //MyAnimator.SetBool("Corriendo", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, velocidad * Time.deltaTime);
         }
         //Hulle
         else if (Vector2.Distance(transform.position, player.position) < distanciaRetirada)
         {
-            MyAnimator.SetBool("Corriendo", true);
+            //MyAnimator.SetBool("Corriendo", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, -velocidad * Time.deltaTime);
         }
         //Para
         else
         {
-            MyAnimator.SetBool("Corriendo", false);
+            //MyAnimator.SetBool("Corriendo", false);
         }
-    }
-
-    void MovimientoInicio()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, posicionInicial, velocidad * Time.deltaTime);
     }
 }
