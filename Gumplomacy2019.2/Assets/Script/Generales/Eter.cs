@@ -10,16 +10,16 @@ public class Eter : MonoBehaviour
     /// EterMecanos si es de la raza mecanos
     /// EterIctioniclos si es de la raza ictioniclos
     /// EterBotaniclos si es de la raza botaniclos
+    /// TODO Es necesario actualizar el nombre de donde se consigue la GestionEter
     /// </summary>
 
     [Tooltip("Indica cuanto éter rellena cada célula")]
     public int eterValue = 1;
+    GestionEter gestionEter;
 
-    Collider2D _col;
-
-    void Start()
+    private void Start()
     {
-        _col = GetComponent<Collider2D>();   
+       gestionEter = GameObject.Find("gameController").GetComponent<GestionEter>();
     }
 
     /// <summary>
@@ -29,6 +29,7 @@ public class Eter : MonoBehaviour
     {
         if(collision.transform.CompareTag("Player"))
         {
+            gestionEter.ControlEter(eterValue,transform.tag);
             Destroy(gameObject);
         }
     }
