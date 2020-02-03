@@ -18,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - sala
   - 
   - 
   - 
@@ -45,4 +45,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Suelo
+    uniqueID: 1411515775
+    locked: 0
+  - name: Player
+    uniqueID: 2735778217
     locked: 0
