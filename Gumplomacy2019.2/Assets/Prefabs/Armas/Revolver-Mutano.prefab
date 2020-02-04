@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7156313450632533649}
   - component: {fileID: 7156313450632533648}
   m_Layer: 0
-  m_Name: Orbe-Mutano
+  m_Name: Revolver-Mutano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,7 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cadencia: 10
-  municion: 15
   "da\xF1o": 2
   _puntoSalida: {fileID: 7156313450656906214}
   bala: {fileID: 0}
