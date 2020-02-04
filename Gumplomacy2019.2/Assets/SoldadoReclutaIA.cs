@@ -48,21 +48,27 @@ public class SoldadoReclutaIA : MonoBehaviour
             Flip();
         }
     }
+
     void Patrullando()
     {
-        for(int pG = 0; pG < puntosDeGuardia.Length; pG++)
+        int puntoGuardia = 0;
+        Vector3 siguientePunto = puntosDeGuardia[puntoGuardia].position;
+        float distancia = Vector2.Distance(transform.position, siguientePunto);
+        if (distancia > 0.5f)
         {
-            Vector3 siguientePunto = puntosDeGuardia[pG].position;
-            if (transform.position != siguientePunto)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, siguientePunto, velocidadPatrulla * Time.deltaTime);
-            }
-            else if(transform.position == siguientePunto)
-            {
-                pG++;
-            }
+            transform.position = Vector2.MoveTowards(transform.position, siguientePunto, velocidadPatrulla * Time.deltaTime);
         }
-        
+        else
+        {
+            puntoGuardia++;
+            siguientePunto = puntosDeGuardia[puntoGuardia].position;
+            distancia = Vector2.Distance(transform.position, siguientePunto);
+        }
+        if(puntoGuardia == puntosDeGuardia.Length)
+        {
+            puntoGuardia = 0;
+        }
+        Debug.Log(distancia);
     }
     /// <summary>
     /// Detectaremos al player comparando la distancia que hay entre el enemigo y el player y usando la visión, esto activará un booleano para activar el estado de èrsecución.
