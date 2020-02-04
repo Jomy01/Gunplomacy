@@ -20,34 +20,49 @@ public class Debug_mode : MonoBehaviour
 
     public void SetMejorasFuselaje()
     {
-        if (_fuselaje <= 2)
+        if (_fuselaje < 2)
         {
             _fuselaje++;
             PlayerPrefs.SetInt("mejoras_fuselaje", _fuselaje);
+            Debug.Log(_fuselaje);
+            Debug.Log(_motor);
+            Debug.Log(_navegacion);
         }
     }
 
     public void SetMejorasMotor()
     {
-        if (_motor <= 2)
+        if (_motor < 2)
         {
-            _fuselaje++;
+            _motor++;
             PlayerPrefs.SetInt("mejoras_motor", _motor);
+            Debug.Log(_fuselaje);
+            Debug.Log(_motor);
+            Debug.Log(_navegacion);
         }
     }
 
     public void SetMejorasNavegacion()
     {
-        if (_navegacion <= 2)
+        if (_navegacion < 2)
         {
-            _fuselaje++;
+            _navegacion++;
             PlayerPrefs.SetInt("mejoras_navegacion", _navegacion);
+            Debug.Log(_fuselaje);
+            Debug.Log(_motor);
+            Debug.Log(_navegacion);
         }
     }
 
     public void DeleteAll()
     {
         PlayerPrefs.DeleteAll();
+        Debug.Log(_fuselaje);
+        Debug.Log(_motor);
+        Debug.Log(_navegacion);
+        _fuselaje = 0;
+        _motor = 0;
+        _navegacion = 0;
     }
 
 }
