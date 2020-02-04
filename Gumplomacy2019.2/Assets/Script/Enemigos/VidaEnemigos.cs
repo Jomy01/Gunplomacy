@@ -7,7 +7,8 @@ public class VidaEnemigos : MonoBehaviour
     public float vidaEnemigo = 1000;
     public float vidaEnemigoActual;
     public int golpe = 0;
-    Transform parent;
+    public Transform origenParticulas;
+
 
     public ParticleSystem _particulasMuerte;
 
@@ -18,10 +19,16 @@ public class VidaEnemigos : MonoBehaviour
 
     }
 
-    private void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        RecibeDaño(golpe);
+       RecibeDaño(golpe);
     }
+
+    //Para Testeo
+    //private void Update()
+    //{
+    //    RecibeDaño(golpe);
+    //}
 
     public void RecibeDaño(int daño)
     {
@@ -35,7 +42,7 @@ public class VidaEnemigos : MonoBehaviour
 
     void Muerte()
     {
-        Instantiate<ParticleSystem>(_particulasMuerte, transform.position, transform.rotation);
+        Instantiate<ParticleSystem>(_particulasMuerte, origenParticulas.position, origenParticulas.rotation);
         _particulasMuerte.Play();
         Destroy(gameObject);
     }
