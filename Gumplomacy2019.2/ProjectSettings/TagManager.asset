@@ -9,6 +9,7 @@ TagManager:
   - EterIctioniclos
   - EterBotaniclos
   - Arma
+  - Cofre
   layers:
   - Default
   - TransparentFX
@@ -51,4 +52,7 @@ TagManager:
     locked: 0
   - name: suelo
     uniqueID: 1631207023
+    locked: 0
+  - name: Arma
+    uniqueID: 3476713933
     locked: 0

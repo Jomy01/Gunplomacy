@@ -9,23 +9,31 @@ public class ArmaOrientacionProta : MonoBehaviour
 {
     public Transform puntero;
     public MoviminetoPlayer movimientoPlayer;
+    CogerSoltarArma scripDisparo;
 
     bool flippedX = false;
     bool flippedY = false;
 
     Vector3 target;
+    private void Start()
+    {
+        scripDisparo = GameObject.FindGameObjectWithTag("Player").GetComponent<CogerSoltarArma>();
+    }
     void Update()
     {
-        target = puntero.position;
+        if(!scripDisparo._cogiendoArma)
+        {
+            target = puntero.position;
 
-        float AnguloRadianes = Mathf.Atan2(transform.position.y - target.y, transform.position.x - target.x);
+            float AnguloRadianes = Mathf.Atan2(transform.position.y - target.y, transform.position.x - target.x);
 
-        float AnguloGrados = (180 / Mathf.PI) * AnguloRadianes;
+            float AnguloGrados = (180 / Mathf.PI) * AnguloRadianes;
 
 
-        transform.rotation = Quaternion.Euler(0, 0, AnguloGrados);
-        CorrectRotationWeaponAxisX();
-        CorrectRotationWeaponAxisY(AnguloGrados);
+            transform.rotation = Quaternion.Euler(0, 0, AnguloGrados);
+            CorrectRotationWeaponAxisX();
+            CorrectRotationWeaponAxisY(AnguloGrados);
+        }
     }
     void CorrectRotationWeaponAxisX()
     {

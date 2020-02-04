@@ -18,23 +18,11 @@ public class Armas : MonoBehaviour
     public int daño = 2;
 
     float proximoDisparo = 0;
-
     [Tooltip("Salida de la bala del arma")]
     public Transform _puntoSalida;
 
     public GameObject bala;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Disparar()
     {
         if (Time.time >proximoDisparo)
