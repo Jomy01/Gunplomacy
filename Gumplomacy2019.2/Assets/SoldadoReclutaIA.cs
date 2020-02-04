@@ -5,7 +5,8 @@ using UnityEngine;
 public class SoldadoReclutaIA : MonoBehaviour
 {
     Rigidbody2D mRb;
-    SpriteRenderer mSr;
+    public SpriteRenderer mSr;
+    Animator mA;
 
     [Tooltip("Velocidad a la que se mueve el enemigo mientras te persigue")]
     public float velocidad;
@@ -24,6 +25,12 @@ public class SoldadoReclutaIA : MonoBehaviour
 
     public Transform[] puntosDeGuardia;
     bool heLlegado = false;
+    
+    int puntoGuardia = 0;
+    Vector3 siguientePunto;
+    float distancia;
+    public int delayPatrulla;
+    bool actualizandoPunto = false;
 
     DisparoIAEnemiga scriptDisparo;
 
@@ -32,12 +39,13 @@ public class SoldadoReclutaIA : MonoBehaviour
         mRb = GetComponent<Rigidbody2D>();
         mSr = GetComponent<SpriteRenderer>();
         scriptDisparo = GetComponent<DisparoIAEnemiga>();
+        mA = GetComponent<Animator>();
     }
 
     void Update()
     {
         DetectarPlayer();
-        if(!detectandoPlayer)
+        if(!detectandoPlayer && !actualizandoPunto)
         {
             Patrullando();
         }
@@ -51,24 +59,31 @@ public class SoldadoReclutaIA : MonoBehaviour
 
     void Patrullando()
     {
-        int puntoGuardia = 0;
-        Vector3 siguientePunto = puntosDeGuardia[puntoGuardia].position;
-        float distancia = Vector2.Distance(transform.position, siguientePunto);
+        siguientePunto = puntosDeGuardia[puntoGuardia].position;
+        distancia = Vector2.Distance(transform.position, siguientePunto);
         if (distancia > 0.5f)
         {
+            mA.SetBool("Corriendo", true);
             transform.position = Vector2.MoveTowards(transform.position, siguientePunto, velocidadPatrulla * Time.deltaTime);
         }
         else
         {
-            puntoGuardia++;
-            siguientePunto = puntosDeGuardia[puntoGuardia].position;
-            distancia = Vector2.Distance(transform.position, siguientePunto);
+            mA.SetBool("Corriendo", false);
+            actualizandoPunto = true;
+            Invoke("ActualizarPuntoGuardia", delayPatrulla);
         }
-        if(puntoGuardia == puntosDeGuardia.Length)
+    }
+
+    void ActualizarPuntoGuardia()
+    {
+        puntoGuardia++;
+        if (puntoGuardia == puntosDeGuardia.Length)
         {
             puntoGuardia = 0;
         }
-        Debug.Log(distancia);
+        siguientePunto = puntosDeGuardia[puntoGuardia].position;
+        distancia = Vector2.Distance(transform.position, siguientePunto);
+        actualizandoPunto = false;
     }
     /// <summary>
     /// Detectaremos al player comparando la distancia que hay entre el enemigo y el player y usando la visión, esto activará un booleano para activar el estado de èrsecución.
@@ -119,19 +134,19 @@ public class SoldadoReclutaIA : MonoBehaviour
         //Persigue
         if (Vector2.Distance(transform.position, player.position) > distanciaStop)
         {
-            //MyAnimator.SetBool("Corriendo", true);
+            mA.SetBool("Corriendo", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, velocidad * Time.deltaTime);
         }
         //Hulle
         else if (Vector2.Distance(transform.position, player.position) < distanciaRetirada)
         {
-            //MyAnimator.SetBool("Corriendo", true);
+            mA.SetBool("Corriendo", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, -velocidad * Time.deltaTime);
         }
         //Para
         else
         {
-            //MyAnimator.SetBool("Corriendo", false);
+            mA.SetBool("Corriendo", false);
         }
     }
 }

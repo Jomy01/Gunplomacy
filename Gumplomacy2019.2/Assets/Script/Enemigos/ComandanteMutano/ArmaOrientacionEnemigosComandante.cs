@@ -7,12 +7,12 @@ using UnityEngine;
 ///Hecho por Jose Antonio Diaz 30/01
 ///</summary>
 
-public class ArmaOrientacionEnemigos : MonoBehaviour
+public class ArmaOrientacionEnemigosComandante : MonoBehaviour
 {
     [Tooltip("Ponemos al player aquí, el arma seguira a este objetivo")]
     public Transform player;
     [Tooltip("Colocamos el scrip de la IA del enemigo aquí")]
-    public SoldadoReclutaIA scripIASolRec;
+    public ComandanteIA scripIaComandante;
     [Tooltip("Colocamos el SpriteRenderer del enemigo aquí")]
     public SpriteRenderer spriteEnemigo;
 
@@ -23,7 +23,7 @@ public class ArmaOrientacionEnemigos : MonoBehaviour
     void Update()
     {
         //Si el player está detectado
-        if (scripIASolRec.detectandoPlayer)
+        if (scripIaComandante.detectandoPlayer)
         {
             target = player.position;
 
@@ -40,7 +40,7 @@ public class ArmaOrientacionEnemigos : MonoBehaviour
 
     void CorrectRotationWeaponAxisX()
     {
-        if (!scripIASolRec.mSr.flipX && !flippedX)
+        if (!scripIaComandante.MySprite.flipX && !flippedX)
         {
             flippedX = true;
             Vector3 theScale = transform.localScale;

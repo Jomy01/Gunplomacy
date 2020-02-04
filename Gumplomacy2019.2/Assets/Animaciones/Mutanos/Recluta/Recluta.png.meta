@@ -1,58 +1,58 @@
 fileFormatVersion: 2
-guid: 62b77a740ded1e24a943d488d80c9ea9
+guid: 573100e3591877c4d9ae609b902981b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7144499059177412579
-    second: SoldadoIddle_0
+      213: 7982969070428368916
+    second: Recluta_0
   - first:
-      213: -5020978756137399082
-    second: SoldadoIddle_1
+      213: -7994084361529819615
+    second: Recluta_1
   - first:
-      213: 6504759848419404321
-    second: SoldadoIddle_2
+      213: 2387848225717659044
+    second: Recluta_2
   - first:
-      213: 4556095058407402693
-    second: SoldadoIddle_3
+      213: -8088909393568262727
+    second: Recluta_3
   - first:
-      213: 4767604341874448287
-    second: SoldadoIddle_4
+      213: 6147909020494752201
+    second: Recluta_4
   - first:
-      213: -2483942683561254331
-    second: SoldadoIddle_5
+      213: -8294518535711289496
+    second: Recluta_5
   - first:
-      213: -1512545607230807388
-    second: SoldadoIddle_6
+      213: -7869504400010823624
+    second: Recluta_6
   - first:
-      213: -8317990125935239576
-    second: SoldadoIddle_7
+      213: -5636519560436134237
+    second: Recluta_7
   - first:
-      213: 7648175801377411808
-    second: SoldadoIddle_8
+      213: -783732393531240752
+    second: Recluta_8
   - first:
-      213: -8288337510924260605
-    second: SoldadoIddle_9
+      213: -5251740353597646586
+    second: Recluta_9
   - first:
-      213: 7649213063597276458
-    second: SoldadoIddle_10
+      213: 8166328572407930018
+    second: Recluta_10
   - first:
-      213: -3154387145452467978
-    second: SoldadoIddle_11
+      213: -5861130946292137148
+    second: Recluta_11
   - first:
-      213: 7432247851773959956
-    second: SoldadoIddle_12
+      213: -3509837424759306971
+    second: Recluta_12
   - first:
-      213: -8766792495657911244
-    second: SoldadoIddle_13
+      213: 7675687504553744582
+    second: Recluta_13
   - first:
-      213: 3950096194202073104
-    second: SoldadoIddle_14
+      213: -8423181043312147048
+    second: Recluta_14
   - first:
-      213: -3752591531538090954
-    second: SoldadoIddle_15
+      213: -5682695314319735561
+    second: Recluta_15
   - first:
-      213: 5737642697679191209
-    second: SoldadoIddle_16
+      213: 6476760716553040302
+    second: Recluta_16
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -149,358 +149,358 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SoldadoIddle_0
+      name: Recluta_0
       rect:
         serializedVersion: 2
         x: 12
-        y: 0
-        width: 42
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f7e37bc6a39f2c4cbec8dd32d5ebece
-      internalID: 7144499059177412579
+      spriteID: 9b3c3afeaccca5e468a8c9ea086a0f82
+      internalID: 7982969070428368916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_1
+      name: Recluta_1
       rect:
         serializedVersion: 2
         x: 76
-        y: 0
-        width: 42
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca9cb4067aede8d47aaf439b4255725e
-      internalID: -5020978756137399082
+      spriteID: 91996d1c68edba749b5991e8e2dc4ac2
+      internalID: -7994084361529819615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_2
+      name: Recluta_2
       rect:
         serializedVersion: 2
         x: 140
-        y: 0
-        width: 42
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52f943f5172cff647ada24d80a13dcd8
-      internalID: 6504759848419404321
+      spriteID: 34e57d5328d54874bafe514bb18a4ac8
+      internalID: 2387848225717659044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_3
+      name: Recluta_3
       rect:
         serializedVersion: 2
         x: 204
-        y: 0
-        width: 42
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44935b03084da9847952c1caa15f715e
-      internalID: 4556095058407402693
+      spriteID: 801ed7aea70b0764a89ce2c74431e2fb
+      internalID: -8088909393568262727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_4
+      name: Recluta_4
       rect:
         serializedVersion: 2
         x: 268
-        y: 0
-        width: 42
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c449430944e5ce2408e0113065d494d5
-      internalID: 4767604341874448287
+      spriteID: 65ae2b736933dff448d0c183986f0555
+      internalID: 6147909020494752201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_5
+      name: Recluta_5
       rect:
         serializedVersion: 2
         x: 332
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b630d805feea2f040ad56c61231f296b
-      internalID: -2483942683561254331
+      spriteID: 227b7b6f4c4738a4ba2744a94faee703
+      internalID: -8294518535711289496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_6
+      name: Recluta_6
       rect:
         serializedVersion: 2
         x: 396
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c84daf470e1a894d984ac82ede1797f
-      internalID: -1512545607230807388
+      spriteID: 39fe955e7af7f614b839aba79669e3ad
+      internalID: -7869504400010823624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_7
+      name: Recluta_7
       rect:
         serializedVersion: 2
         x: 460
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6007a8ccf03da3b4281a5644b05b6019
-      internalID: -8317990125935239576
+      spriteID: 69bdcfe91f41d9f4ca3074de50729577
+      internalID: -5636519560436134237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_8
+      name: Recluta_8
       rect:
         serializedVersion: 2
         x: 524
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a60180328a5cb046a0f87bc399f4859
-      internalID: 7648175801377411808
+      spriteID: 55376f26cef5e5d41b03965ae588b4ff
+      internalID: -783732393531240752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_9
+      name: Recluta_9
       rect:
         serializedVersion: 2
         x: 588
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53900eea3535c4c4d84889e46159bed0
-      internalID: -8288337510924260605
+      spriteID: 3e5cac4d6f5582e4e8705faa4949b406
+      internalID: -5251740353597646586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_10
+      name: Recluta_10
       rect:
         serializedVersion: 2
         x: 652
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35caa8d701701fd4f962310a9f9d17e6
-      internalID: 7649213063597276458
+      spriteID: 63fa0ba8523f3ef458dc75709777502c
+      internalID: 8166328572407930018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_11
+      name: Recluta_11
       rect:
         serializedVersion: 2
         x: 716
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ed3241ee70acc34ca268c8c2ccace52
-      internalID: -3154387145452467978
+      spriteID: 4a25ec2878895074d9beeddb3c9f73f2
+      internalID: -5861130946292137148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_12
+      name: Recluta_12
       rect:
         serializedVersion: 2
         x: 780
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b92f03e5fcad3a4da8bde843c13d3ce
-      internalID: 7432247851773959956
+      spriteID: f41c28d846d729f48b77b76f5ac58940
+      internalID: -3509837424759306971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_13
+      name: Recluta_13
       rect:
         serializedVersion: 2
         x: 844
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ff0a93a44bc3024784da79ac94642fb
-      internalID: -8766792495657911244
+      spriteID: 0a6005e97a50b0f41b4c3fcb9063caa8
+      internalID: 7675687504553744582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_14
+      name: Recluta_14
       rect:
         serializedVersion: 2
         x: 908
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07cd2a68c6311c64d874be532c1129d8
-      internalID: 3950096194202073104
+      spriteID: e809d1ba49dc4a04aa73963876155b86
+      internalID: -8423181043312147048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_15
+      name: Recluta_15
       rect:
         serializedVersion: 2
         x: 972
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca0003210658702489e7b5981d539e59
-      internalID: -3752591531538090954
+      spriteID: 5c729ee076bcc6549ba65a8f9863146a
+      internalID: -5682695314319735561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SoldadoIddle_16
+      name: Recluta_16
       rect:
         serializedVersion: 2
         x: 1036
-        y: 0
-        width: 42
-        height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 10
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e206a6ffea4bfec44a79439722a4527b
-      internalID: 5737642697679191209
+      spriteID: 549af6f67c4fec5429822f2b7a34c01e
+      internalID: 6476760716553040302
       vertices: []
       indices: 
       edges: []
