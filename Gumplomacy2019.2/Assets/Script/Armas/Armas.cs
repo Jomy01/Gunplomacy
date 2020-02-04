@@ -12,8 +12,6 @@ public class Armas : MonoBehaviour
 
     [Tooltip("El número de balas que suelta por segundo")]
     public float cadencia = 5;
-    [Tooltip("Cuántas balas tiene cada cargador")]
-    public int municion = 20;
     [Tooltip("Cuánto daño hace cada bala")]
     public int daño = 2;
 
