@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - EterMutanos
-  - EterMecanos
-  - EterIctioniclos
-  - EterBotaniclos
-  - Arma
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -46,9 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: player
-    uniqueID: 1167286277
+  - name: Suelo
+    uniqueID: 3375087559
     locked: 0
-  - name: suelo
-    uniqueID: 1631207023
+  - name: Player
+    uniqueID: 665712297
     locked: 0

@@ -12,7 +12,7 @@ public class ArmaOrientacionEnemigos : MonoBehaviour
     [Tooltip("Ponemos al player aquí, el arma seguira a este objetivo")]
     public Transform player;
     [Tooltip("Colocamos el scrip de la IA del enemigo aquí")]
-    public ComandanteIA scripIaComandante;
+    public SoldadoReclutaIA scripIASolRec;
     [Tooltip("Colocamos el SpriteRenderer del enemigo aquí")]
     public SpriteRenderer spriteEnemigo;
 
@@ -23,7 +23,7 @@ public class ArmaOrientacionEnemigos : MonoBehaviour
     void Update()
     {
         //Si el player está detectado
-        if (scripIaComandante.detectandoPlayer)
+        if (scripIASolRec.detectandoPlayer)
         {
             target = player.position;
 
@@ -40,7 +40,7 @@ public class ArmaOrientacionEnemigos : MonoBehaviour
 
     void CorrectRotationWeaponAxisX()
     {
-        if (!scripIaComandante.MySprite.flipX && !flippedX)
+        if (!scripIASolRec.mSr.flipX && !flippedX)
         {
             flippedX = true;
             Vector3 theScale = transform.localScale;
