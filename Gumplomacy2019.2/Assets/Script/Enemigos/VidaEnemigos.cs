@@ -38,6 +38,10 @@ public class VidaEnemigos : MonoBehaviour
         {
             Muerte();
         }
+        else
+        {
+            daño = 0;
+        }
     }
 
     void Muerte()
