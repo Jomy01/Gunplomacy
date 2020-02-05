@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1827562265255028875}
   - component: {fileID: 8135140591610973524}
   - component: {fileID: 6271046024020392505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BalaNula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
