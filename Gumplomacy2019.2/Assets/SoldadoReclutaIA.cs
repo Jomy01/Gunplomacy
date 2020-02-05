@@ -51,7 +51,7 @@ public class SoldadoReclutaIA : MonoBehaviour
         }
         if(detectandoPlayer)
         {
-            //scriptDisparo.Disparar();
+            scriptDisparo.Disparar();
             Movimiento();
             Flip();
         }
@@ -59,6 +59,7 @@ public class SoldadoReclutaIA : MonoBehaviour
 
     void Patrullando()
     {
+        scriptDisparo.DejarDeDisparar();
         siguientePunto = puntosDeGuardia[puntoGuardia].position;
         distancia = Vector2.Distance(transform.position, siguientePunto);
         if (distancia > 0.5f)

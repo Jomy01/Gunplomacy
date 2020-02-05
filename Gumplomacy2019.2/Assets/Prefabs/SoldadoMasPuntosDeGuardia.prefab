@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3290643182047076417}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PuntoDeGuardia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3290643183076906343}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PuntoDeGuardia (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3290643183127161599}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PuntoDeGuardia (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3290643183626101954}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PuntoDeGuardia (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3290643183651508141}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PuntosDeGuardia_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3290643183671638050}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PuntoDeGuardia (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2318217289794451844}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SoldadoMasPuntosDeGuardia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,6 +224,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2318217289794451844}
     m_Modifications:
+    - target: {fileID: 480627804431372829, guid: f50f36b54bfd96f42a3174f10902f687,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546243785684495691, guid: f50f36b54bfd96f42a3174f10902f687,
+        type: 3}
+      propertyPath: _puntoSalida
+      value: 
+      objectReference: {fileID: 8778775670351527532}
     - target: {fileID: 3149110302562795711, guid: f50f36b54bfd96f42a3174f10902f687,
         type: 3}
       propertyPath: scripIASolRec
@@ -234,6 +244,11 @@ PrefabInstance:
       propertyPath: spriteEnemigo
       value: 
       objectReference: {fileID: 3290643181740903350}
+    - target: {fileID: 6442397346779943123, guid: f50f36b54bfd96f42a3174f10902f687,
+        type: 3}
+      propertyPath: arma
+      value: 
+      objectReference: {fileID: 8778775670723911263}
     - target: {fileID: 8586354875928443043, guid: f50f36b54bfd96f42a3174f10902f687,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -289,16 +304,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8586354875928443043, guid: f50f36b54bfd96f42a3174f10902f687,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586354875928443043, guid: f50f36b54bfd96f42a3174f10902f687,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8586354875928443069, guid: f50f36b54bfd96f42a3174f10902f687,
         type: 3}
       propertyPath: puntosDeGuardia.Array.data[0]
@@ -329,6 +334,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soldado
       objectReference: {fileID: 0}
+    - target: {fileID: 8586354875928443071, guid: f50f36b54bfd96f42a3174f10902f687,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f50f36b54bfd96f42a3174f10902f687, type: 3}
 --- !u!4 &3290643181740903351 stripped
@@ -355,3 +365,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322a293d84cd69a44bc56e7f12e31774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8778775670723911263 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2546243785684495691, guid: f50f36b54bfd96f42a3174f10902f687,
+    type: 3}
+  m_PrefabInstance: {fileID: 6521892645211616020}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee52c5b2b7f6a4458149ce2dc43c1cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &8778775670351527532 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2546243786656632184, guid: f50f36b54bfd96f42a3174f10902f687,
+    type: 3}
+  m_PrefabInstance: {fileID: 6521892645211616020}
+  m_PrefabAsset: {fileID: 0}
