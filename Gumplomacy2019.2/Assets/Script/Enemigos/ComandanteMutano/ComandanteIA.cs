@@ -25,7 +25,7 @@ public class ComandanteIA : MonoBehaviour
     public SpriteRenderer MySprite;
     DisparoIAEnemiga scriptDisparo;
 
-
+    float target;
 
     void Start()
     {
@@ -40,16 +40,17 @@ public class ComandanteIA : MonoBehaviour
     void Update()
     {
         DetectarPlayer();
+        Flip();
         if (detectandoPlayer)
         {
+            target = player.position.x;
             scriptDisparo.Disparar();
             Movimiento();
-            Flip();
         }
         if (!detectandoPlayer)
         {
+            target = posicionInicial.x;
             MovimientoInicio();
-            MyAnimator.SetBool("Corriendo", false);
             scriptDisparo.DejarDeDisparar();
         }
     }
@@ -85,11 +86,11 @@ public class ComandanteIA : MonoBehaviour
     /// </summary>
     void Flip()
     {
-        if (player.position.x > transform.position.x)
+        if (target > transform.position.x)
         {
             MySprite.flipX = false;
         }
-        if (player.position.x < transform.position.x)
+        if (target < transform.position.x)
         {
             MySprite.flipX = true;
         }
@@ -120,6 +121,12 @@ public class ComandanteIA : MonoBehaviour
 
     void MovimientoInicio()
     {
+        MyAnimator.SetBool("Corriendo", true);
         transform.position = Vector2.MoveTowards(transform.position, posicionInicial, velocidad * Time.deltaTime);
+        float distanciaPuntoInicil = Vector3.Distance(transform.position, posicionInicial);
+        if(distanciaPuntoInicil <= 1f)
+        {
+            MyAnimator.SetBool("Corriendo", false);
+        }
     }
 }
