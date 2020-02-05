@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2945718129301717731}
   - component: {fileID: 8407126966550546114}
   - component: {fileID: 4954496267697428603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bala Escopeta
   m_TagString: Untagged
   m_Icon: {fileID: 0}

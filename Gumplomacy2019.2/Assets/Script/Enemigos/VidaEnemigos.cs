@@ -19,7 +19,7 @@ public class VidaEnemigos : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collider collision)
     {
        RecibeDaño(golpe);
     }
@@ -37,6 +37,10 @@ public class VidaEnemigos : MonoBehaviour
         if (vidaEnemigoActual <= 0)
         {
             Muerte();
+        }
+        else
+        {
+            daño = 0;
         }
     }
 

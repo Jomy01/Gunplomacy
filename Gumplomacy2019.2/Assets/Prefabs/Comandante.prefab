@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 5064596056432092270}
   - component: {fileID: 5064596056432092269}
   - component: {fileID: 5064596056432092271}
-  m_Layer: 0
+  - component: {fileID: 164488206}
+  m_Layer: 10
   m_Name: Comandante
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +100,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -175,6 +176,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &164488206
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064596056432092260}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.004901886, y: 0.8}
+  m_Size: {x: 0.80583954, y: 1.6}
+  m_Direction: 0
 --- !u!1 &5064596056845799053
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5064596056845799052}
   - component: {fileID: 5064596056845799091}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,15 +257,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orbe-Mutano
       objectReference: {fileID: 0}
+    - target: {fileID: 7156313450632533651, guid: 1fd4ccca89892c6409ab55e8817a2c93,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7156313450632533655, guid: 1fd4ccca89892c6409ab55e8817a2c93,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.529
       objectReference: {fileID: 0}
     - target: {fileID: 7156313450632533655, guid: 1fd4ccca89892c6409ab55e8817a2c93,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.231
       objectReference: {fileID: 0}
     - target: {fileID: 7156313450632533655, guid: 1fd4ccca89892c6409ab55e8817a2c93,
         type: 3}
@@ -294,6 +316,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156313450656906209, guid: 1fd4ccca89892c6409ab55e8817a2c93,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156313450656906214, guid: 1fd4ccca89892c6409ab55e8817a2c93,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.562
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd4ccca89892c6409ab55e8817a2c93, type: 3}
