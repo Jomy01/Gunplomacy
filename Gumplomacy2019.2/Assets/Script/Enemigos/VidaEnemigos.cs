@@ -18,10 +18,9 @@ public class VidaEnemigos : MonoBehaviour
         vidaEnemigoActual = vidaEnemigo;
 
     }
-
-    private void OnCollisionEnter2D(Collider collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-       RecibeDaño(golpe);
+        RecibeDaño(golpe);
     }
 
     //Para Testeo

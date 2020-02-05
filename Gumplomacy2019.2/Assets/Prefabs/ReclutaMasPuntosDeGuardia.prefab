@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5431662350298794367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.43, y: 6.89, z: 0}
+  m_LocalPosition: {x: -4.3, y: 3.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5431662350512485095}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5431662350412533493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.38, y: -7.87, z: 0}
+  m_LocalPosition: {x: -6.3, y: -13.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5431662350512485095}
@@ -84,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5431662350415646422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.48, y: -0.08, z: 0}
+  m_LocalPosition: {x: 7, y: -2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5431662350512485095}
@@ -149,12 +149,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5431662350830393497}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.4, y: -7.38, z: 0}
+  m_LocalPosition: {x: -12.7, y: -10.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5431662350512485095}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &6451267916128924107
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5431662351268506782}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.925, y: 0.9}
+  m_Direction: 0
 --- !u!114 &452629740534905460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5431662351538825033}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1, y: 15.9, z: 0}
+  m_LocalPosition: {x: -14.7, y: 5.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5431662350512485095}
@@ -254,6 +270,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1791375649976589531}
     m_Modifications:
+    - target: {fileID: 3010691681949054464, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 665712297
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010691681949054464, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3010691681949054465, guid: 02329c61c880cb248a04fe532ed2ac8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -311,9 +337,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
         type: 3}
+      propertyPath: puntosDeGuardia.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: mSr
+      value: 
+      objectReference: {fileID: 5431662351268506777}
+    - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: velocidadPatrulla
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: distanciaStop
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: distanciaRetirada
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
       propertyPath: puntosDeGuardia.Array.data[0]
       value: 
-      objectReference: {fileID: 5431662350512485095}
+      objectReference: {fileID: 5431662351538825032}
+    - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: puntosDeGuardia.Array.data[1]
+      value: 
+      objectReference: {fileID: 5431662350298794366}
+    - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: puntosDeGuardia.Array.data[2]
+      value: 
+      objectReference: {fileID: 5431662350415646417}
+    - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: puntosDeGuardia.Array.data[3]
+      value: 
+      objectReference: {fileID: 5431662350412533492}
+    - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: puntosDeGuardia.Array.data[4]
+      value: 
+      objectReference: {fileID: 5431662350830393496}
+    - target: {fileID: 3010691681949054466, guid: 02329c61c880cb248a04fe532ed2ac8b,
+        type: 3}
+      propertyPath: delayPatrulla
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3010691681949054471, guid: 02329c61c880cb248a04fe532ed2ac8b,
         type: 3}
       propertyPath: m_Name
@@ -340,6 +416,12 @@ GameObject:
 --- !u!4 &5431662351268506776 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3010691681949054465, guid: 02329c61c880cb248a04fe532ed2ac8b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7109217899825535641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &5431662351268506777 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3010691681949054464, guid: 02329c61c880cb248a04fe532ed2ac8b,
     type: 3}
   m_PrefabInstance: {fileID: 7109217899825535641}
   m_PrefabAsset: {fileID: 0}

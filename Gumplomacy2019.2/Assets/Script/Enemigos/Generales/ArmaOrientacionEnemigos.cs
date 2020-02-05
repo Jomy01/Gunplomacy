@@ -19,12 +19,34 @@ public class ArmaOrientacionEnemigos : MonoBehaviour
     bool flippedX = false;
     bool flippedY = false;
 
+    bool volverInicio;
+
     Vector3 target;
+    Quaternion posicionInicial;
+
+    private void Start()
+    {
+        posicionInicial = transform.rotation;
+    }
     void Update()
     {
         //Si el player está detectado
         if (scripIASolRec.detectandoPlayer)
         {
+            volverInicio = true;
+            if(volverInicio)
+            {
+                if(spriteEnemigo.flipX)
+                {
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+                if(!spriteEnemigo.flipX)
+                {
+                    transform.localScale = new Vector3(-1, -1, 1);
+                }
+                volverInicio = false;
+            }
+
             target = player.position;
 
             float AnguloRadianes = Mathf.Atan2(transform.position.y - target.y, transform.position.x - target.x);
@@ -35,6 +57,19 @@ public class ArmaOrientacionEnemigos : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, AnguloGrados);
             CorrectRotationWeaponAxisX();
             CorrectRotationWeaponAxisY(AnguloGrados);
+        }
+        else
+        {
+            transform.rotation = posicionInicial;
+            volverInicio = true;
+            if (spriteEnemigo.flipX)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
         }
     }
 
