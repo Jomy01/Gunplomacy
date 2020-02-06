@@ -385,7 +385,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: Nave Pedro
+  textoNave: "Kurowake es una nave de guerra que pocos desean ver en combate, debido
+    a ser una de las m\xE1s poderosas del universo, cuenta con tres pisos y una forma
+    menos veloz que las anteriores de esta raza, pero lo compensa su poder.\r"
   textoPanel: {fileID: 395668713}
 --- !u!61 &213565175
 BoxCollider2D:
@@ -434,7 +436,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: 
+  textoNave: "La nave de guerra botanicla,una nave que consiste en el bulbo de una
+    gran planta carn\xEDvora, dise\xF1ada y modificada para arrasar por donde va,
+    una nave de tres pisos con movimiento lento y\r gran tama\xF1o."
   textoPanel: {fileID: 395668713}
 --- !u!61 &221621204
 BoxCollider2D:
@@ -1295,7 +1299,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: 
+  textoNave: "La blue sunset, el crucero mutano, es una de las naves m\xE1s r\xE1pidas
+    de su clase dada sus proporciones aerodin\xE1micas, adem\xE1s de ser la m\xE1s
+    com\xFAn de los mutanos, en esta puedes encontrar un piso.\r\n"
   textoPanel: {fileID: 395668713}
 --- !u!61 &607815381
 BoxCollider2D:
@@ -1671,7 +1677,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: Nave Dani
+  textoNave: "Esta nave de expedici\xF3n cuenta con dos hangares distintos, mas solo
+    una sala de mando central, esto le permite defenderse de una manera m\xE1s eficiente,
+    en esta puedes ver dos pisos distintos.\r"
   textoPanel: {fileID: 395668713}
 --- !u!61 &820152036
 BoxCollider2D:
@@ -2099,7 +2107,10 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: 
+  textoNave: "El crucero de los botaniclos es la nave m\xE1s r\xE1pida y com\xFAn
+    entre su flota, esta nave es una flor de gran tama\xF1o, a la cual incluyeron
+    la tecnolog\xEDa m\xE1s puntera para que pudiese ser m\xE1s r\xE1pida que las
+    dem\xE1s que tienen, cuenta con un piso.\r\n"
   textoPanel: {fileID: 395668713}
 --- !u!61 &1137522288
 BoxCollider2D:
@@ -2459,7 +2470,10 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: 
+  textoNave: "Esta nave, que cuenta con forma de hoja cuenta con el puente de mando
+    en la rama de la misma, lo que le permite ver todo lo que rodea la nave, haciendo
+    que sus dos pisos de hoja espacial pueda defenderse por todos sus lados, de gran
+    maniobrabilidad.\r\n"
   textoPanel: {fileID: 395668713}
 --- !u!61 &1654945246
 BoxCollider2D:
