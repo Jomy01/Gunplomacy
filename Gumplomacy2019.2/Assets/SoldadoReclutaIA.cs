@@ -37,6 +37,7 @@ public class SoldadoReclutaIA : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.Find("Player").GetComponent<Transform>();
         mRb = GetComponent<Rigidbody2D>();
         mSr = GetComponent<SpriteRenderer>();
         scriptDisparo = GetComponent<DisparoIAEnemiga>();
