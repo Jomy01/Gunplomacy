@@ -385,9 +385,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "Kurowake es una nave de guerra que pocos desean ver en combate, debido
-    a ser una de las m\xE1s poderosas del universo, cuenta con tres pisos y una forma
-    menos veloz que las anteriores de esta raza, pero lo compensa su poder.\r"
+  textoNave: "Nave de guerra\nKurowake\nEs una de las m\xE1s poderosas del universo
+    y pocos la desean ver en combate.\n-3-5 comandantes\r\n-50% de enemigos reclutas\r\n-50%
+    de enemigos soldados\r"
   textoPanel: {fileID: 395668713}
 --- !u!61 &213565175
 BoxCollider2D:
@@ -436,9 +436,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "La nave de guerra botanicla,una nave que consiste en el bulbo de una
-    gran planta carn\xEDvora, dise\xF1ada y modificada para arrasar por donde va,
-    una nave de tres pisos con movimiento lento y\r gran tama\xF1o."
+  textoNave: "Nave de guerra \nPenthessel\nConsiste en el bulbo de una gran planta
+    carn\xEDvora, dise\xF1ada y modificada para arrasar por donde va.\n-3-5 comandantes\r\n-50%
+    de enemigos reclutas\r\n-50% de enemigos soldados\r"
   textoPanel: {fileID: 395668713}
 --- !u!61 &221621204
 BoxCollider2D:
@@ -1299,9 +1299,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "La blue sunset, el crucero mutano, es una de las naves m\xE1s r\xE1pidas
-    de su clase dada sus proporciones aerodin\xE1micas, adem\xE1s de ser la m\xE1s
-    com\xFAn de los mutanos, en esta puedes encontrar un piso.\r\n"
+  textoNave: "Nave crucero\nBlue sunset\nIna de las m\xE1s r\xE1pidas y comunes de
+    su clase dada sus proporciones aerodin\xE1micas.\r\n-1 comandante\r\n-70% de enemigos
+    reclutas\r\n-30% de enemigos soldados"
   textoPanel: {fileID: 395668713}
 --- !u!61 &607815381
 BoxCollider2D:
@@ -1677,9 +1677,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "Esta nave de expedici\xF3n cuenta con dos hangares distintos, mas solo
-    una sala de mando central, esto le permite defenderse de una manera m\xE1s eficiente,
-    en esta puedes ver dos pisos distintos.\r"
+  textoNave: "Nave de expedici\xF3n \nTwin dubio\nTiene dos hangares y una sala de
+    mando que le permiten defenderse m\xE1s eficientemente.\r\n-1-2 comandantes\r\n-60%
+    de enemigos reclutas\r\n-40% de enemigos soldados\r\n"
   textoPanel: {fileID: 395668713}
 --- !u!61 &820152036
 BoxCollider2D:
@@ -2107,10 +2107,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "El crucero de los botaniclos es la nave m\xE1s r\xE1pida y com\xFAn
-    entre su flota, esta nave es una flor de gran tama\xF1o, a la cual incluyeron
-    la tecnolog\xEDa m\xE1s puntera para que pudiese ser m\xE1s r\xE1pida que las
-    dem\xE1s que tienen, cuenta con un piso.\r\n"
+  textoNave: "Nave crucero \nBlosship\nLa m\xE1s r\xE1pida y com\xFAn entre su flota,
+    esta es una flor de gran tama\xF1o, a la cual incluyeron la tecnolog\xEDa m\xE1s
+    puntera.\r\n-1 comandante\r\n-70% de enemigos reclutas\r\n-30% de enemigos soldados\n"
   textoPanel: {fileID: 395668713}
 --- !u!61 &1137522288
 BoxCollider2D:
@@ -2124,7 +2123,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -2470,10 +2469,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "Esta nave, que cuenta con forma de hoja cuenta con el puente de mando
-    en la rama de la misma, lo que le permite ver todo lo que rodea la nave, haciendo
-    que sus dos pisos de hoja espacial pueda defenderse por todos sus lados, de gran
-    maniobrabilidad.\r\n"
+  textoNave: "Nave de expedici\xF3n \nShitofune\nEsta nave en forma de hoja puede
+    ver todo lo que rodea la nave y cuenta con una gran maniobrabilidad.\r\n-1-2 comandantes\r\n-60%
+    de enemigos reclutas\r\n-40% de enemigos soldados\r\n\n"
   textoPanel: {fileID: 395668713}
 --- !u!61 &1654945246
 BoxCollider2D:
