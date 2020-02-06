@@ -26,6 +26,9 @@ public class ArmaOrientacionEnemigos : MonoBehaviour
 
     private void Start()
     {
+        player = GameObject.Find("Player").GetComponent<Transform>();
+        scripIASolRec = GetComponentInParent<SoldadoReclutaIA>();
+        spriteEnemigo = GetComponentInParent<SpriteRenderer>();
         posicionInicial = transform.rotation;
     }
     void Update()

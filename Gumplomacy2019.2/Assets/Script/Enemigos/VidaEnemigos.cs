@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class VidaEnemigos : MonoBehaviour
 {
-    public float vidaEnemigo = 1000;
+    public float vidaEnemigo = 1;
     public float vidaEnemigoActual;
     public int golpe = 0;
     public Transform origenParticulas;
@@ -15,12 +15,16 @@ public class VidaEnemigos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        vidaEnemigo = 1;
         vidaEnemigoActual = vidaEnemigo;
-
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        RecibeDaño(golpe);
+        if(collision.gameObject.CompareTag("BalaProta"))
+        {
+            RecibeDaño(golpe);
+        }
+
     }
 
     //Para Testeo
@@ -45,8 +49,8 @@ public class VidaEnemigos : MonoBehaviour
 
     void Muerte()
     {
-        Instantiate<ParticleSystem>(_particulasMuerte, origenParticulas.position, origenParticulas.rotation);
-        _particulasMuerte.Play();
+        //Instantiate<ParticleSystem>(_particulasMuerte, origenParticulas.position, origenParticulas.rotation);
+        //_particulasMuerte.Play();
         Destroy(gameObject);
     }
 }

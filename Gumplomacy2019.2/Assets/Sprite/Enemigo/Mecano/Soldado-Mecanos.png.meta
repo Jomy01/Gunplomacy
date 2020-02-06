@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 433ca22b8cd9cee48a17d221c910d70d
+guid: a48fefedd02eb564090c2f592204c14a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6008369984721647176
-    second: Recluta idle_0
-  - first:
-      213: 3420842445258028220
-    second: Recluta idle_1
-  - first:
-      213: 8673914194061043438
-    second: Recluta idle_2
-  - first:
-      213: -3442747868715530909
-    second: Recluta idle_3
+      213: 5119941457037991458
+    second: Soldado-Mecanos_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -110,85 +101,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Recluta idle_0
+      name: Soldado-Mecanos_0
       rect:
         serializedVersion: 2
-        x: 72
-        y: 49
-        width: 34
-        height: 50
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bce2d9c9c70d13341a7af6a2b876cbcb
-      internalID: -6008369984721647176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recluta idle_1
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 84
-        width: 4
-        height: 5
+        x: 3
+        y: 5
+        width: 27
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4435e3c721b449498fea5e7c8ff776b
-      internalID: 3420842445258028220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recluta idle_2
-      rect:
-        serializedVersion: 2
-        x: 472
-        y: 49
-        width: 34
-        height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a6db5f093f1a5f42a7ab0374a5fd071
-      internalID: 8673914194061043438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recluta idle_3
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 84
-        width: 4
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 268ed698c95444c40923c8e1e2ca75ca
-      internalID: -3442747868715530909
+      spriteID: d913b760c9b8c1b40b799a38564cf187
+      internalID: 5119941457037991458
       vertices: []
       indices: 
       edges: []
