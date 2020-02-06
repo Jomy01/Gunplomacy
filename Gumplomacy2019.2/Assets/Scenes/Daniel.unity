@@ -385,9 +385,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "Kurowake es una nave de guerra que pocos desean ver en combate, debido
-    a ser una de las m\xE1s poderosas del universo, cuenta con tres pisos y una forma
-    menos veloz que las anteriores de esta raza, pero lo compensa su poder.\r"
+  textoNave: "Nave de guerra\nKurowake\nEs una de las m\xE1s poderosas del universo
+    y pocos la desean ver en combate.\n-3-5 comandantes\r\n-50% de enemigos reclutas\r\n-50%
+    de enemigos soldados\r"
   textoPanel: {fileID: 395668713}
 --- !u!61 &213565175
 BoxCollider2D:
@@ -402,7 +402,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.016119808, y: 0.0036953539}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -413,7 +413,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.33249247, y: 0.29465106}
   m_EdgeRadius: 0
 --- !u!1 &221621200 stripped
 GameObject:
@@ -436,9 +436,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "La nave de guerra botanicla,una nave que consiste en el bulbo de una
-    gran planta carn\xEDvora, dise\xF1ada y modificada para arrasar por donde va,
-    una nave de tres pisos con movimiento lento y\r gran tama\xF1o."
+  textoNave: "Nave de guerra \nPenthessel\nConsiste en el bulbo de una gran planta
+    carn\xEDvora, dise\xF1ada y modificada para arrasar por donde va.\n-3-5 comandantes\r\n-50%
+    de enemigos reclutas\r\n-50% de enemigos soldados\r"
   textoPanel: {fileID: 395668713}
 --- !u!61 &221621204
 BoxCollider2D:
@@ -453,7 +453,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00483121, y: 0.003722459}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -464,7 +464,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.3630757, y: 0.23678866}
   m_EdgeRadius: 0
 --- !u!1 &296764001
 GameObject:
@@ -833,7 +833,10 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: 
+  textoNave: "Nave de guerra \nJellwar\nLa mas poderosa de las naves ictioniclas,
+    la cual cuenta con tres ap\xE9ndicesforma de tent\xE1culo que conectan directamente
+    con los pisos de la misma.\n*3-5 comandantes\r\n*50% de enemigos reclutas\r\n*50%
+    de enemigos soldados"
   textoPanel: {fileID: 395668713}
 --- !u!61 &492316788
 BoxCollider2D:
@@ -848,7 +851,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.008225009, y: -0.0060935616}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -859,7 +862,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.36342576, y: 0.24267274}
   m_EdgeRadius: 0
 --- !u!1 &538864061
 GameObject:
@@ -1032,7 +1035,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: 
+  textoNave: "Nave crucero \nHayakyu\nEl crucero Hayakyu, fueron restos de una estaci\xF3n
+    espacial abandonada hasta que los mecanos dieron con todos ella, lentas pero muy
+    resistentes.\n*1 comandante\r\n*70% de enemigos reclutas\r\n*30% de enemigos soldados"
   textoPanel: {fileID: 395668713}
 --- !u!61 &583778681
 BoxCollider2D:
@@ -1047,7 +1052,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.047745615, y: -0.0070094243}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1058,7 +1063,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.18398076, y: 0.35629857}
   m_EdgeRadius: 0
 --- !u!1001 &596345575
 PrefabInstance:
@@ -1299,9 +1304,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "La blue sunset, el crucero mutano, es una de las naves m\xE1s r\xE1pidas
-    de su clase dada sus proporciones aerodin\xE1micas, adem\xE1s de ser la m\xE1s
-    com\xFAn de los mutanos, en esta puedes encontrar un piso.\r\n"
+  textoNave: "Nave crucero\nBlue sunset\nIna de las m\xE1s r\xE1pidas y comunes de
+    su clase dada sus proporciones aerodin\xE1micas.\r\n-1 comandante\r\n-70% de enemigos
+    reclutas\r\n-30% de enemigos soldados"
   textoPanel: {fileID: 395668713}
 --- !u!61 &607815381
 BoxCollider2D:
@@ -1316,7 +1321,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.004605647, y: 0.0061588027}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1327,7 +1332,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.24959058, y: 0.11727586}
   m_EdgeRadius: 0
 --- !u!1001 &617923999
 PrefabInstance:
@@ -1677,9 +1682,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "Esta nave de expedici\xF3n cuenta con dos hangares distintos, mas solo
-    una sala de mando central, esto le permite defenderse de una manera m\xE1s eficiente,
-    en esta puedes ver dos pisos distintos.\r"
+  textoNave: "Nave de expedici\xF3n \nTwin dubio\nTiene dos hangares y una sala de
+    mando que le permiten defenderse m\xE1s eficientemente.\r\n-1-2 comandantes\r\n-60%
+    de enemigos reclutas\r\n-40% de enemigos soldados\r\n"
   textoPanel: {fileID: 395668713}
 --- !u!61 &820152036
 BoxCollider2D:
@@ -1694,7 +1699,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0011514425, y: 0.0036953464}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1705,7 +1710,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.28413302, y: 0.29957795}
   m_EdgeRadius: 0
 --- !u!1 &885707989
 GameObject:
@@ -2107,10 +2112,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "El crucero de los botaniclos es la nave m\xE1s r\xE1pida y com\xFAn
-    entre su flota, esta nave es una flor de gran tama\xF1o, a la cual incluyeron
-    la tecnolog\xEDa m\xE1s puntera para que pudiese ser m\xE1s r\xE1pida que las
-    dem\xE1s que tienen, cuenta con un piso.\r\n"
+  textoNave: "Nave crucero \nBlosship\nLa m\xE1s r\xE1pida y com\xFAn entre su flota,
+    esta es una flor de gran tama\xF1o, a la cual incluyeron la tecnolog\xEDa m\xE1s
+    puntera.\r\n-1 comandante\r\n-70% de enemigos reclutas\r\n-30% de enemigos soldados\n"
   textoPanel: {fileID: 395668713}
 --- !u!61 &1137522288
 BoxCollider2D:
@@ -2124,8 +2128,8 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_UsedByComposite: 1
+  m_Offset: {x: -0.008791953, y: 0.026691794}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2136,7 +2140,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.34766936, y: 0.17682979}
   m_EdgeRadius: 0
 --- !u!1 &1146221616 stripped
 GameObject:
@@ -2159,11 +2163,10 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: " NAVE DE GUERRA \nWALNET\nEsta nave es la m\xE1s grande de todas las
-    vistas en este universo, creadas a partir de sat\xE9lites, asteroides y planetas
-    enanos, las Walnets arrasan literalmente todo a su paso, estas cuentan con anillas
-    que rodean y protegen los tres pisos de roca espacial, conectando los pisos a
-    su vez."
+  textoNave: " NAVE DE GUERRA \nWALNET\nEsta nave es la m\xE1s grande del universo,
+    creada a partir de sat\xE9lites, asteroides y planetas enanos, esta nave arrasa
+    todo a su paso, cuenta con anillas que rodean y protegen la nave.\n*3-5 comandantes\n*50%
+    de enemigos reclutas\r\n*50% de enemigos soldados"
   textoPanel: {fileID: 395668713}
 --- !u!61 &1146221618
 BoxCollider2D:
@@ -2178,7 +2181,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0010503978, y: 0.0034477413}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2189,7 +2192,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.34485403, y: 0.39169478}
   m_EdgeRadius: 0
 --- !u!1 &1237081079 stripped
 GameObject:
@@ -2212,7 +2215,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: 
+  textoNave: "Nave de expedici\xF3n \nSishell\nLa nave intermedia de las tropas acu\xE1ticas,utilizaron
+    grandes artefactos para dar una forma de concha a esta nave.\n*1-2 comandantes\r\n*60%
+    de enemigos reclutas\r\n*40% de enemigos soldados"
   textoPanel: {fileID: 395668713}
 --- !u!61 &1237081083
 BoxCollider2D:
@@ -2227,7 +2232,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.006992325, y: 0.0016817898}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2238,7 +2243,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.3318037, y: 0.32489738}
   m_EdgeRadius: 0
 --- !u!1 &1265699696
 GameObject:
@@ -2470,10 +2475,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: "Esta nave, que cuenta con forma de hoja cuenta con el puente de mando
-    en la rama de la misma, lo que le permite ver todo lo que rodea la nave, haciendo
-    que sus dos pisos de hoja espacial pueda defenderse por todos sus lados, de gran
-    maniobrabilidad.\r\n"
+  textoNave: "Nave de expedici\xF3n \nShitofune\nEsta nave en forma de hoja puede
+    ver todo lo que rodea la nave y cuenta con una gran maniobrabilidad.\r\n-1-2 comandantes\r\n-60%
+    de enemigos reclutas\r\n-40% de enemigos soldados\r\n\n"
   textoPanel: {fileID: 395668713}
 --- !u!61 &1654945246
 BoxCollider2D:
@@ -2488,7 +2492,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.009653114, y: 0.017022021}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2499,7 +2503,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.35404342, y: 0.23582824}
   m_EdgeRadius: 0
 --- !u!1 &1744310772 stripped
 GameObject:
@@ -2522,7 +2526,9 @@ MonoBehaviour:
   Cam: {fileID: 885707991}
   cExit: {fileID: 538864061}
   Panel: {fileID: 11166254}
-  textoNave: 
+  textoNave: "Nave crucero \nSepien\nEs la nave m\xE1s com\xFAn entre los ictioniclos,
+    es la nave m\xE1s peque\xF1a entre sus flotas, aunque no se debe tomar a la ligera
+    si no quieres caer antes de tiempo.\n*1 Comandante\n*70% Reclutas\n*30% Soldados"
   textoPanel: {fileID: 395668713}
 --- !u!61 &1744310776
 BoxCollider2D:
@@ -2537,7 +2543,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0045724213, y: 0.010144398}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2548,7 +2554,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.44}
+  m_Size: {x: 0.3537323, y: 0.21060973}
   m_EdgeRadius: 0
 --- !u!1001 &1809317662
 PrefabInstance:
@@ -2575,7 +2581,26 @@ PrefabInstance:
       objectReference: {fileID: 395668713}
     - target: {fileID: 1478390013, guid: 638b5271074a53442b2b1b653120d801, type: 3}
       propertyPath: textoNave
-      value: 
+      value: "Nave de expedici\xF3n \nUchusen \nLas uchusen se crearon a partir del
+        dise\xF1o de barcos, lo que le permite moverse a gran velocidad por el espacio,
+        esta nave de expedici\xF3n cuenta con dos pisos.\n*1-2 comandantes\r\n*60%
+        de enemigos reclutas\r\n*40% de enemigos soldados"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478390014, guid: 638b5271074a53442b2b1b653120d801, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.004016429
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478390014, guid: 638b5271074a53442b2b1b653120d801, type: 3}
+      propertyPath: m_Size.y
+      value: 0.32094514
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478390014, guid: 638b5271074a53442b2b1b653120d801, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.010648526
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478390014, guid: 638b5271074a53442b2b1b653120d801, type: 3}
+      propertyPath: m_Size.x
+      value: 0.27326655
       objectReference: {fileID: 0}
     - target: {fileID: 7047253411471677379, guid: 638b5271074a53442b2b1b653120d801,
         type: 3}
@@ -2839,7 +2864,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 9
-    m_MaxSize: 40
+    m_MaxSize: 54
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

@@ -43,15 +43,21 @@ public class Zoom : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        cExit.SetActive(true);
-        Panel.SetActive(true);
+        if (!zoom)
+        {
+            cExit.SetActive(true);
+            Panel.SetActive(true);
+            zoom = true;
 
-        textoPanel.text = textoNave;
 
-        transform.localScale = posInicialNave;
-        Cam.transform.position = new Vector3(transform.position.x + 1.5f, transform.position.y, -10);
-        Cam.GetComponent<Camera>().orthographicSize = 1.25f;
-        zoom = true;
+            textoPanel.text = textoNave;
+
+            transform.localScale = posInicialNave;
+            Cam.transform.position = new Vector3(transform.position.x + 1.5f, transform.position.y, -10);
+            Cam.GetComponent<Camera>().orthographicSize = 1.25f;
+        }
+
+
     }
 
     public void Atras()
