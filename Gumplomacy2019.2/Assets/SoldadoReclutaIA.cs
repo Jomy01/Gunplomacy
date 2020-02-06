@@ -33,6 +33,7 @@ public class SoldadoReclutaIA : MonoBehaviour
     bool actualizandoPunto = false;
 
     DisparoIAEnemiga scriptDisparo;
+    float target;
 
     void Start()
     {
@@ -48,6 +49,7 @@ public class SoldadoReclutaIA : MonoBehaviour
         if(!detectandoPlayer && !actualizandoPunto)
         {
             Patrullando();
+            Flip();
         }
         if(detectandoPlayer)
         {
@@ -62,6 +64,7 @@ public class SoldadoReclutaIA : MonoBehaviour
         scriptDisparo.DejarDeDisparar();
         siguientePunto = puntosDeGuardia[puntoGuardia].position;
         distancia = Vector2.Distance(transform.position, siguientePunto);
+        target = siguientePunto.x;
         if (distancia > 0.5f)
         {
             mA.SetBool("Corriendo", true);
@@ -91,6 +94,7 @@ public class SoldadoReclutaIA : MonoBehaviour
     /// </summary>
     void DetectarPlayer()
     {
+        target = player.position.x;
         if (Vector2.Distance(transform.position, player.position) < vision)
         {
             detectandoPlayer = true;
@@ -118,11 +122,11 @@ public class SoldadoReclutaIA : MonoBehaviour
     /// </summary>
     void Flip()
     {
-        if (player.position.x > transform.position.x)
+        if (target > transform.position.x)
         {
             mSr.flipX = false;
         }
-        if (player.position.x < transform.position.x)
+        if (target < transform.position.x)
         {
             mSr.flipX = true;
         }
