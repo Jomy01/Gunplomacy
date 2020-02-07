@@ -27,16 +27,16 @@ public class VidaProta : MonoBehaviour
                 //Muerte();
             }
         }
-        if(collision.gameObject.CompareTag("Enemigo"))
-        {
-            vidas--;
-            imagenVida.sprite = spriteVidas[vidas];
-            if (vidas <= 0)
-            {
-                PausaEscena();
-                Muerte();
-            }
-        }
+        //if(collision.gameObject.CompareTag("Enemigo"))
+        //{
+        //    vidas--;
+        //    imagenVida.sprite = spriteVidas[vidas];
+        //    if (vidas <= 0)
+        //    {
+        //        PausaEscena();
+        //        Muerte();
+        //    }
+        //}
     }
     void PausaEscena()
     {
