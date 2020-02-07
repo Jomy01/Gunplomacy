@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bala : MonoBehaviour
 {
     public float velocidad = 20;
-
+    public int daño;
     Rigidbody2D _rb;
     // Start is called before the first frame update
     void Start()
