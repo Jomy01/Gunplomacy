@@ -30,8 +30,7 @@ public class VidaPlayer : MonoBehaviour
             numVida--;
             if (numVida <= 0)
             {
-                //GAME OVER
-                //Crear escena o animacion equivalente para el game over
+                GameOverMenu.isGameOver = true;
                 gameObject.SetActive(false);
             }
             UpdateVidaUI();
@@ -54,8 +53,7 @@ public class VidaPlayer : MonoBehaviour
 
             if(numVida <= 0)
             {
-                //GAME OVER
-                //Crear escena o animacion equivalente para el game over
+                GameOverMenu.isGameOver = true;
                 gameObject.SetActive(false);
             }
             UpdateVidaUI();
