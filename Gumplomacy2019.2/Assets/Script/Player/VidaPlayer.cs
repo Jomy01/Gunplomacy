@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class VidaPlayer : MonoBehaviour
 {
-    public int numVida = 6;
+    public static int maxVida = 6;
+    public static int currentVida = 6;
+    int currentVidaInformation;
 
     public List<Image> spriteVidas;
     public Sprite tanque_lleno;
@@ -18,8 +20,7 @@ public class VidaPlayer : MonoBehaviour
         foreach(Image spriteVida in spriteVidas){
             spriteVida.sprite = tanque_lleno;
         }
-
-        numVida = spriteVidas.Count * 2;
+        currentVidaInformation = currentVida;
     }
 
     // Update is called once per frame
@@ -27,12 +28,11 @@ public class VidaPlayer : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            numVida--;
-            if (numVida <= 0)
-            {
-                GameOverMenu.isGameOver = true;
-                gameObject.SetActive(false);
-            }
+            restaVida(1);
+        }
+        if(currentVidaInformation != currentVida)
+        {
+            currentVidaInformation = currentVida;
             UpdateVidaUI();
         }
     }
@@ -44,37 +44,35 @@ public class VidaPlayer : MonoBehaviour
         {
             if(col.collider.tag == "enemigo")
             {
-                numVida--;
+                restaVida(1);
             }
             else
             {
-                numVida = numVida - 2;
+                restaVida(2);
             }
-
-            if(numVida <= 0)
-            {
-                GameOverMenu.isGameOver = true;
-                gameObject.SetActive(false);
-            }
-            UpdateVidaUI();
         }
     }
 
     void UpdateVidaUI()
     {
-        switch (numVida)
+        switch (currentVida)
         {
+            case 6:
+                spriteVidas[2].sprite = tanque_lleno;
+                break;
             case 5:
                 spriteVidas[2].sprite = tanque_medio;
                 break;
             case 4:
                 spriteVidas[2].sprite = tanque_vacio;
+                spriteVidas[1].sprite = tanque_lleno;
                 break;
             case 3:
                 spriteVidas[1].sprite = tanque_medio;
                 break;
             case 2:
                 spriteVidas[1].sprite = tanque_vacio;
+                spriteVidas[0].sprite = tanque_lleno;
                 break;
             case 1:
                 spriteVidas[0].sprite = tanque_medio;
@@ -82,6 +80,16 @@ public class VidaPlayer : MonoBehaviour
             case 0:
                 spriteVidas[0].sprite = tanque_vacio;
                 break;
+        }
+    }
+
+    void restaVida(int num)
+    {
+        currentVida -= num;
+        if (currentVida <= 0)
+        {
+            GameOverMenu.isGameOver = true;
+            gameObject.SetActive(false);
         }
     }
 }
