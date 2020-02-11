@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee52c5b2b7f6a4458149ce2dc43c1cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cadencia: 10
-  "da\xF1o": 2
+  cadencia: 1
+  "da\xF1o": 5
   _puntoSalida: {fileID: 772385560997362030}
-  bala: {fileID: 838207279442382896, guid: a452f0ca5987c1d449821c1838ee1996, type: 3}
+  bala: {fileID: 0}

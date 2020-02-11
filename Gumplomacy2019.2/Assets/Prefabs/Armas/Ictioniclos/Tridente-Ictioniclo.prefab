@@ -154,4 +154,4 @@ MonoBehaviour:
   cadencia: 2
   "da\xF1o": 2
   _puntoSalida: {fileID: 6817109658087869417}
-  bala: {fileID: 6874041557038004637, guid: 237dcab48f4c9a84582b3753e330cb10, type: 3}
+  bala: {fileID: 0}
