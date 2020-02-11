@@ -11,6 +11,7 @@ public class Eter : MonoBehaviour
     /// EterIctioniclos si es de la raza ictioniclos
     /// EterBotaniclos si es de la raza botaniclos
     /// TODO Es necesario actualizar el nombre de donde se consigue la GestionEter
+    /// Hecho por Ignacio Moreno
     /// </summary>
 
     [Tooltip("Indica cuanto éter rellena cada célula")]
