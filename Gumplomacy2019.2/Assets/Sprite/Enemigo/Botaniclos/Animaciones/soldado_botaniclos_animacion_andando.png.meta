@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: ed8beef4b167d9b49af98fa64ad742b2
+guid: 316b656b416d8d648b2581a51ad23c2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7769141253786949737
-    second: Orbe-Mutano_0
+      213: -6801348331966337590
+    second: soldado_botaniclos_animacion_andando_0
+  - first:
+      213: -214641080120986443
+    second: soldado_botaniclos_animacion_andando_1
+  - first:
+      213: -2130788476199930151
+    second: soldado_botaniclos_animacion_andando_2
+  - first:
+      213: -1707249222545677762
+    second: soldado_botaniclos_animacion_andando_3
+  - first:
+      213: -5679794603954971098
+    second: soldado_botaniclos_animacion_andando_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -48,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Orbe-Mutano_0
+      name: soldado_botaniclos_animacion_andando_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 21
-        width: 26
-        height: 40
+        x: 0
+        y: 0
+        width: 64
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3f9531634492b545a69af1fc91e7730
-      internalID: 7769141253786949737
+      spriteID: 32fcb694f36a1804a8aabcb9e0cc3af5
+      internalID: -6801348331966337590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado_botaniclos_animacion_andando_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7204c94f421914ca2105fe0593bd0d
+      internalID: -214641080120986443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado_botaniclos_animacion_andando_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa0fe5e7a0c7f84e820d4d4f7b32964
+      internalID: -2130788476199930151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado_botaniclos_animacion_andando_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e667b68c792f6e144a2125f255bd6cd4
+      internalID: -1707249222545677762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado_botaniclos_animacion_andando_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac1d3ed45f737748b45bd92fae7552b
+      internalID: -5679794603954971098
       vertices: []
       indices: 
       edges: []

@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7156313450632533651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 7156313450656906214}
   m_Father: {fileID: 0}
@@ -122,10 +122,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee52c5b2b7f6a4458149ce2dc43c1cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cadencia: 10
-  "da\xF1o": 2
+  cadencia: 2
+  "da\xF1o": 3
   _puntoSalida: {fileID: 7156313450656906214}
-  bala: {fileID: 7354362381124958625, guid: f8e6b7297ebbf4347a26ce35adc39ee8, type: 3}
+  bala: {fileID: 7354362381124958625, guid: 2fa66c3c3bbd4b648b01a21ba743b512, type: 3}
 --- !u!1 &7156313450656906209
 GameObject:
   m_ObjectHideFlags: 0

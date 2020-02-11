@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ed8beef4b167d9b49af98fa64ad742b2
+guid: 44f3d7c340ef5ab42b77a85be1c43995
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7769141253786949737
-    second: Orbe-Mutano_0
+      213: -8910203092294449276
+    second: capitan_botaniclos_animacion_respiracion_0
+  - first:
+      213: 6629504158878212523
+    second: capitan_botaniclos_animacion_respiracion_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -48,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Orbe-Mutano_0
+      name: capitan_botaniclos_animacion_respiracion_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 21
-        width: 26
-        height: 40
+        x: 0
+        y: 0
+        width: 64
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3f9531634492b545a69af1fc91e7730
-      internalID: 7769141253786949737
+      spriteID: 310560be4386a0f46aee92845438c13e
+      internalID: -8910203092294449276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: capitan_botaniclos_animacion_respiracion_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66bd684420ab2f419d2f89588f33f0a
+      internalID: 6629504158878212523
       vertices: []
       indices: 
       edges: []
