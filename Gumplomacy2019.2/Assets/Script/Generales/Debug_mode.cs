@@ -4,65 +4,70 @@ using UnityEngine;
 
 public class Debug_mode : MonoBehaviour
 {
-    int _fuselaje = 0;
-    int _motor = 0;
-    int _navegacion = 0;
+    public int fuselaje = 0;
+    public int motor = 0;
+    public int navegacion = 0;
+
+    public int startFujelaje = 0;
+    public int startMotor = 0;
+    public int startNavegacion = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("mejoras_fuselaje", _fuselaje);
-        PlayerPrefs.SetInt("mejoras_motor", _motor);
-        PlayerPrefs.SetInt("mejoras_navegacion", _navegacion);
-        PlayerPrefs.SetInt("fuselaje", 0);
-        PlayerPrefs.SetInt("motor", 0);
-        PlayerPrefs.SetInt("navegacion", 0);
+        PlayerPrefs.SetInt("mejoras_fuselaje", fuselaje);
+        PlayerPrefs.SetInt("mejoras_motor", motor);
+        PlayerPrefs.SetInt("mejoras_navegacion", navegacion);
+        PlayerPrefs.SetInt("fuselaje", startFujelaje);
+        PlayerPrefs.SetInt("motor", startMotor);
+        PlayerPrefs.SetInt("navegacion", startNavegacion);
     }
 
     public void SetMejorasFuselaje()
     {
-        if (_fuselaje < 2)
+        if (fuselaje < 2)
         {
-            _fuselaje++;
-            PlayerPrefs.SetInt("mejoras_fuselaje", _fuselaje);
-            Debug.Log(_fuselaje);
-            Debug.Log(_motor);
-            Debug.Log(_navegacion);
+            fuselaje++;
+            PlayerPrefs.SetInt("mejoras_fuselaje", fuselaje);
+            Debug.Log(fuselaje);
+            Debug.Log(motor);
+            Debug.Log(navegacion);
         }
     }
 
     public void SetMejorasMotor()
     {
-        if (_motor < 2)
+        if (motor < 2)
         {
-            _motor++;
-            PlayerPrefs.SetInt("mejoras_motor", _motor);
-            Debug.Log(_fuselaje);
-            Debug.Log(_motor);
-            Debug.Log(_navegacion);
+            motor++;
+            PlayerPrefs.SetInt("mejoras_motor", motor);
+            Debug.Log(fuselaje);
+            Debug.Log(motor);
+            Debug.Log(navegacion);
         }
     }
 
     public void SetMejorasNavegacion()
     {
-        if (_navegacion < 2)
+        if (navegacion < 2)
         {
-            _navegacion++;
-            PlayerPrefs.SetInt("mejoras_navegacion", _navegacion);
-            Debug.Log(_fuselaje);
-            Debug.Log(_motor);
-            Debug.Log(_navegacion);
+            navegacion++;
+            PlayerPrefs.SetInt("mejoras_navegacion", navegacion);
+            Debug.Log(fuselaje);
+            Debug.Log(motor);
+            Debug.Log(navegacion);
         }
     }
 
     public void DeleteAll()
     {
         PlayerPrefs.DeleteAll();
-        Debug.Log(_fuselaje);
-        Debug.Log(_motor);
-        Debug.Log(_navegacion);
-        _fuselaje = 0;
-        _motor = 0;
-        _navegacion = 0;
+        Debug.Log(fuselaje);
+        Debug.Log(motor);
+        Debug.Log(navegacion);
+        fuselaje = 0;
+        motor = 0;
+        navegacion = 0;
     }
 
 }
