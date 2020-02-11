@@ -9,7 +9,7 @@ public class MoviminetoPlayer : MonoBehaviour
 {
     Rigidbody2D mRb;
     Animator mA;
-    SpriteRenderer mSr;
+    public SpriteRenderer mSr;
 
     [Tooltip("Velocidad a la que se moverá el personaje")]
     public float velocidad;
