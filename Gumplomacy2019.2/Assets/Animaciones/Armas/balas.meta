@@ -1,9 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Gumplomacy2019.2/Assets/Animaciones/Armas/balas.meta
+ HEAD
+ HEAD:Gumplomacy2019.2/Assets/Animaciones/Armas/balas.meta
 guid: a50596b19bfe26346881be20b87a2991
-=======
+
 guid: 39ab691d7a611394db2a32b665ce5b50
->>>>>>> Julio:Gumplomacy2019.2/Assets/Prefabs/Naves/Paleta Ictioniclos.meta
+
+guid: d4ac2bf27c0bce94eb831f3836b8f5e2
+ bd2fe97c498cb3d19bcadac07723f819e8d93bc6
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
