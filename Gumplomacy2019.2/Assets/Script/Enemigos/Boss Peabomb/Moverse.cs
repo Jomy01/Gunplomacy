@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Moverse : MonoBehaviour
 {
-
+    Rigidbody2D mRb;
+    public SpriteRenderer mSr;
+    Animator mA;
 
     [Tooltip("Velocidad a la que se mueve el enemigo")]
     public float velocidad;
+    [Tooltip("Velocidad a la que se mueve el enemigo mientras patrulla")]
+    public float velocidadPatrulla;
     [Tooltip("Distancia a la que el personaje se para delante del player")]
     public float distanciaStop;
     [Tooltip("Distancia a la que el enemigo empieza a huir del player")]
@@ -19,39 +23,59 @@ public class Moverse : MonoBehaviour
     [Tooltip("Ponemos el player")]
     public Transform player;
 
+    public Transform[] puntosDeGuardia;
+    bool heLlegado = false;
+
+    int puntoGuardia = 0;
+    Vector3 siguientePunto;
+    float distancia;
+    public int delayPatrulla;
+    
+
     Vector3 posicionInicial;
     Animator MyAnimator;
     public SpriteRenderer MySprite;
-    DisparoIAEnemiga scriptDisparo;
-
+   
     float target;
+    bool actualizandoPunto = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        posicionInicial = transform.position;
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        MyAnimator = GetComponent<Animator>();
-        MySprite = GetComponent<SpriteRenderer>();
-        scriptDisparo = GetComponent<DisparoIAEnemiga>();
+        player = GameObject.Find("Player").GetComponent<Transform>();
+        mRb = GetComponent<Rigidbody2D>();
+        mSr = GetComponent<SpriteRenderer>();
+        
+        mA = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         DetectarPlayer();
-        Flip();
+        if (!detectandoPlayer && !actualizandoPunto)
+        {
+            Patrullando();
+            Flip();
+        }
         if (detectandoPlayer)
         {
-            target = player.position.x;
-            scriptDisparo.Disparar();
+            
             Movimiento();
+            Flip();
         }
-        if (!detectandoPlayer)
+    }
+    void ActualizarPuntoGuardia()
+    {
+        puntoGuardia++;
+        if (puntoGuardia == puntosDeGuardia.Length)
         {
-            target = posicionInicial.x;
-            MovimientoInicio();
-            scriptDisparo.DejarDeDisparar();
+            puntoGuardia = 0;
         }
+        siguientePunto = puntosDeGuardia[puntoGuardia].position;
+        distancia = Vector2.Distance(transform.position, siguientePunto);
+        actualizandoPunto = false;
     }
     void DetectarPlayer()
     {
@@ -84,35 +108,54 @@ public class Moverse : MonoBehaviour
             MySprite.flipX = true;
         }
     }
+  
     void Movimiento()
     {
         //Persigue
         if (Vector2.Distance(transform.position, player.position) > distanciaStop)
         {
-            MyAnimator.SetBool("Iddle", true);
+            MyAnimator.SetBool("Ataque", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, velocidad * Time.deltaTime);
         }
         //Hulle
         else if (Vector2.Distance(transform.position, player.position) < distanciaRetirada)
         {
-            MyAnimator.SetBool("Iddle", true);
+            MyAnimator.SetBool("Ataque", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, -velocidad * Time.deltaTime);
         }
         //Para
         else
         {
-            MyAnimator.SetBool("Iddle", false);
+            MyAnimator.SetBool("Ataque", false);
         }
     }
 
     void MovimientoInicio()
     {
-        MyAnimator.SetBool("Iddle", true);
+        MyAnimator.SetBool("Ataque", true);
         transform.position = Vector2.MoveTowards(transform.position, posicionInicial, velocidad * Time.deltaTime);
         float distanciaPuntoInicil = Vector3.Distance(transform.position, posicionInicial);
         if (distanciaPuntoInicil <= 1f)
         {
-            MyAnimator.SetBool("Iddle", false);
+            MyAnimator.SetBool("Ataque", false);
+        }
+    }
+    void Patrullando()
+    {
+
+        siguientePunto = puntosDeGuardia[puntoGuardia].position;
+        distancia = Vector2.Distance(transform.position, siguientePunto);
+        target = siguientePunto.x;
+        if (distancia > 0.5f)
+        {
+            mA.SetBool("Ataque", true);
+            transform.position = Vector2.MoveTowards(transform.position, siguientePunto, velocidadPatrulla * Time.deltaTime);
+        }
+        else
+        {
+            mA.SetBool("Ataque", false);
+            actualizandoPunto = true;
+            Invoke("ActualizarPuntoGuardia", delayPatrulla);
         }
     }
 }
