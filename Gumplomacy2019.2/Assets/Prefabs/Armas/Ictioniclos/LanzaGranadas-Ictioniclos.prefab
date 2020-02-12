@@ -123,7 +123,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.04042387, y: 0.03307998}
@@ -154,4 +154,4 @@ MonoBehaviour:
   cadencia: 1
   "da\xF1o": 5
   _puntoSalida: {fileID: 772385560997362030}
-  bala: {fileID: 8011233806999876190, guid: 4a353028470411e4cafe39344890ec8f, type: 3}
+  bala: {fileID: 0}

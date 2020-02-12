@@ -98,7 +98,7 @@ MonoBehaviour:
   cadencia: 4
   "da\xF1o": 1
   _puntoSalida: {fileID: 3646103088793928689}
-  bala: {fileID: 3424772063676128637, guid: 59e7ceb247aaf314eba570c4097f53ce, type: 3}
+  bala: {fileID: 838207279442382896, guid: a452f0ca5987c1d449821c1838ee1996, type: 3}
 --- !u!61 &8032280051617201594
 BoxCollider2D:
   m_ObjectHideFlags: 0
