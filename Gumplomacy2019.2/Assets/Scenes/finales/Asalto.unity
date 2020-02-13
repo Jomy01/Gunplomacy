@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 11166256}
   - component: {fileID: 11166258}
   m_Layer: 5
-  m_Name: hOLO
+  m_Name: holograma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,12 +357,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191455637}
-  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
-  m_LocalScale: {x: 0.92862004, y: 0.92862004, z: 0.92862004}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 0.012922401, y: 10.757898, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 2140780787}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!1 &213565171 stripped
 GameObject:
@@ -382,9 +382,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: "Nave de guerra\nKurowake\nEs una de las m\xE1s poderosas del universo
     y pocos la desean ver en combate.\n-3-5 comandantes\r\n-50% de enemigos reclutas\r\n-50%
     de enemigos soldados\r"
@@ -433,9 +433,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: "Nave de guerra \nPenthessel\nConsiste en el bulbo de una gran planta
     carn\xEDvora, dise\xF1ada y modificada para arrasar por donde va.\n-3-5 comandantes\r\n-50%
     de enemigos reclutas\r\n-50% de enemigos soldados\r"
@@ -478,8 +478,9 @@ GameObject:
   - component: {fileID: 296764004}
   - component: {fileID: 296764003}
   - component: {fileID: 296764002}
+  - component: {fileID: 296764006}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CanvasAsalto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -559,13 +560,27 @@ RectTransform:
   - {fileID: 714931604}
   - {fileID: 11166255}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &296764006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296764001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87493c3d7855798499df65a0b6730d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holo: {fileID: 11166254}
+  exit: {fileID: 538864061}
 --- !u!1001 &330237611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -830,9 +845,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: "Nave de guerra \nJellwar\nLa mas poderosa de las naves ictioniclas,
     la cual cuenta con tres ap\xE9ndicesforma de tent\xE1culo que conectan directamente
     con los pisos de la misma.\n*3-5 comandantes\r\n*50% de enemigos reclutas\r\n*50%
@@ -878,12 +893,12 @@ GameObject:
   - component: {fileID: 538864064}
   - component: {fileID: 538864063}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BotonExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &538864062
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1032,9 +1047,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: "Nave crucero \nHayakyu\nEl crucero Hayakyu, fueron restos de una estaci\xF3n
     espacial abandonada hasta que los mecanos dieron con todos ella, lentas pero muy
     resistentes.\n*1 comandante\r\n*70% de enemigos reclutas\r\n*30% de enemigos soldados"
@@ -1155,6 +1170,7 @@ GameObject:
   - component: {fileID: 606657292}
   - component: {fileID: 606657291}
   - component: {fileID: 606657290}
+  - component: {fileID: 606657293}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1208,8 +1224,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &606657293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606657289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d7c65026bdab145bda4aa4c21c0135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &607245203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,9 +1329,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: "Nave crucero\nBlue sunset\nIna de las m\xE1s r\xE1pidas y comunes de
     su clase dada sus proporciones aerodin\xE1micas.\r\n-1 comandante\r\n-70% de enemigos
     reclutas\r\n-30% de enemigos soldados"
@@ -1555,12 +1583,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686207555}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -17.83, y: 0.01, z: 0}
-  m_LocalScale: {x: 0.92862004, y: 0.92862004, z: 0.92862004}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -19.187613, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 2140780787}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &714931603
 GameObject:
@@ -1595,7 +1623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -55.08}
+  m_AnchoredPosition: {x: 0, y: -30.48}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &716544506
@@ -1715,9 +1743,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: "Nave de expedici\xF3n \nTwin dubio\nTiene dos hangares y una sala de
     mando que le permiten defenderse m\xE1s eficientemente.\r\n-1-2 comandantes\r\n-60%
     de enemigos reclutas\r\n-40% de enemigos soldados\r\n"
@@ -2145,9 +2173,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: "Nave crucero \nBlosship\nLa m\xE1s r\xE1pida y com\xFAn entre su flota,
     esta es una flor de gran tama\xF1o, a la cual incluyeron la tecnolog\xEDa m\xE1s
     puntera.\r\n-1 comandante\r\n-70% de enemigos reclutas\r\n-30% de enemigos soldados\n"
@@ -2196,13 +2224,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: " NAVE DE GUERRA \nWALNET\nEsta nave es la m\xE1s grande del universo,
     creada a partir de sat\xE9lites, asteroides y planetas enanos, esta nave arrasa
-    todo a su paso, cuenta con anillas que rodean y protegen la nave.\n*3-5 comandantes\n*50%
-    de enemigos reclutas\r\n*50% de enemigos soldados"
+    todo a su paso, cuenta con anillas que rodean y protegen la nave."
   textoPanel: {fileID: 395668713}
 --- !u!61 &1146221618
 BoxCollider2D:
@@ -2248,9 +2275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: "Nave de expedici\xF3n \nSishell\nLa nave intermedia de las tropas acu\xE1ticas,utilizaron
     grandes artefactos para dar una forma de concha a esta nave.\n*1-2 comandantes\r\n*60%
     de enemigos reclutas\r\n*40% de enemigos soldados"
@@ -2354,12 +2381,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265699696}
-  m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: -0.012, y: -9.94, z: 0}
-  m_LocalScale: {x: 0.92862004, y: 0.92862004, z: 0.92862004}
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: -10.714824, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 2140780787}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
 --- !u!1001 &1448383621
 PrefabInstance:
@@ -2508,9 +2535,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: "Nave de expedici\xF3n \nShitofune\nEsta nave en forma de hoja puede
     ver todo lo que rodea la nave y cuenta con una gran maniobrabilidad.\r\n-1-2 comandantes\r\n-60%
     de enemigos reclutas\r\n-40% de enemigos soldados\r\n\n"
@@ -2559,9 +2586,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
+  cam: {fileID: 0}
+  canvas: {fileID: 0}
   textoNave: "Nave crucero \nSepien\nEs la nave m\xE1s com\xFAn entre los ictioniclos,
     es la nave m\xE1s peque\xF1a entre sus flotas, aunque no se debe tomar a la ligera
     si no quieres caer antes de tiempo.\n*1 Comandante\n*70% Reclutas\n*30% Soldados"
@@ -2614,27 +2641,24 @@ PrefabInstance:
     - target: {fileID: 1478390013, guid: 638b5271074a53442b2b1b653120d801, type: 3}
       propertyPath: textoPanel
       value: 
-      objectReference: {fileID: 395668713}
+      objectReference: {fileID: 0}
     - target: {fileID: 1478390013, guid: 638b5271074a53442b2b1b653120d801, type: 3}
       propertyPath: textoNave
-      value: "Nave de expedici\xF3n \nUchusen \nLas uchusen se crearon a partir del
-        dise\xF1o de barcos, lo que le permite moverse a gran velocidad por el espacio,
-        esta nave de expedici\xF3n cuenta con dos pisos.\n*1-2 comandantes\r\n*60%
-        de enemigos reclutas\r\n*40% de enemigos soldados"
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1478390014, guid: 638b5271074a53442b2b1b653120d801, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Offset.y
       value: 0.004016429
       objectReference: {fileID: 0}
-    - target: {fileID: 1478390014, guid: 638b5271074a53442b2b1b653120d801, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Size.y
       value: 0.32094514
       objectReference: {fileID: 0}
-    - target: {fileID: 1478390014, guid: 638b5271074a53442b2b1b653120d801, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Offset.x
       value: -0.010648526
       objectReference: {fileID: 0}
-    - target: {fileID: 1478390014, guid: 638b5271074a53442b2b1b653120d801, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Size.x
       value: 0.27326655
       objectReference: {fileID: 0}
@@ -2786,7 +2810,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1869425045}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 606657293}
+        m_MethodName: CargarNivel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1869425045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3350,11 +3385,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138860473}
   m_LocalRotation: {x: 0.7071068, y: -0.7071068, z: 0.00000013240823, w: -0.00000013240823}
-  m_LocalPosition: {x: 14.44, y: 0.93, z: -0}
-  m_LocalScale: {x: 0.92862004, y: 1.0957716, z: 0.92862004}
+  m_LocalPosition: {x: 15.562878, y: 0.9907174, z: 0}
+  m_LocalScale: {x: 1, y: 1.1800004, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 2140780787}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -180.00002, z: -90}
 --- !u!1 &2140780785
 GameObject:
@@ -3432,7 +3467,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.012, y: 0.01, z: 0}
   m_LocalScale: {x: 0.92862004, y: 0.92862004, z: 0.92862004}
-  m_Children: []
+  m_Children:
+  - {fileID: 1265699698}
+  - {fileID: 2138860475}
+  - {fileID: 191455639}
+  - {fileID: 686207557}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

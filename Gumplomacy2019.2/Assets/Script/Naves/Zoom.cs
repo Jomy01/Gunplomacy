@@ -4,16 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Zoom : MonoBehaviour
-{
+{ 
+    //Añadido por ignacio para poder cargar niveles
+    [Tooltip("Cada nave presentara un Id distinto para poder cargar el nivel correspondiente")]
+    [Range(0, 11)]
+    public int LevelId = 0;
+
     Vector3 posInicialNave;
     Vector3 posInicialCam;
     Vector3 posPanel;
 
     float sizeOriginal;
-    public Camera Cam;
+    //public Camera Cam;
+    public Camera cam;
 
-    public GameObject cExit;
-    public GameObject Panel;
+    //public GameObject cExit;
+    //public GameObject Panel;
+    public CanvasElements canvas;
+
+    GameObject cExit;
+    GameObject panel;
 
     public static bool zoom = false;
 
@@ -23,10 +33,19 @@ public class Zoom : MonoBehaviour
 
     private void Start()
     {
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        canvas = GameObject.Find("CanvasAsalto").GetComponent<CanvasElements>();
+
+        cExit = canvas.exit;
+        panel = canvas.holo;
+        
+
+
+
         posInicialNave = transform.localScale;
-        sizeOriginal = Cam.GetComponent<Camera>().orthographicSize;
-        posInicialCam = Cam.transform.position;
-        posPanel = Panel.transform.position;
+        sizeOriginal = cam.GetComponent<Camera>().orthographicSize;
+        posInicialCam = cam.transform.position;
+        posPanel = panel.transform.position;
 
     }
     private void OnMouseOver()
@@ -46,15 +65,16 @@ public class Zoom : MonoBehaviour
         if (!zoom)
         {
             cExit.SetActive(true);
-            Panel.SetActive(true);
+            panel.SetActive(true);
             zoom = true;
 
+            AsaultManager.levelID = LevelId;
 
-            textoPanel.text = textoNave;
+            canvas.texto.text = textoNave;
 
             transform.localScale = posInicialNave;
-            Cam.transform.position = new Vector3(transform.position.x + 1.5f, transform.position.y, -10);
-            Cam.GetComponent<Camera>().orthographicSize = 1.25f;
+            cam.transform.position = new Vector3(transform.position.x + 1.5f, transform.position.y, -10);
+            cam.GetComponent<Camera>().orthographicSize = 1.25f;
         }
 
 
@@ -64,10 +84,10 @@ public class Zoom : MonoBehaviour
     {
 
         zoom = false;
-        Cam.transform.position = posInicialCam;
-        Cam.GetComponent<Camera>().orthographicSize = sizeOriginal;
+        cam.transform.position = posInicialCam;
+        cam.GetComponent<Camera>().orthographicSize = sizeOriginal;
         cExit.SetActive(false);
-        Panel.SetActive(false);
+        panel.SetActive(false);
 
     }
 }

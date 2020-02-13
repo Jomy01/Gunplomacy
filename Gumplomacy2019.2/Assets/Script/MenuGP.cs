@@ -17,6 +17,18 @@ public class MenuGP : MonoBehaviour
     {
         SceneManager.LoadScene("Preload");
         Debug.Log("Comenzar partida");
+        //Se resetean los playerprefs
+        ResetPlayerPrefInt("mejoras_fuselaje");
+        ResetPlayerPrefInt("mejoras_motor");
+        ResetPlayerPrefInt("mejoras_navegacion");
+        ResetPlayerPrefInt("fuselaje");
+        ResetPlayerPrefInt("motor");
+        ResetPlayerPrefInt("navegacion");
+    }
+
+    public void Continuar()
+    {
+        SceneManager.LoadScene("Preload");
     }
 
     //¿cómo funciona el sistema de guardado y cómo se llama a la partida salvada?
@@ -32,6 +44,11 @@ public class MenuGP : MonoBehaviour
         Application.Quit();
         Debug.Log("Acabar partida");
 
+    }
+
+    void ResetPlayerPrefInt(string name)
+    {
+        PlayerPrefs.SetInt(name, 0);
     }
 
 
