@@ -41,7 +41,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.3392018, g: 0.6886792, b: 0, a: 1}
+  m_Color: {r: 0.8666667, g: 0.8980392, b: 0.11372549, a: 1}
   m_Intensity: 6.27
   m_Range: 22.830885
   m_SpotAngle: 30
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4191438701366906453}
   m_Layer: 0
-  m_Name: Sala 4p
+  m_Name: Luz Foco Animada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.3392018, g: 0.6886792, b: 0, a: 1}
+  m_Color: {r: 0.8666667, g: 0.8980392, b: 0.11372549, a: 1}
   m_Intensity: 8.4
   m_Range: 18.06
   m_SpotAngle: 30
@@ -279,7 +279,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.3392018, g: 0.6886792, b: 0, a: 1}
+  m_Color: {r: 0.8666667, g: 0.8980392, b: 0.11372549, a: 1}
   m_Intensity: 4.9
   m_Range: 16.16
   m_SpotAngle: 30
@@ -370,7 +370,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.3392018, g: 0.6886792, b: 0, a: 1}
+  m_Color: {r: 0.8666667, g: 0.8980392, b: 0.11372549, a: 1}
   m_Intensity: 6.27
   m_Range: 22.830885
   m_SpotAngle: 30
@@ -461,7 +461,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.3392018, g: 0.6886792, b: 0, a: 1}
+  m_Color: {r: 0.8666667, g: 0.8980392, b: 0.11372549, a: 1}
   m_Intensity: 6.27
   m_Range: 22.830885
   m_SpotAngle: 30
@@ -552,7 +552,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 0.3392018, g: 0.6886792, b: 0, a: 1}
+  m_Color: {r: 0.8666667, g: 0.8980392, b: 0.11372549, a: 1}
   m_Intensity: 6.27
   m_Range: 22.830885
   m_SpotAngle: 30
