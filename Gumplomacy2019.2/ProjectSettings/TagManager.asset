@@ -10,6 +10,7 @@ TagManager:
   - EterIctioniclos
   - Cofre
   - BalaProta
+  - Bala
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - BalaProta
   - Enemigo
   - Player
-  - 
+  - MiniMapa
   - 
   - 
   - 
@@ -52,4 +53,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 665712297
+    locked: 0
+  - name: UI
+    uniqueID: 2135399891
     locked: 0
