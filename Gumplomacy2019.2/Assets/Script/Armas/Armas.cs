@@ -14,6 +14,10 @@ public class Armas : MonoBehaviour
     public float cadencia = 5;
     [Tooltip("Cuánto daño hace cada bala")]
     public int daño = 2;
+    [Tooltip("Raza a la que pertenece el arma")]
+    public string raza;
+    [Tooltip("Eter que consume la utilizacion del arma")]
+    public int consumoEter;
 
     float proximoDisparo = 0;
     [Tooltip("Salida de la bala del arma")]

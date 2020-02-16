@@ -204,13 +204,14 @@ GameObject:
   - component: {fileID: 6810819376410574444}
   - component: {fileID: 6810819376410574442}
   - component: {fileID: 6810819376410574447}
-  - component: {fileID: 6810819376410574446}
   - component: {fileID: 6810819376410574433}
   - component: {fileID: 6810819376410574445}
+  - component: {fileID: 6810819376410574446}
   - component: {fileID: 763721533}
   - component: {fileID: 791048278}
   - component: {fileID: 3371160350404059866}
   - component: {fileID: 2481088114019912105}
+  - component: {fileID: 8698017320293418622}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -306,21 +307,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6810819376410574446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6810819376410574443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12947653733cf2043bcdcd789a2ae412, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mSr: {fileID: 6810819376410574442}
-  velocidad: 5
-  puntero: {fileID: 0}
 --- !u!70 &6810819376410574433
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -356,6 +342,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6810819376410574446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810819376410574443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12947653733cf2043bcdcd789a2ae412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mSr: {fileID: 6810819376410574442}
+  velocidad: 5
+  puntero: {fileID: 0}
 --- !u!114 &763721533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,16 +412,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae8161d4d991974d92796c02a74529d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteVidas:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  uiVidas: []
   tanque_lleno: {fileID: 21300000, guid: 47a5c07c5319b664a8436408eb71eb8c, type: 3}
   tanque_medio: {fileID: 21300000, guid: e56ad09bf2461604aa10720cd2f884ec, type: 3}
   tanque_vacio: {fileID: 21300000, guid: 9206b093103695349b1da8d003521644, type: 3}
+--- !u!114 &8698017320293418622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810819376410574443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666c00d0864540040bc746cd3d0a1fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6810819377516850535
 GameObject:
   m_ObjectHideFlags: 0
