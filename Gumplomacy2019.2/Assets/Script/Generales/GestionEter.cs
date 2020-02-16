@@ -10,27 +10,27 @@ public class GestionEter : MonoBehaviour
     /// Hecho por Ignacio Moreno
     /// </summary>
     //Slider para el eter de los mutanos
-    Slider sliderMutanos;
+    public Slider sliderMutanos;
     //Slider para el eter de los mecanos
-     Slider sliderMecanos;
+    public Slider sliderMecanos;
     //Slider para el eter de los botaniclos
-     Slider sliderBotaniclos;
+    public Slider sliderBotaniclos;
     //Slider para el eter de los ictioniclos
-     Slider sliderIctioniclos;
+    public Slider sliderIctioniclos;
 
     // Start is called before the first frame update
     void Start()
     {
         //Se buscan los sliders en la escena con sus nombres
-        sliderMutanos = GameObject.Find("SliderMutano").GetComponent<Slider>();
-        sliderMecanos = GameObject.Find("SliderMecano").GetComponent<Slider>();
-        sliderBotaniclos = GameObject.Find("SliderBotaniclo").GetComponent<Slider>();
-        sliderIctioniclos = GameObject.Find("SliderIctioniclo").GetComponent<Slider>();
+        sliderMutanos = GameObject.Find("EterMutano").GetComponent<Slider>();
+        sliderMecanos = GameObject.Find("EterMecano").GetComponent<Slider>();
+        sliderBotaniclos = GameObject.Find("EterBotaniclo").GetComponent<Slider>();
+        sliderIctioniclos = GameObject.Find("EterIctioniclo").GetComponent<Slider>();
         //Se inicializan a cero
-        sliderMutanos.value = 0;
-        sliderMecanos.value = 0;
-        sliderBotaniclos.value = 0;
-        sliderIctioniclos.value = 0;
+        sliderMutanos.value = 300;
+        sliderMecanos.value = 300;
+        sliderBotaniclos.value = 300;
+        sliderIctioniclos.value = 300;
     }
 
     /// <summary>
@@ -52,7 +52,6 @@ public class GestionEter : MonoBehaviour
             case "EterIctioniclos":
                 sliderIctioniclos.value += eterValue;
                 break;
-
         }
         
     }

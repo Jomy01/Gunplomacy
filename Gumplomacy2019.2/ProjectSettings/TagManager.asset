@@ -8,7 +8,11 @@ TagManager:
   - EterMecanos
   - EterMutanos
   - EterIctioniclos
+  - EterBotaniclos
+  - Arma
   - Cofre
+  - enemigo
+  - boss
   - BalaProta
   - Bala
   layers:
