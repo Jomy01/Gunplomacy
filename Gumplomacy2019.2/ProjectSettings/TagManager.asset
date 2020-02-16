@@ -4,14 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - EterMutanos
+  - EterBotaniclos
   - EterMecanos
+  - EterMutanos
   - EterIctioniclos
   - EterBotaniclos
   - Arma
   - Cofre
   - enemigo
   - boss
+  - BalaProta
+  - Bala
   layers:
   - Default
   - TransparentFX
@@ -21,11 +24,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bala
+  - BalaProta
+  - Enemigo
+  - Player
+  - MiniMapa
   - 
   - 
   - 
@@ -48,4 +51,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Suelo
+    uniqueID: 3375087559
+    locked: 0
+  - name: Player
+    uniqueID: 665712297
+    locked: 0
+  - name: UI
+    uniqueID: 2135399891
     locked: 0

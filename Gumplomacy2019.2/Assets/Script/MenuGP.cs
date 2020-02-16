@@ -15,7 +15,8 @@ public class MenuGP : MonoBehaviour
     // Update is called once per frame
     public void NuevaPartida()
     {
-        SceneManager.LoadScene("Partida");
+        SceneManager.LoadScene(2);
+        //SceneManager.LoadScene("Partida");
         Debug.Log("Comenzar partida");
     }
 
@@ -35,6 +36,7 @@ public class MenuGP : MonoBehaviour
     public void Salir()
     {
         Application.Quit();
+        Debug.Log("Acabar partida");
 
     }
 

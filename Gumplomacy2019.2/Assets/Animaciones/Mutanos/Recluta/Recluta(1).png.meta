@@ -1,0 +1,667 @@
+fileFormatVersion: 2
+guid: 9c4b86e4e3b5fbf459f9a96ea59c5750
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6309832036903255635
+    second: Recluta(1)_0
+  - first:
+      213: -1253150959087944721
+    second: Recluta(1)_1
+  - first:
+      213: -577150241522050951
+    second: Recluta(1)_2
+  - first:
+      213: 8565290204420594880
+    second: Recluta(1)_3
+  - first:
+      213: 230170033339347860
+    second: Recluta(1)_4
+  - first:
+      213: -4622638012103555674
+    second: Recluta(1)_5
+  - first:
+      213: 8118475466610911954
+    second: Recluta(1)_6
+  - first:
+      213: 6168801152179831887
+    second: Recluta(1)_7
+  - first:
+      213: -4370965176346860864
+    second: Recluta(1)_8
+  - first:
+      213: -1895410485254146861
+    second: Recluta(1)_9
+  - first:
+      213: 8878230012673810672
+    second: Recluta(1)_10
+  - first:
+      213: 2988435805403880297
+    second: Recluta(1)_11
+  - first:
+      213: 3138971221712845932
+    second: Recluta(1)_12
+  - first:
+      213: 5958693853339355483
+    second: Recluta(1)_13
+  - first:
+      213: -1270324835202639987
+    second: Recluta(1)_14
+  - first:
+      213: 2099329893955050359
+    second: Recluta(1)_15
+  - first:
+      213: 2126267426020520877
+    second: Recluta(1)_16
+  - first:
+      213: 8072148940312956563
+    second: Recluta(1)_17
+  - first:
+      213: 450428553399263815
+    second: Recluta(1)_18
+  - first:
+      213: 8627203198590700510
+    second: Recluta(1)_19
+  - first:
+      213: -3408364513849416208
+    second: Recluta(1)_20
+  - first:
+      213: -8575301166131832365
+    second: Recluta(1)_21
+  - first:
+      213: 4200478264672786929
+    second: Recluta(1)_22
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Recluta(1)_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a10592f0e4b0f439ae5b2a337823d0
+      internalID: -6309832036903255635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe131c22ac91854db8d3abcffd63196
+      internalID: -1253150959087944721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9842e187ce5214e841b8bd44b0792e
+      internalID: -577150241522050951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 10
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a83cb694d16c94ba3a96be3aef6b3e
+      internalID: 8565290204420594880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 10
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd61e098c968439499795bccbc2e7fc6
+      internalID: 230170033339347860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 10
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5450ef2e5c87c4db3e3748e3f7d795
+      internalID: -4622638012103555674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_6
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 10
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40793194a7d082d4cac5c6a1d2eeda3b
+      internalID: 8118475466610911954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 10
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e2b9fe2f41bcd438dc0dde116f106d
+      internalID: 6168801152179831887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_8
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 10
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5868588c56facd249938fd8e503ed7b9
+      internalID: -4370965176346860864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_9
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f906e69c6cab34284998b398ee04fe
+      internalID: -1895410485254146861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_10
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24367798a72d39e4989250ab3d219733
+      internalID: 8878230012673810672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_11
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea1ae725f493b24c960dda328b72e72
+      internalID: 2988435805403880297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_12
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d79cb9dcf4b7bb4bae8f6a4352c4d6b
+      internalID: 3138971221712845932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_13
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 10
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e42c57275acd9e42944915df7854887
+      internalID: 5958693853339355483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_14
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 10
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffdf30a327b0a34aba15ab45d7cfab2
+      internalID: -1270324835202639987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_15
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 10
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feffb8d6094726547aa845de749978ce
+      internalID: 2099329893955050359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_16
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 10
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7376448afdb2344a905ae5fcfa48f21
+      internalID: 2126267426020520877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_17
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4f653410065334798ee7e3ea807397
+      internalID: 8072148940312956563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_18
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221e209b6a85b3949a88520b148e0eac
+      internalID: 450428553399263815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_19
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07d7b17d04764a438b398a778e7c24f
+      internalID: 8627203198590700510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_20
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b19ad04a0c36f4bb40f1a5f581e7a3
+      internalID: -3408364513849416208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_21
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768de622cddd8914bb29a454c7ac3af4
+      internalID: -8575301166131832365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recluta(1)_22
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 10
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae24bed8e608444ebb4d98e173dfa1e
+      internalID: 4200478264672786929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

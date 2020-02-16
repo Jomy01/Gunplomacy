@@ -12,29 +12,15 @@ public class Armas : MonoBehaviour
 
     [Tooltip("El número de balas que suelta por segundo")]
     public float cadencia = 5;
-    [Tooltip("Cuántas balas tiene cada cargador")]
-    public int municion = 20;
     [Tooltip("Cuánto daño hace cada bala")]
     public int daño = 2;
 
     float proximoDisparo = 0;
-
     [Tooltip("Salida de la bala del arma")]
     public Transform _puntoSalida;
 
     public GameObject bala;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Disparar()
     {
         if (Time.time >proximoDisparo)

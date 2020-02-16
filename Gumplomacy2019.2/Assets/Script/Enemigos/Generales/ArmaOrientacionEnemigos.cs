@@ -12,19 +12,44 @@ public class ArmaOrientacionEnemigos : MonoBehaviour
     [Tooltip("Ponemos al player aquí, el arma seguira a este objetivo")]
     public Transform player;
     [Tooltip("Colocamos el scrip de la IA del enemigo aquí")]
-    public ComandanteIA scripIaComandante;
+    public SoldadoReclutaIA scripIASolRec;
     [Tooltip("Colocamos el SpriteRenderer del enemigo aquí")]
     public SpriteRenderer spriteEnemigo;
 
     bool flippedX = false;
     bool flippedY = false;
 
+    bool volverInicio;
+
     Vector3 target;
+    Quaternion posicionInicial;
+
+    private void Start()
+    {
+        player = GameObject.Find("Player").GetComponent<Transform>();
+        scripIASolRec = GetComponentInParent<SoldadoReclutaIA>();
+        spriteEnemigo = GetComponentInParent<SpriteRenderer>();
+        posicionInicial = transform.rotation;
+    }
     void Update()
     {
         //Si el player está detectado
-        if (scripIaComandante.detectandoPlayer)
+        if (scripIASolRec.detectandoPlayer)
         {
+            volverInicio = true;
+            if(volverInicio)
+            {
+                if(spriteEnemigo.flipX)
+                {
+                    transform.localScale = new Vector3(-1, 1, 1);
+                }
+                if(!spriteEnemigo.flipX)
+                {
+                    transform.localScale = new Vector3(-1, -1, 1);
+                }
+                volverInicio = false;
+            }
+
             target = player.position;
 
             float AnguloRadianes = Mathf.Atan2(transform.position.y - target.y, transform.position.x - target.x);
@@ -36,11 +61,24 @@ public class ArmaOrientacionEnemigos : MonoBehaviour
             CorrectRotationWeaponAxisX();
             CorrectRotationWeaponAxisY(AnguloGrados);
         }
+        else
+        {
+            transform.rotation = posicionInicial;
+            volverInicio = true;
+            if (spriteEnemigo.flipX)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+        }
     }
 
     void CorrectRotationWeaponAxisX()
     {
-        if (!scripIaComandante.MySprite.flipX && !flippedX)
+        if (!scripIASolRec.mSr.flipX && !flippedX)
         {
             flippedX = true;
             Vector3 theScale = transform.localScale;
