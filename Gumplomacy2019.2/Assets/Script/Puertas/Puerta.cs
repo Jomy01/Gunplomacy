@@ -7,7 +7,7 @@ public class Puerta : MonoBehaviour
     public enum ColorLlave { vacio, koala, StarWar, Dragon, Alas, Demons }
     public ColorLlave llave;
     public bool _cercaDeLaPuerta = false;
-    GameObject _canvasPuerta;
+   
     Animator _animPuerta;
 
     void Start()
@@ -23,13 +23,12 @@ public class Puerta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2") && _cercaDeLaPuerta)
+        if ( _cercaDeLaPuerta && Inventario.copia.PuedoUsarLaLlave(llave))
         {
-            if (Inventario.copia.PuedoUsarLaLlave(llave))
-            {
+         
                 _animPuerta.SetBool("abrir", true);
                 llave = ColorLlave.vacio;
-            }
+          
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,7 +36,7 @@ public class Puerta : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             _cercaDeLaPuerta = true;
-            _canvasPuerta.SetActive(true);
+           
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -45,7 +44,7 @@ public class Puerta : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             _cercaDeLaPuerta = false;
-            _canvasPuerta.SetActive(false);
+           
         }
     }
 }

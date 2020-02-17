@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 6810819376410574444}
   - component: {fileID: 6810819376410574442}
   - component: {fileID: 6810819376410574447}
+  - component: {fileID: 3786673254461710280}
   - component: {fileID: 6810819376410574433}
   - component: {fileID: 6810819376410574445}
   - component: {fileID: 6810819376410574446}
@@ -307,6 +308,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &3786673254461710280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810819376410574443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5395b8430472364489c171dac21bd95b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  llavekoala: 0
+  llaveStarWar: 0
+  llaveDragon: 0
+  llaveAlas: 0
+  llaveDemons: 0
 --- !u!70 &6810819376410574433
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -428,6 +446,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666c00d0864540040bc746cd3d0a1fa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sliderMutanos: {fileID: 0}
+  sliderMecanos: {fileID: 0}
+  sliderBotaniclos: {fileID: 0}
+  sliderIctioniclos: {fileID: 0}
 --- !u!1 &6810819377516850535
 GameObject:
   m_ObjectHideFlags: 0

@@ -47,18 +47,18 @@ public class Inventario : MonoBehaviour
         if (color == "LlaveDragon")
         {
             Inventario.copia.llaveDragon = true;
-            _animLlaveDragon.SetBool("activar", true);
+            //_animLlaveDragon.SetBool("activar", true);
 
         }
         if (color == "LlaveAlas")
         {
             Inventario.copia.llaveAlas = true;
-            _animLlaveAlas.SetBool("activar", true);
+            //_animLlaveAlas.SetBool("activar", true);
         }
         if (color == "LlavesDemons")
         {
             Inventario.copia.llaveDemons = true;
-            _animLlaveDemons.SetBool("activar", true);
+            //_animLlaveDemons.SetBool("activar", true);
 
         }
     }
