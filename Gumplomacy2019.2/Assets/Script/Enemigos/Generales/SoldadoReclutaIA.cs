@@ -99,6 +99,7 @@ public class SoldadoReclutaIA : MonoBehaviour
         if (Vector2.Distance(transform.position, player.position) < vision)
         {
             detectandoPlayer = true;
+            AlarmaGlobal.alarma = true;
         }
         else if (Vector2.Distance(transform.position, player.position) > vision)
         {
