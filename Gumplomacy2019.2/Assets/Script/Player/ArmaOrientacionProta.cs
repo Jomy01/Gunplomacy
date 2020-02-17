@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class ArmaOrientacionProta : MonoBehaviour
 {
-    public Transform puntero;
+    Transform puntero;
     public MoviminetoPlayer movimientoPlayer;
     CogerSoltarArma scripDisparo;
 
@@ -18,6 +18,8 @@ public class ArmaOrientacionProta : MonoBehaviour
     private void Start()
     {
         scripDisparo = GameObject.FindGameObjectWithTag("Player").GetComponent<CogerSoltarArma>();
+        puntero = GameObject.Find("Puntero").transform;
+
     }
     void Update()
     {

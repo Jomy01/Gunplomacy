@@ -14,7 +14,7 @@ public class MoviminetoPlayer : MonoBehaviour
     [Tooltip("Velocidad a la que se moverá el personaje")]
     public float velocidad;
     [Tooltip("Busca el puntero para hacer flip")]
-    public Transform puntero;
+    Transform puntero;
 
     bool m_FacingRight = false;
     //Para tener por separado la entrada del teclado para si necesitamos añadir más cosas a las mismas, 
@@ -27,6 +27,7 @@ public class MoviminetoPlayer : MonoBehaviour
         mRb = GetComponent<Rigidbody2D>();
         mA = GetComponent<Animator>();
         mSr = GetComponent<SpriteRenderer>();
+        puntero = GameObject.Find("Puntero").transform;
     }
 
     void Update()
