@@ -62,6 +62,7 @@ public class ComandanteIA : MonoBehaviour
         if (Vector2.Distance(transform.position, player.position) < vision)
         {
             detectandoPlayer = true;
+            AlarmaGlobal.alarma = true;
         }
         else if (Vector2.Distance(transform.position, player.position) > vision)
         {
