@@ -20,6 +20,7 @@ TagManager:
   - LlaveDragon
   - LlaveAlas
   - LlavesDemons
+  - BalaImpurity
   layers:
   - Default
   - TransparentFX

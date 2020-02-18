@@ -40,6 +40,10 @@ public class VidaPlayer : MonoBehaviour
         {
             restaVida(col.gameObject.GetComponent<Bala>().daño);
         }
+        if(col.gameObject.CompareTag("BalaImpurity"))
+        {
+            restaVida(col.gameObject.GetComponent<BalaImpurity>().daño);
+        }
     }
 
     void UpdateVidaUI()
