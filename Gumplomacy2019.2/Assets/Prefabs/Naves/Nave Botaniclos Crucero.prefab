@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelId: 0
+  LevelId: 1
   cam: {fileID: 0}
   canvas: {fileID: 0}
   textoNave: "Nave crucero \nBlosship\nLa m\xE1s r\xE1pida y com\xFAn entre su flota,

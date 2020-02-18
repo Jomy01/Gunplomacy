@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6535328518918538002}
   - component: {fileID: 3182673304278863173}
   - component: {fileID: 2471720056241390741}
+  - component: {fileID: 2817559690967786849}
   m_Layer: 0
-  m_Name: 2 - b
+  m_Name: Nave Botaniclos Expedicion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +95,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelId: 0
-  cam: {fileID: 0}
-  canvas: {fileID: 0}
-  textoNave: 
-  textoPanel: {fileID: 0}
+  textoNave: "Nave de expedici\xF3n \nShitofune\nEsta nave en forma de hoja puede
+    ver todo lo que rodea la nave y cuenta con una gran maniobrabilidad.\r"
+--- !u!70 &2817559690967786849
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4642119568295894958}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.015}
+  m_Size: {x: 0.39, y: 0.24}
+  m_Direction: 1
