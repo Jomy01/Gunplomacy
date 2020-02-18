@@ -190,7 +190,7 @@ PrefabInstance:
     - target: {fileID: 5089937681235515305, guid: 6db76665d5149bb44918e2f6a6a18593,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6db76665d5149bb44918e2f6a6a18593, type: 3}
@@ -292,7 +292,7 @@ PrefabInstance:
     - target: {fileID: 6689097922342017520, guid: 062a09c4bc3ad6347a98ec3584b5d38c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6689097922342017523, guid: 062a09c4bc3ad6347a98ec3584b5d38c,
         type: 3}
@@ -366,7 +366,7 @@ PrefabInstance:
     - target: {fileID: 361177710685621530, guid: df3ed41f40e796f4682b15789c05596d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 361177710685621533, guid: df3ed41f40e796f4682b15789c05596d,
         type: 3}
@@ -495,7 +495,7 @@ PrefabInstance:
     - target: {fileID: 5150749320968832691, guid: 115da176b0bad3447b9a984483db1d2d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 115da176b0bad3447b9a984483db1d2d, type: 3}
@@ -569,7 +569,7 @@ PrefabInstance:
     - target: {fileID: 8580491171445480144, guid: bcb8be7a8441f37468b5f25dde55e185,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcb8be7a8441f37468b5f25dde55e185, type: 3}
@@ -643,7 +643,7 @@ PrefabInstance:
     - target: {fileID: 8579202939395134884, guid: 25dc640e9ddfb69438e9fc7ac976542c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25dc640e9ddfb69438e9fc7ac976542c, type: 3}
@@ -662,7 +662,7 @@ PrefabInstance:
     - target: {fileID: 5973247735019898432, guid: dcc64f91e6734d04589a7d7e66b04d44,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6301068187835284750, guid: dcc64f91e6734d04589a7d7e66b04d44,
         type: 3}
@@ -791,7 +791,7 @@ PrefabInstance:
     - target: {fileID: 6949608200679038137, guid: 356884aa35c0e5f41be1026de935cf9b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 356884aa35c0e5f41be1026de935cf9b, type: 3}
@@ -810,7 +810,7 @@ PrefabInstance:
     - target: {fileID: 3068681688602330731, guid: 08dad2a68326edf41b88e04cfa435df2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6650196808069042485, guid: 08dad2a68326edf41b88e04cfa435df2,
         type: 3}
@@ -884,7 +884,7 @@ PrefabInstance:
     - target: {fileID: 832397565968762441, guid: 9661e79582b105d4981edcb59250008c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2716467709738813854, guid: 9661e79582b105d4981edcb59250008c,
         type: 3}
@@ -954,6 +954,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nave_crucero_botanicla
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939655908685595206, guid: d3ff548846c3e2142b68e55c226f7def,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5259019568978837815, guid: d3ff548846c3e2142b68e55c226f7def,
         type: 3}
@@ -1027,7 +1032,7 @@ PrefabInstance:
     - target: {fileID: 5575255350747146251, guid: 21bbeeb1ba7da764b9efd1009d27619c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5575255350747146252, guid: 21bbeeb1ba7da764b9efd1009d27619c,
         type: 3}
