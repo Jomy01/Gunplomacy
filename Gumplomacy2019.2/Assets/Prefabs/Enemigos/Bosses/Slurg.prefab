@@ -142,9 +142,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8189971780580323843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9f09abd483105b408c92f54fa4e109a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a53cb89e6818234085358a44e921169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMovimiento: {fileID: 8300000, guid: 1751a4c1fec71f84bbbae5d34ad39fff, type: 3}
+  sonidoMuerte: {fileID: 8300000, guid: 970bc2088ee164a4cbc00a0640d474d1, type: 3}
+  sonidoAtaque: {fileID: 8300000, guid: 39ca9f2f5ea38fd49b50ab8380d70390, type: 3}
 --- !u!1 &8189971781935696454
 GameObject:
   m_ObjectHideFlags: 0
