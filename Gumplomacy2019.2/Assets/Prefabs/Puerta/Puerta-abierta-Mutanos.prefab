@@ -388,6 +388,7 @@ GameObject:
   - component: {fileID: 4975238610423613771}
   - component: {fileID: 4975238610423613769}
   - component: {fileID: 187383531960185264}
+  - component: {fileID: 6712385406924905915}
   m_Layer: 0
   m_Name: Puerta-abierta-Mutanos
   m_TagString: Untagged
@@ -507,3 +508,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.44, y: 0.5277686}
   m_EdgeRadius: 0
+--- !u!114 &6712385406924905915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4975238610423613772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bd03fb683a11742a01f34522b354d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  llave: 1
+  _cercaDeLaPuerta: 0
