@@ -8,13 +8,13 @@ public class GameManager : MonoBehaviour
 {
     Canvas topCanvas;
 
-
+    string _activeSceneName = "Asalto";
 
     // Start is called before the first frame update
     void Start()
     {
         topCanvas = GameObject.Find("CanvasMenuSuperior").GetComponent<Canvas>();
-        Asalto();
+        LoadScene("Asalto");
     }
 
     // Update is called once per frame
@@ -25,7 +25,13 @@ public class GameManager : MonoBehaviour
 
     public void Asalto()
     {
-        LoadScene("Asalto");
+        if (_activeSceneName != "Asalto" )
+        {
+            LoadScene("Asalto");
+            UnloadScene(_activeSceneName);
+            _activeSceneName = "Asalto";
+        }
+        
     }
 
     //Aun no implementado
@@ -34,16 +40,26 @@ public class GameManager : MonoBehaviour
     //    LoadScene("Opciones");
     //}
 
+
     public void Mejoras()
     {
-        LoadScene("Mejoras");
+        if (_activeSceneName != "Mejoras")
+        {
+            LoadScene("Mejoras");
+            UnloadScene(_activeSceneName);
+            _activeSceneName = "Mejoras";
+        }
     }
-
 
 
     void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+    }
+
+    void UnloadScene(string sceneName)
+    {
+        SceneManager.UnloadSceneAsync(sceneName);
     }
 
 }

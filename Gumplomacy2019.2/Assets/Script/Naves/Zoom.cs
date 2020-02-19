@@ -8,6 +8,7 @@ public class Zoom : MonoBehaviour
     //Añadido por ignacio para poder cargar niveles
     [Tooltip("Cada nave presentara un Id distinto para poder cargar el nivel correspondiente")]
     [Range(0, 11)]
+
     public int LevelId = 0;
 
     Vector3 posInicialNave;
@@ -16,11 +17,11 @@ public class Zoom : MonoBehaviour
 
     float sizeOriginal;
     //public Camera Cam;
-    public Camera cam;
+    Camera cam;
 
     //public GameObject cExit;
     //public GameObject Panel;
-    public CanvasElements canvas;
+    CanvasElements canvas;
 
     GameObject cExit;
     GameObject panel;
@@ -29,7 +30,7 @@ public class Zoom : MonoBehaviour
 
     [TextArea]
     public string textoNave;
-    public Text textoPanel;
+    Text textoPanel;
 
     private void Start()
     {
@@ -38,7 +39,7 @@ public class Zoom : MonoBehaviour
 
         cExit = canvas.exit;
         panel = canvas.holo;
-        
+        textoPanel = canvas.texto;
 
 
 
@@ -80,14 +81,4 @@ public class Zoom : MonoBehaviour
 
     }
 
-    public void Atras()
-    {
-
-        zoom = false;
-        cam.transform.position = posInicialCam;
-        cam.GetComponent<Camera>().orthographicSize = sizeOriginal;
-        cExit.SetActive(false);
-        panel.SetActive(false);
-
-    }
 }

@@ -12,14 +12,33 @@ public class AsaultManager : MonoBehaviour
 
     public static int levelID;
 
+    Camera cam;
+
+    CanvasElements canvas;
+
+
+    GameObject cExit;
+    GameObject panel;
+
+
+
     void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        SceneManager.LoadScene(sceneName);
+        SceneManager.UnloadSceneAsync("Asalto");
+    }
+
+    private void Start()
+    {
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+        canvas = GameObject.Find("CanvasAsalto").GetComponent<CanvasElements>();
+
+        cExit = canvas.exit;
+        panel = canvas.holo;
     }
 
 
-        
-    
+
 
     public void CargarNivel(int nivelID)
     {
@@ -67,4 +86,14 @@ public class AsaultManager : MonoBehaviour
         }
     }
 
+    public void Atras()
+    {
+
+        Zoom.zoom = false;
+        cam.transform.position = new Vector3(0,0,-10);
+        cam.GetComponent<Camera>().orthographicSize = 5f;
+        cExit.SetActive(false);
+        panel.SetActive(false);
+
+    }
 }
