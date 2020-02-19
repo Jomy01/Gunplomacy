@@ -48,6 +48,9 @@ public class VidaEnemigos : MonoBehaviour
 
     void Muerte()
     {
+        /*PARA EJECUTAR EL SONIDO DE MUERTE DEL PERSONAJE
+        AudioEnemy.copia.SonidoMuerte();
+        */
         //Instantiate<ParticleSystem>(_particulasMuerte, origenParticulas.position, origenParticulas.rotation);
         //_particulasMuerte.Play();
         Destroy(gameObject);
