@@ -6,20 +6,16 @@ public class IA_Impurity : MonoBehaviour
 {
     SpriteRenderer mSpR;
     Transform player;
-    Rigidbody2D mRb;
 
     public GameObject OrbeRoratorio;
     public GameObject OrbeAtaque;
     public float velocidadRotacion;
     [Tooltip("Veces Por Segundo")]
     public float Velocidad_Ataque;
-    [Tooltip("Velocidad Al Desplazarse")]
-    public float velocidad;
 
     float cadencia = 0f;
     bool bola1 = false;
     bool bola2 = false;
-    int posicionAleatoriaMovimiento = 0;
     Transform pivotOrbeRota;
     Transform pivotAtaque;
     VidaEnemigos vida;
@@ -30,13 +26,10 @@ public class IA_Impurity : MonoBehaviour
     Vector3 posicionRota4;
     Vector3 posicionAtaque;
 
-    public Transform[] puntosMovimiento;
-
     float target;
 
     private void Awake()
     {
-        mRb = GetComponent<Rigidbody2D>();
         pivotOrbeRota = transform.GetChild(0).GetComponent<Transform>();
         pivotAtaque = transform.GetChild(1).GetComponent<Transform>();
         player = GameObject.Find("Player").GetComponent<Transform>();
@@ -44,11 +37,15 @@ public class IA_Impurity : MonoBehaviour
         vida = GetComponent<VidaEnemigos>();
     }
     void Start()
-    {       
+    {
+        
         pivotOrbeRota.localRotation = Quaternion.Euler(0, 0, 0);
 
+        posicionRota1 = new Vector3(pivotOrbeRota.position.x + 0.77f * 3, pivotOrbeRota.position.y, pivotOrbeRota.position.z);
         posicionRota2 = new Vector3(pivotOrbeRota.position.x, pivotOrbeRota.position.y + 0.77f * 3, pivotOrbeRota.position.z);
+        posicionRota3 = new Vector3(pivotOrbeRota.position.x - 0.77f * 3, pivotOrbeRota.position.y, pivotOrbeRota.position.z);
         posicionRota4 = new Vector3(pivotOrbeRota.position.x, pivotOrbeRota.position.y - 0.77f * 3, pivotOrbeRota.position.z);
+        posicionAtaque = pivotAtaque.position;
 
         Instantiate(OrbeRoratorio, posicionRota2, Quaternion.identity, pivotOrbeRota);
         Instantiate(OrbeRoratorio, posicionRota4, Quaternion.identity, pivotOrbeRota);
@@ -57,22 +54,12 @@ public class IA_Impurity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Posiciones();
         RotacionOrbes();
         CreacionOrbes();
         Ataque();
         Flip();
-        Moverse();
     }
-    /// <summary>
-    /// Actuaaliza la posicion donde tiene que aparecer el ataque y donde aparecen los orbes de defensa
-    /// </summary>
-    void Posiciones()
-    {
-        posicionRota1 = new Vector3(pivotOrbeRota.position.x + 0.77f * 3, pivotOrbeRota.position.y, pivotOrbeRota.position.z);
-        posicionRota3 = new Vector3(pivotOrbeRota.position.x - 0.77f * 3, pivotOrbeRota.position.y, pivotOrbeRota.position.z);
-        posicionAtaque = pivotAtaque.position;
-    }
+
     /// <summary>
     /// Maneja la velocidad y el sentido de los orbes
     /// </summary>
@@ -127,18 +114,5 @@ public class IA_Impurity : MonoBehaviour
         {
             mSpR.flipX = true;
         }
-    }
-    void Moverse()
-    {
-        Vector3 targetPosition;
-        float distanciaAlPunto;
-        targetPosition = puntosMovimiento[posicionAleatoriaMovimiento].position - transform.position;
-        distanciaAlPunto = Vector3.Distance(transform.position, puntosMovimiento[posicionAleatoriaMovimiento].position);
-        mRb.velocity = targetPosition * velocidad * Time.deltaTime;
-        if (distanciaAlPunto <= 1f)
-        {
-            posicionAleatoriaMovimiento = Random.Range(0, 7);
-        }
-        Debug.Log(puntosMovimiento[posicionAleatoriaMovimiento].name);
     }
 }
