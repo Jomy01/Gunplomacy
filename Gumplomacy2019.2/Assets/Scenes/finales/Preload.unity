@@ -1351,7 +1351,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2042392159}
   - component: {fileID: 2042392157}
-  - component: {fileID: 2042392158}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1402,14 +1401,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &2042392158
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042392156}
-  m_Enabled: 1
 --- !u!4 &2042392159
 Transform:
   m_ObjectHideFlags: 0

@@ -51,6 +51,7 @@ public class Zoom : MonoBehaviour
     }
     private void OnMouseOver()
     {
+        Debug.Log("Over");
         if (!zoom)
         { 
         transform.localScale = new Vector3(10, 10, 0); 
@@ -59,10 +60,12 @@ public class Zoom : MonoBehaviour
     }
     private void OnMouseExit()
     {
+        Debug.Log("Exit");
         transform.localScale = posInicialNave;
     }
     private void OnMouseDown()
     {
+        Debug.Log("Down");
         if (!zoom)
         {
             cExit.SetActive(true);
@@ -81,4 +84,5 @@ public class Zoom : MonoBehaviour
 
     }
 
+   
 }
