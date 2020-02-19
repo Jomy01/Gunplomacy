@@ -13,14 +13,24 @@ public class Debug_mode : MonoBehaviour
     public int startNavegacion = 0;
 
     // Start is called before the first frame update
+    //void Start()
+    //{
+    //    PlayerPrefs.SetInt("mejoras_fuselaje", fuselaje);
+    //    PlayerPrefs.SetInt("mejoras_motor", motor);
+    //    PlayerPrefs.SetInt("mejoras_navegacion", navegacion);
+    //    PlayerPrefs.SetInt("fuselaje", startFujelaje);
+    //    PlayerPrefs.SetInt("motor", startMotor);
+    //    PlayerPrefs.SetInt("navegacion", startNavegacion);
+    //}
+
     void Start()
     {
-        PlayerPrefs.SetInt("mejoras_fuselaje", fuselaje);
-        PlayerPrefs.SetInt("mejoras_motor", motor);
-        PlayerPrefs.SetInt("mejoras_navegacion", navegacion);
-        PlayerPrefs.SetInt("fuselaje", startFujelaje);
-        PlayerPrefs.SetInt("motor", startMotor);
-        PlayerPrefs.SetInt("navegacion", startNavegacion);
+        PlayerPrefs.GetInt("mejoras_fuselaje", fuselaje);
+        PlayerPrefs.GetInt("mejoras_motor", motor);
+        PlayerPrefs.GetInt("mejoras_navegacion", navegacion);
+        PlayerPrefs.GetInt("fuselaje", startFujelaje);
+        PlayerPrefs.GetInt("motor", startMotor);
+        PlayerPrefs.GetInt("navegacion", startNavegacion);
     }
 
     public void SetMejorasFuselaje()
