@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Moverse : MonoBehaviour
 {
-
-
     [Tooltip("Velocidad a la que se mueve el enemigo")]
     public float velocidad;
     [Tooltip("Distancia a la que el personaje se para delante del player")]
@@ -25,7 +23,7 @@ public class Moverse : MonoBehaviour
     DisparoIAEnemiga scriptDisparo;
 
     float target;
-    // Start is called before the first frame update
+
     void Start()
     {
         posicionInicial = transform.position;
