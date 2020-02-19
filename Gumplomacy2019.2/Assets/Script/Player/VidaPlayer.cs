@@ -46,6 +46,7 @@ public class VidaPlayer : MonoBehaviour
         }
         if(col.gameObject.CompareTag("BalaImpurity"))
         {
+            Debug.Log("balaimpuryt");
             restaVida(col.gameObject.GetComponent<BalaImpurity>().daño);
         }
     }

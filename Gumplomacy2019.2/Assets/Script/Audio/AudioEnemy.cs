@@ -11,10 +11,11 @@ public class AudioEnemy : MonoBehaviour
     public AudioClip sonidoAtaque;
     public AudioClip sonidoMovimiento;
     public AudioClip sonidoMuerte;
+    public AudioClip sonidoRespirar;
 
     AudioSource _sourceEnemy;
 
-    //creamos una copia static del script para poder acceder a él
+     //creamos una copia static del script para poder acceder a él
     public static AudioEnemy copia;
 
     // Start is called before the first frame update
@@ -22,6 +23,7 @@ public class AudioEnemy : MonoBehaviour
     {
         _sourceEnemy = GetComponent<AudioSource>();
         copia = this;
+        InvokeRepeating("SonidoRespirar", 3f, Random.Range(5f, 20f));
 
     }
 
@@ -47,6 +49,11 @@ public class AudioEnemy : MonoBehaviour
     {
        _sourceEnemy.PlayOneShot(sonidoMuerte);
         
+    }
+
+    public void SonidoRespirar()
+    {
+        _sourceEnemy.PlayOneShot(sonidoRespirar);
     }
 
 }
