@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelId: 0
+  LevelId: 11
   textoNave: "Nave de guerra \nJellwar\nLa mas poderosa de las naves ictioniclas,
     la cual cuenta con tres ap\xE9ndicesforma de tent\xE1culo que conectan directamente
     con los pisos de la misma."

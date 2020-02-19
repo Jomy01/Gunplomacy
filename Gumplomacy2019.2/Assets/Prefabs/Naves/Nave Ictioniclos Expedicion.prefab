@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelId: 0
+  LevelId: 10
   textoNave: "Nave de expedici\xF3n \nSishell\nLa nave intermedia de las tropas acu\xE1ticas,utilizaron
     grandes artefactos para dar una forma de concha a esta nave."
 --- !u!70 &5459424537079449337

@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelId: 0
+  LevelId: 2
   textoNave: "Nave de guerra\nKurowake\nEs una de las m\xE1s poderosas del universo
     y pocos la desean ver en combate."
 --- !u!70 &7300314835317483712

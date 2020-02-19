@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelId: 0
+  LevelId: 3
   textoNave: " NAVE DE GUERRA \nWALNET\nEsta nave es la m\xE1s grande del universo,
     creada a partir de sat\xE9lites, asteroides y planetas enanos, esta nave arrasa
     todo a su paso, cuenta con anillas que rodean y protegen la nave."

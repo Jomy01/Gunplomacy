@@ -94,13 +94,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelId: 0
-  cam: {fileID: 0}
-  canvas: {fileID: 0}
+  LevelId: 5
   textoNave: "Nave crucero \nHayakyu\nEl crucero Hayakyu, fueron restos de una estaci\xF3n
     espacial abandonada hasta que los mecanos dieron con todos ella, lentas pero muy
     resistentes.\n"
-  textoPanel: {fileID: 0}
 --- !u!70 &5967610389009531321
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -94,13 +94,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelId: 0
-  cam: {fileID: 0}
-  canvas: {fileID: 0}
+  LevelId: 9
   textoNave: "Nave crucero \nSepien\nEs la nave m\xE1s com\xFAn entre los ictioniclos,
     es la nave m\xE1s peque\xF1a entre sus flotas, aunque no se debe tomar a la ligera
     si no quieres caer antes de tiempo.\n*1 Comandante\n*70% Reclutas\n*30% Soldados"
-  textoPanel: {fileID: 0}
 --- !u!70 &5602901665172727033
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
