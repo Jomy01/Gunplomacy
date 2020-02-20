@@ -43,8 +43,8 @@ public class PauseMenu : MonoBehaviour
     public void ReturnToBase()
     {
         Debug.Log("Regresando a base...");
-        //Time.timeScale = 1f;
-        //SceneManager.LoadScene("MenuNave");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Preload");
     }
 
     public void ExitGame()

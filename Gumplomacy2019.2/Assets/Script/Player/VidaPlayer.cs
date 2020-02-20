@@ -9,6 +9,9 @@ public class VidaPlayer : MonoBehaviour
     public static int currentVida = 6;
     int currentVidaInformation;
 
+    SpriteRenderer spriteRenderer;
+    public GameObject gun;
+
     public List<Image> uiVidas;
     public Sprite tanque_lleno;
     public Sprite tanque_medio;
@@ -21,6 +24,7 @@ public class VidaPlayer : MonoBehaviour
             spriteVida.sprite = tanque_lleno;
         }
         currentVidaInformation = currentVida;
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -95,7 +99,8 @@ public class VidaPlayer : MonoBehaviour
         {
             UpdateVidaUI();
             GameOverMenu.isGameOver = true;
-            gameObject.SetActive(false);
+            spriteRenderer.enabled = false;
+            gun.SetActive(false);
         }
     }
 }
