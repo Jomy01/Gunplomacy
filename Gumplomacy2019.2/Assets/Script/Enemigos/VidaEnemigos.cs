@@ -8,6 +8,7 @@ public class VidaEnemigos : MonoBehaviour
     public float vidaEnemigoActual;
     public int golpe = 0;
     public Transform origenParticulas;
+    public GameObject prefabCadaver;
 
 
     public ParticleSystem _particulasMuerte;
@@ -53,6 +54,7 @@ public class VidaEnemigos : MonoBehaviour
         */
         //Instantiate<ParticleSystem>(_particulasMuerte, origenParticulas.position, origenParticulas.rotation);
         //_particulasMuerte.Play();
+        Instantiate(prefabCadaver, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

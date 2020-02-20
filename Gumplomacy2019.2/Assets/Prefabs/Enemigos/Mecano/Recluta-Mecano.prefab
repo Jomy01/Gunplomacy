@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 665712297
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bba9fc6a1029e944f809a2261c0fe067, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -152,6 +152,8 @@ MonoBehaviour:
   vidaEnemigoActual: 0
   golpe: 0
   origenParticulas: {fileID: 0}
+  prefabCadaver: {fileID: 2048736763747905735, guid: f4f7b828d0940b94389cffedd7cc2ceb,
+    type: 3}
   _particulasMuerte: {fileID: 0}
 --- !u!114 &6401177437384306899
 MonoBehaviour:
