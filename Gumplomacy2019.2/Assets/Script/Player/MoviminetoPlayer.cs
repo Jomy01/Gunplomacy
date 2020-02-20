@@ -83,6 +83,6 @@ public class MoviminetoPlayer : MonoBehaviour
     /// </summary>
     void Movimineto(Vector2 direccion, float velocidad)
     {
-        mRb.velocity = direccion * velocidad;
+        mRb.velocity = direccion.normalized * velocidad;
     }
 }

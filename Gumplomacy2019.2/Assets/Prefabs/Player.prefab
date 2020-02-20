@@ -97,7 +97,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 665712297
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a69aec00c637e7147ae7f5859b83bb2b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -273,7 +273,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 665712297
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -3087819864445757613, guid: 73f1741b97b460845a5caaaef4f5cc4c,
     type: 3}
@@ -504,6 +504,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6810819377516850534}
     m_Modifications:
+    - target: {fileID: 4253665878881641305, guid: e4701603cf6b39b418257b213e436ffc,
+        type: 3}
+      propertyPath: raza
+      value: EterMutanos
+      objectReference: {fileID: 0}
     - target: {fileID: 5606366079071115445, guid: e4701603cf6b39b418257b213e436ffc,
         type: 3}
       propertyPath: m_Layer
