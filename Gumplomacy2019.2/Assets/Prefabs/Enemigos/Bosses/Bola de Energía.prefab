@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2282479188433222327}
   - component: {fileID: 2282479188433222216}
   m_Layer: 8
-  m_Name: "Bola De Energ\xEDa"
-  m_TagString: Untagged
+  m_Name: "Bola de Energ\xEDa"
+  m_TagString: BalaImpurity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

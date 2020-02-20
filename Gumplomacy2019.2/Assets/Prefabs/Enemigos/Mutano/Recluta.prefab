@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1964485248510755426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 3010691682272132629}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6801554901152698323}
+  m_Layer: 0
+  m_Name: Revolver-Mutano (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6801554901152698323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 3010691682272132629}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964485248510755426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4665144453534064695}
+  m_Father: {fileID: 3010691682948329883}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3010691681949054471
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,6 +175,8 @@ MonoBehaviour:
   vidaEnemigoActual: 0
   golpe: 0
   origenParticulas: {fileID: 7122532366231434046}
+  prefabCadaver: {fileID: 2184062526831370212, guid: 130b23ea0868b4540b5335278513a1ef,
+    type: 3}
   _particulasMuerte: {fileID: 63429410766237101, guid: b54378ead4b15264ba3666f05f92c389,
     type: 3}
 --- !u!1 &3010691682948329882
@@ -174,7 +207,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4665144453534064695}
+  - {fileID: 6801554901152698323}
   m_Father: {fileID: 3010691681949054465}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -221,6 +254,37 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3010691681949054465}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8809995728092201175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 3010691682272132629}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4665144453534064695}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4665144453534064695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 7599204297645334050, guid: e4701603cf6b39b418257b213e436ffc,
+    type: 3}
+  m_PrefabInstance: {fileID: 3010691682272132629}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8809995728092201175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6801554901152698323}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3010691682272132629
@@ -298,9 +362,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4701603cf6b39b418257b213e436ffc, type: 3}
---- !u!4 &4665144453534064695 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7599204297645334050, guid: e4701603cf6b39b418257b213e436ffc,
-    type: 3}
-  m_PrefabInstance: {fileID: 3010691682272132629}
-  m_PrefabAsset: {fileID: 0}
