@@ -191,4 +191,6 @@ MonoBehaviour:
   vidaEnemigoActual: 0
   golpe: 0
   origenParticulas: {fileID: 0}
+  prefabCadaver: {fileID: 7218432846001984592, guid: 9539f94ef20da0f4d9d88c6d542b4d39,
+    type: 3}
   _particulasMuerte: {fileID: 0}
