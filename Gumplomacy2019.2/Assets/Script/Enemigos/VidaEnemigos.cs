@@ -8,6 +8,7 @@ public class VidaEnemigos : MonoBehaviour
     public float vidaEnemigoActual;
     public int golpe = 0;
     public Transform origenParticulas;
+    public GameObject prefabCadaver;
 
 
     public ParticleSystem _particulasMuerte;
@@ -48,8 +49,12 @@ public class VidaEnemigos : MonoBehaviour
 
     void Muerte()
     {
+        /*PARA EJECUTAR EL SONIDO DE MUERTE DEL PERSONAJE
+        AudioEnemy.copia.SonidoMuerte();
+        */
         //Instantiate<ParticleSystem>(_particulasMuerte, origenParticulas.position, origenParticulas.rotation);
         //_particulasMuerte.Play();
+        Instantiate(prefabCadaver, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

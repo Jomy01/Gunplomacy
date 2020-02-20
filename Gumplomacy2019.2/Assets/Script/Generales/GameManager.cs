@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     {
         topCanvas = GameObject.Find("CanvasMenuSuperior").GetComponent<Canvas>();
         LoadScene("Asalto");
+        Zoom.zoom = false;
     }
 
     // Update is called once per frame
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
         if (_activeSceneName != "Asalto" )
         {
             LoadScene("Asalto");
+            Zoom.zoom = false;
             UnloadScene(_activeSceneName);
             _activeSceneName = "Asalto";
         }
