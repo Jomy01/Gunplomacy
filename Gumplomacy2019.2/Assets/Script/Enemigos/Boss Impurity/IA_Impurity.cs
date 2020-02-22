@@ -139,6 +139,5 @@ public class IA_Impurity : MonoBehaviour
         {
             posicionAleatoriaMovimiento = Random.Range(0, 7);
         }
-        Debug.Log(puntosMovimiento[posicionAleatoriaMovimiento].name);
     }
 }

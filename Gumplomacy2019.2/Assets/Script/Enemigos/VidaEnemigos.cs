@@ -10,6 +10,8 @@ public class VidaEnemigos : MonoBehaviour
     public Transform origenParticulas;
     public GameObject prefabCadaver;
 
+    public bool Muerto = false;
+
 
     public ParticleSystem _particulasMuerte;
 
@@ -55,6 +57,7 @@ public class VidaEnemigos : MonoBehaviour
         //Instantiate<ParticleSystem>(_particulasMuerte, origenParticulas.position, origenParticulas.rotation);
         //_particulasMuerte.Play();
         Instantiate(prefabCadaver, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        Muerto = true;
+        //Destroy(gameObject);
     }
 }

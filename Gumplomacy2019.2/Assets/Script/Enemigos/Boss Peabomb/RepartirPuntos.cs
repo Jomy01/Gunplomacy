@@ -23,7 +23,11 @@ public class RepartirPuntos : MonoBehaviour
     void Start()
     {
         puntos = new Transform[transform.childCount];
-        for(int i = 0; i < puntos.Length; i++)
+        InvokeRepeating("rPuntos", 0, 10);
+    }
+    void rPuntos()
+    {
+        for (int i = 0; i < puntos.Length; i++)
         {
             puntos[i] = transform.GetChild(i);
             x = Random.Range(xm, xM + 1);
@@ -31,25 +35,22 @@ public class RepartirPuntos : MonoBehaviour
             posicionPuntos = new Vector3(x, y, transform.position.z);
             puntos[i].localPosition = posicionPuntos;
             puntoN = puntos[i].localPosition;
-            
-            while(z <= i)
+
+            while (z <= i)
             {
-                    Debug.Log("for Z");
-                    puntoA = puntos[z-1].localPosition;
-                    distanciaEntrePuntos = Vector2.Distance(puntoN, puntoA);
+                puntoA = puntos[z - 1].localPosition;
+                distanciaEntrePuntos = Vector2.Distance(puntoN, puntoA);
                 while (distanciaEntrePuntos < 10)
                 {
-                    Debug.Log("while");
                     x = Random.Range(xm, xM + 1);
                     y = Random.Range(ym, yM + 1);
                     posicionPuntos = new Vector3(x, y, transform.position.z);
                     puntos[i].localPosition = posicionPuntos;
                     puntoN = puntos[i].localPosition;
                     distanciaEntrePuntos = Vector2.Distance(puntoN, puntoA);
-                    z = 0;
+                    z = 1;
                 }
                 z++;
-                Debug.Log(distanciaEntrePuntos);
             }
 
         }

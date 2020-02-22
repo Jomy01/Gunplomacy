@@ -48,6 +48,15 @@ public class VidaPlayer : MonoBehaviour
         {
             restaVida(col.gameObject.GetComponent<BalaImpurity>().daño);
         }
+        if(col.gameObject.CompareTag("Bomba"))
+        {
+            Debug.Log("Mehadado");
+            restaVida(col.gameObject.GetComponent<Bomba>().daño);
+        }
+        if(col.gameObject.CompareTag("enemigo"))
+        {
+            restaVida(1);
+        }
     }
 
     void UpdateVidaUI()

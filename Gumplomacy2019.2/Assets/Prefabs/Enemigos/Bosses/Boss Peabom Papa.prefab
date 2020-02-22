@@ -36,6 +36,9 @@ Transform:
   - {fileID: 6360219172272483697}
   - {fileID: 4263938362256177896}
   - {fileID: 8063589835386384597}
+  - {fileID: 4134979087056253186}
+  - {fileID: 2397248628657797606}
+  - {fileID: 3822270134006079137}
   m_Father: {fileID: 2556908449602357210}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -55,6 +58,36 @@ MonoBehaviour:
   xm: -12
   yM: 12
   ym: -12
+--- !u!1 &900836458869298942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2397248628657797606}
+  m_Layer: 0
+  m_Name: Punto (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2397248628657797606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900836458869298942}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 295287630253732205}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2260836466491831592
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,6 +179,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 295287630253732205}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3381890957043143131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4134979087056253186}
+  m_Layer: 0
+  m_Name: Punto (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4134979087056253186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3381890957043143131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 295287630253732205}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4193125294303616867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3822270134006079137}
+  m_Layer: 0
+  m_Name: Punto (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3822270134006079137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4193125294303616867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 295287630253732205}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6358395450673565898
 GameObject:
@@ -249,9 +342,12 @@ GameObject:
   - component: {fileID: 6999018090605761789}
   - component: {fileID: 6999018090605761788}
   - component: {fileID: 2303858703920366221}
-  m_Layer: 0
+  - component: {fileID: 1032056344}
+  - component: {fileID: 1032056343}
+  - component: {fileID: 1032056348}
+  m_Layer: 10
   m_Name: Boss Peabomb
-  m_TagString: Untagged
+  m_TagString: enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,6 +446,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1896cda700eef67458861f810f8ea395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidad: 50
+  puntosSala:
+  - {fileID: 7379961886021593639}
+  - {fileID: 3124057170519235119}
+  - {fileID: 931978625016651983}
+  - {fileID: 8204886423855776727}
+  - {fileID: 3357051241262157231}
+  - {fileID: 6360219172272483697}
+  - {fileID: 4263938362256177896}
+  - {fileID: 8063589835386384597}
+  - {fileID: 4134979087056253186}
+  - {fileID: 2397248628657797606}
+  - {fileID: 3822270134006079137}
+  colliderAtaque: {fileID: 0}
+  rangoMaximo: 10
+  coldawnAtaque: 2
+  bomba: {fileID: 3486698511083729851, guid: 3f56307b8ce69da47835e607827315d5, type: 3}
+--- !u!50 &1032056344
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6999018090605761791}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!58 &1032056343
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6999018090605761791}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.3
+--- !u!114 &1032056348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6999018090605761791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91847f701965c55409d956f5625b294c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaEnemigo: 300
+  vidaEnemigoActual: 0
+  golpe: 0
+  origenParticulas: {fileID: 0}
+  prefabCadaver: {fileID: 0}
+  Muerto: 0
+  _particulasMuerte: {fileID: 0}
 --- !u!1 &7229749794123213412
 GameObject:
   m_ObjectHideFlags: 0
