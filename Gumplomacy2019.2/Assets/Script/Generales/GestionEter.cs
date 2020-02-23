@@ -27,10 +27,10 @@ public class GestionEter : MonoBehaviour
         sliderBotaniclos = GameObject.Find("EterBotaniclo").GetComponent<Slider>();
         sliderIctioniclos = GameObject.Find("EterIctioniclo").GetComponent<Slider>();
         //Se inicializan a cero
-        sliderMutanos.value = 300;
-        sliderMecanos.value = 300;
-        sliderBotaniclos.value = 300;
-        sliderIctioniclos.value = 300;
+        sliderMutanos.value = 150;
+        sliderMecanos.value = 150;
+        sliderBotaniclos.value = 150;
+        sliderIctioniclos.value = 150;
     }
 
     /// <summary>

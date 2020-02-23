@@ -49,6 +49,8 @@ public class MoviminetoPlayer : MonoBehaviour
         if (input.x != 0 || input.y != 0)
         {
             mA.SetBool("Andando", true);
+            //linea añadida para porbar el script de sonido
+           // AudioEnemy.copia.SonidoRespirar();
         }
         else
         {
@@ -81,6 +83,6 @@ public class MoviminetoPlayer : MonoBehaviour
     /// </summary>
     void Movimineto(Vector2 direccion, float velocidad)
     {
-        mRb.velocity = direccion * velocidad;
+        mRb.velocity = direccion.normalized * velocidad;
     }
 }

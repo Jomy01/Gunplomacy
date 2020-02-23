@@ -9,7 +9,10 @@ public class VidaPlayer : MonoBehaviour
     public static int currentVida = 6;
     int currentVidaInformation;
 
-    List<Image> uiVidas = new List<Image>();
+    SpriteRenderer spriteRenderer;
+    public GameObject gun;
+
+    public List<Image> uiVidas;
     public Sprite tanque_lleno;
     public Sprite tanque_medio;
     public Sprite tanque_vacio;
@@ -24,6 +27,7 @@ public class VidaPlayer : MonoBehaviour
             spriteVida.sprite = tanque_lleno;
         }
         currentVidaInformation = currentVida;
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -42,6 +46,23 @@ public class VidaPlayer : MonoBehaviour
         if(col.gameObject.CompareTag("Bala"))
         {
             restaVida(col.gameObject.GetComponent<Bala>().daño);
+        }
+        if(col.gameObject.CompareTag("BalaImpurity"))
+        {
+            restaVida(col.gameObject.GetComponent<BalaImpurity>().daño);
+        }
+        if(col.gameObject.CompareTag("Bomba"))
+        {
+            Debug.Log("Mehadado");
+            restaVida(col.gameObject.GetComponent<Bomba>().daño);
+        }
+        if(col.gameObject.CompareTag("enemigo"))
+        {
+            restaVida(1);
+        }
+        if (col.gameObject.CompareTag("BossSlurm"))
+        {
+            restaVida(col.gameObject.GetComponent<IA_BossSlurm>().daño);
         }
     }
 
@@ -94,7 +115,8 @@ public class VidaPlayer : MonoBehaviour
         {
             UpdateVidaUI();
             GameOverMenu.isGameOver = true;
-            gameObject.SetActive(false);
+            spriteRenderer.enabled = false;
+            gun.SetActive(false);
         }
     }
 }

@@ -154,7 +154,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 665712297
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6284032921690291046, guid: 6be0f443061ec63468f505f6b144c62d,
     type: 3}
@@ -251,6 +251,8 @@ MonoBehaviour:
   vidaEnemigoActual: 0
   golpe: 1
   origenParticulas: {fileID: 0}
+  prefabCadaver: {fileID: 747225916724486580, guid: c1d1a97bc0a8a544488c1ea7adf6bbca,
+    type: 3}
   _particulasMuerte: {fileID: 0}
 --- !u!114 &7962604953006543152
 MonoBehaviour:
@@ -381,7 +383,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 665712297
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6688709247215160978, guid: b449eceeae02e9246af8635e56af056e,
     type: 3}
@@ -435,6 +437,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cadencia: 2
   "da\xF1o": 2
+  raza: 
+  consumoEter: 0
   _puntoSalida: {fileID: 5153730490616422017}
   bala: {fileID: 6874041557038004637, guid: 237dcab48f4c9a84582b3753e330cb10, type: 3}
 --- !u!1 &7732349008100382646
