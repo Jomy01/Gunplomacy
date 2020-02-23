@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Hecho por Jose Antonio Diaz Llamas
+/// 20/02/2020
+/// Todabia no está terminado pero funciona
+/// </summary>
 public class RepartirPuntos : MonoBehaviour
 {
     Transform[] puntos;

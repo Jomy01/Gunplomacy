@@ -57,6 +57,10 @@ public class VidaPlayer : MonoBehaviour
         {
             restaVida(1);
         }
+        if (col.gameObject.CompareTag("BossSlurm"))
+        {
+            restaVida(col.gameObject.GetComponent<IA_BossSlurm>().daño);
+        }
     }
 
     void UpdateVidaUI()

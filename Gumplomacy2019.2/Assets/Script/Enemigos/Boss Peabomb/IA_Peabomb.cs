@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Hecho Por Jose Antonio Diaz Llamas  
+/// 22/02/2020
+/// </summary>
 public class IA_Peabomb : MonoBehaviour
 {
     Rigidbody2D mRb;
     Animator mA;
+    SpriteRenderer mSr;
     VidaEnemigos scripVida;
+    Transform player;
     int posicionAleatoria = 0;
 
     public float velocidad;
@@ -16,10 +22,13 @@ public class IA_Peabomb : MonoBehaviour
     public float rangoMaximo = 10;
     public float coldawnAtaque = 5;
     public GameObject bomba;
+
+    float targetFlip;
     private void Start()
     {
         mRb = GetComponent<Rigidbody2D>();
         mA = GetComponent<Animator>();
+        player = GameObject.Find("Player").GetComponent<Transform>();
         scripVida = GetComponent<VidaEnemigos>();
         colliderAtaque = GetComponent<CircleCollider2D>();
         InvokeRepeating("Atacando", 2, coldawnAtaque);
@@ -55,6 +64,18 @@ public class IA_Peabomb : MonoBehaviour
         if(!scripVida.Muerto)
         {
             StartCoroutine("Ataque");
+        }
+    }
+    void Flip()
+    {
+        targetFlip = player.position.x;
+        if (targetFlip > transform.position.x)
+        {
+            mSr.flipX = false;
+        }
+        if (targetFlip < transform.position.x)
+        {
+            mSr.flipX = true;
         }
     }
     IEnumerator Ataque()
