@@ -36,25 +36,25 @@ public class DisparoProta : MonoBehaviour
         bool can = false;
         switch (scripArma.raza)
         {
-            case "EterBotaniclos":
+            case "Botaniclos":
                 if (eter.sliderBotaniclos.value > Mathf.Abs(scripArma.consumoEter))
                 {
                     can = true;
                 }
                 break;
-            case "EterMutanos":
+            case "Mutanos":
                 if (eter.sliderMutanos.value > Mathf.Abs(scripArma.consumoEter))
                 {
                     can = true;
                 }
                 break;
-            case "EterMecanos":
+            case "Mecanos":
                 if (eter.sliderMecanos.value > Mathf.Abs(scripArma.consumoEter))
                 {
                     can = true;
                 }
                 break;
-            case "EterIctioniclos":
+            case "Ictioniclos":
                 if (eter.sliderIctioniclos.value > Mathf.Abs(scripArma.consumoEter))
                 {
                     can = true;

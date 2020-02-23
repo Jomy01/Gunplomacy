@@ -40,16 +40,16 @@ public class GestionEter : MonoBehaviour
     {
         switch(type)
         {
-            case "EterBotaniclos":
+            case "Botaniclos":
                 sliderBotaniclos.value += eterValue;
                 break;
-            case "EterMutanos":
+            case "Mutanos":
                 sliderMutanos.value += eterValue;
                 break;
-            case "EterMecanos":
+            case "Mecanos":
                 sliderMecanos.value += eterValue;
                 break;
-            case "EterIctioniclos":
+            case "Ictioniclos":
                 sliderIctioniclos.value += eterValue;
                 break;
         }

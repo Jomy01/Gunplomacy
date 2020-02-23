@@ -9,7 +9,7 @@ public class VidaPlayer : MonoBehaviour
     public static int currentVida = 6;
     int currentVidaInformation;
 
-    public List<Image> uiVidas;
+    List<Image> uiVidas = new List<Image>();
     public Sprite tanque_lleno;
     public Sprite tanque_medio;
     public Sprite tanque_vacio;
@@ -17,7 +17,10 @@ public class VidaPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach(Image spriteVida in uiVidas){
+        uiVidas.Add(GameObject.Find("Vida_0").GetComponent<Image>());
+        uiVidas.Add(GameObject.Find("Vida_1").GetComponent<Image>());
+        uiVidas.Add(GameObject.Find("Vida_2").GetComponent<Image>());
+        foreach (Image spriteVida in uiVidas){
             spriteVida.sprite = tanque_lleno;
         }
         currentVidaInformation = currentVida;
