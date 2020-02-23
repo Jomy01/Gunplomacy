@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class DisparoProta : MonoBehaviour
 {
-    public Armas scripArma;
+    Armas armaEquipada;
     bool puedoDisparar = true;
     GestionEter eter;
 
     private void Start()
     {
         eter = gameObject.GetComponent<GestionEter>();
+        armaEquipada = GameObject.Find("Arma protagonista").GetComponent<Armas>();
     }
     private void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
-            if(puedoDisparar && haveEter())
+            if (puedoDisparar && hasEter())
             {
-                scripArma.Disparar();
-                eter.ControlEter(scripArma.consumoEter, scripArma.raza);
+                armaEquipada.Disparar();
+                eter.ControlEter(armaEquipada.consumoEter, armaEquipada.raza);
                 puedoDisparar = false;
-                Invoke("PuedoDisparar", scripArma.cadencia);
+                Invoke("PuedoDisparar", armaEquipada.cadencia);
             }
         }
     }
@@ -31,31 +32,31 @@ public class DisparoProta : MonoBehaviour
         puedoDisparar = true;
     }
 
-    bool haveEter()
+    bool hasEter()
     {
         bool can = false;
-        switch (scripArma.raza)
+        switch (armaEquipada.raza)
         {
             case "Botaniclos":
-                if (eter.sliderBotaniclos.value > Mathf.Abs(scripArma.consumoEter))
+                if (eter.sliderBotaniclos.value > Mathf.Abs(armaEquipada.consumoEter))
                 {
                     can = true;
                 }
                 break;
             case "Mutanos":
-                if (eter.sliderMutanos.value > Mathf.Abs(scripArma.consumoEter))
+                if (eter.sliderMutanos.value > Mathf.Abs(armaEquipada.consumoEter))
                 {
                     can = true;
                 }
                 break;
             case "Mecanos":
-                if (eter.sliderMecanos.value > Mathf.Abs(scripArma.consumoEter))
+                if (eter.sliderMecanos.value > Mathf.Abs(armaEquipada.consumoEter))
                 {
                     can = true;
                 }
                 break;
             case "Ictioniclos":
-                if (eter.sliderIctioniclos.value > Mathf.Abs(scripArma.consumoEter))
+                if (eter.sliderIctioniclos.value > Mathf.Abs(armaEquipada.consumoEter))
                 {
                     can = true;
                 }
