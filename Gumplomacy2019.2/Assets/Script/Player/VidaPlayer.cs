@@ -20,7 +20,10 @@ public class VidaPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach(Image spriteVida in uiVidas){
+        uiVidas.Add(GameObject.Find("Vida_0").GetComponent<Image>());
+        uiVidas.Add(GameObject.Find("Vida_1").GetComponent<Image>());
+        uiVidas.Add(GameObject.Find("Vida_2").GetComponent<Image>());
+        foreach (Image spriteVida in uiVidas){
             spriteVida.sprite = tanque_lleno;
         }
         currentVidaInformation = currentVida;

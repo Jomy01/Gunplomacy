@@ -153,5 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cadencia: 1
   "da\xF1o": 5
+  raza: Ictioniclos
+  consumoEter: -15
   _puntoSalida: {fileID: 772385560997362030}
   bala: {fileID: 8011233806999876190, guid: 4a353028470411e4cafe39344890ec8f, type: 3}

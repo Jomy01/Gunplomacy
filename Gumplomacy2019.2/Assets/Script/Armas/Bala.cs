@@ -16,6 +16,9 @@ public class Bala : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if((gameObject.tag == "BalaProta" && collision.gameObject.tag != "ArmaProtagonista" && collision.gameObject.tag != "Player") || gameObject.tag != "BalaProta")
+        {
+            Destroy(gameObject);
+        }
     }
 }

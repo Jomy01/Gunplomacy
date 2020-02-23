@@ -7,7 +7,7 @@ public class RegenerarVida : MonoBehaviour
     public static float secondsToHeal = 1f;
     public static float increaseSpeedToHeal = 0.1f;
     public static int eterConsumed = -25;
-    public static string razaEter = "EterMutanos";
+    public string razaEter = "Mutanos";
 
     bool isCoroutineStarted = false;
     GestionEter eter;
@@ -43,25 +43,25 @@ public class RegenerarVida : MonoBehaviour
         bool can = false;
         switch (razaEter)
         {
-            case "EterBotaniclos":
+            case "Botaniclos":
                 if(eter.sliderBotaniclos.value > Mathf.Abs(eterConsumed))
                 {
                     can = true;
                 }
                 break;
-            case "EterMutanos":
+            case "Mutanos":
                 if (eter.sliderMutanos.value > Mathf.Abs(eterConsumed))
                 {
                     can = true;
                 }
                 break;
-            case "EterMecanos":
+            case "Mecanos":
                 if (eter.sliderMecanos.value > Mathf.Abs(eterConsumed))
                 {
                     can = true;
                 }
                 break;
-            case "EterIctioniclos":
+            case "Ictioniclos":
                 if (eter.sliderIctioniclos.value > Mathf.Abs(eterConsumed))
                 {
                     can = true;
