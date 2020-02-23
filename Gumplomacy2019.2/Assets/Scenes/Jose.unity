@@ -213,7 +213,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1302827849
+--- !u!1001 &1690458602
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -225,20 +225,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slurg ataque
       objectReference: {fileID: 0}
-    - target: {fileID: 2647515704493575889, guid: 9693ebf538345a74cb6afeece9174e64,
-        type: 3}
-      propertyPath: m_TagString
-      value: BossSlurm
-      objectReference: {fileID: 0}
     - target: {fileID: 2647515704493575891, guid: 9693ebf538345a74cb6afeece9174e64,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.677402
+      value: 28.015785
       objectReference: {fileID: 0}
     - target: {fileID: 2647515704493575891, guid: 9693ebf538345a74cb6afeece9174e64,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.2439256
+      value: -2.569392
       objectReference: {fileID: 0}
     - target: {fileID: 2647515704493575891, guid: 9693ebf538345a74cb6afeece9174e64,
         type: 3}
