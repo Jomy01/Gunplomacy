@@ -51,7 +51,7 @@ public class IA_Peabomb : MonoBehaviour
         float distanciaAlPunto;
         targetPosition = puntosSala[posicionAleatoria].position - transform.position;
         distanciaAlPunto = Vector3.Distance(transform.position, puntosSala[posicionAleatoria].position);
-        mRb.velocity = targetPosition * velocidad * Time.deltaTime;
+        mRb.velocity = targetPosition.normalized * velocidad * Time.deltaTime;
 
         if (distanciaAlPunto < 1f)
         {

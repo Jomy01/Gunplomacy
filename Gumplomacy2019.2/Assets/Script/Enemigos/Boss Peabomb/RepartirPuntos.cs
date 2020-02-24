@@ -34,30 +34,32 @@ public class RepartirPuntos : MonoBehaviour
         for (int i = 0; i < puntos.Length; i++)
         {
             puntos[i] = transform.GetChild(i);
-            x = Random.Range(xm, xM + 1);
-            y = Random.Range(ym, yM + 1);
-            posicionPuntos = new Vector3(x, y, transform.position.z);
-            puntos[i].localPosition = posicionPuntos;
+            puntos[i].localPosition = GeneraPuntoNuevo();
             puntoN = puntos[i].localPosition;
 
-            while (z <= i)
+            if(i>0)
             {
-                puntoA = puntos[z - 1].localPosition;
+                var intentos = 0;
+                puntoA = puntos[i-1].localPosition;
                 distanciaEntrePuntos = Vector2.Distance(puntoN, puntoA);
-                while (distanciaEntrePuntos < 10)
+                while (distanciaEntrePuntos < 3 && intentos < 10)
                 {
-                    x = Random.Range(xm, xM + 1);
-                    y = Random.Range(ym, yM + 1);
-                    posicionPuntos = new Vector3(x, y, transform.position.z);
-                    puntos[i].localPosition = posicionPuntos;
+                    intentos++;
+                    puntos[i].localPosition = GeneraPuntoNuevo();
                     puntoN = puntos[i].localPosition;
                     distanciaEntrePuntos = Vector2.Distance(puntoN, puntoA);
-                    z = 1;
+                    
                 }
-                z++;
+               
             }
-
         }
+    }
+
+    private Vector3 GeneraPuntoNuevo()
+    {
+       var  x = Random.Range(xm, xM + 1);
+       var y = Random.Range(ym, yM + 1);
+       return  new Vector3(x, y, transform.position.z);
     }
     private void OnDrawGizmos()
     {

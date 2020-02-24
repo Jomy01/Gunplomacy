@@ -14,6 +14,7 @@ public class IA_BossSlurm : MonoBehaviour
     Transform player;
     Animator mA;
     VidaEnemigos vidaScrip;
+    //public Animation animacion;
     bool Puedotacar = false;
     bool Atacando = false;
 
@@ -65,6 +66,7 @@ public class IA_BossSlurm : MonoBehaviour
             SrBola.flipX = true;
             if(Atacando)
             {
+                //animacion["MovimientoSlurg"].speed = -1.0f;
                 //PREGUNTAR A PEDRO COMO INVERTIR LA ANIMACION DE RODAR
             }
         }
