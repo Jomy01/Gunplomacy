@@ -7,7 +7,8 @@ public class ArmasJugador : MonoBehaviour
     //Contiene las dos armas que poseera el jugador durante la partida
     public GameObject armaPrincipal;
     public GameObject armaSecundaria;
-
+    bool armaCerca = false;
+    GameObject armaSuelo;
     bool hasArmaSecundaria = false;
 
     public Transform _mano;
@@ -25,6 +26,11 @@ public class ArmasJugador : MonoBehaviour
         if (Input.mouseScrollDelta.y != 0)
         {
             cambiaArma();
+        }
+        if (armaCerca && Input.GetKeyUp(KeyCode.Q) )
+        {
+            
+            cogerArmaDelSuelo(armaSuelo);
         }
     }
 
@@ -45,9 +51,21 @@ public class ArmasJugador : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKeyUp(KeyCode.Q) && collision.gameObject.tag == "Arma")
+        if (collision.gameObject.tag == "Arma")
         {
-            cogerArmaDelSuelo(collision.gameObject);
+            armaCerca = true;
+            armaSuelo = collision.gameObject;
+           
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Arma")
+        {
+            armaCerca = false;
+            armaSuelo = null;
+
         }
     }
 
