@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// IA del comandante
+/// Hecho por Jose Antonio Diaz 30/01
+/// Editado Por Miguel
+/// </summary>
 public class Moverse : MonoBehaviour
 {
     [Tooltip("Velocidad a la que se mueve el enemigo")]

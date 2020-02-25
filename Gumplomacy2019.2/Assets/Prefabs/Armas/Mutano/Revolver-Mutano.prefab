@@ -128,6 +128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cadencia: 3
   "da\xF1o": 1
+  raza: Mutanos
+  consumoEter: 10
   _puntoSalida: {fileID: 4854214490022423174}
   bala: {fileID: 838207279442382896, guid: a452f0ca5987c1d449821c1838ee1996, type: 3}
 --- !u!61 &2214725427116250317

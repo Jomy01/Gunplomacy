@@ -20,7 +20,10 @@ public class VidaPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach(Image spriteVida in uiVidas){
+        uiVidas.Add(GameObject.Find("Vida_0").GetComponent<Image>());
+        uiVidas.Add(GameObject.Find("Vida_1").GetComponent<Image>());
+        uiVidas.Add(GameObject.Find("Vida_2").GetComponent<Image>());
+        foreach (Image spriteVida in uiVidas){
             spriteVida.sprite = tanque_lleno;
         }
         currentVidaInformation = currentVida;
@@ -47,6 +50,19 @@ public class VidaPlayer : MonoBehaviour
         if(col.gameObject.CompareTag("BalaImpurity"))
         {
             restaVida(col.gameObject.GetComponent<BalaImpurity>().daño);
+        }
+        if(col.gameObject.CompareTag("Bomba"))
+        {
+            Debug.Log("Mehadado");
+            restaVida(col.gameObject.GetComponent<Bomba>().daño);
+        }
+        if(col.gameObject.CompareTag("enemigo"))
+        {
+            restaVida(1);
+        }
+        if (col.gameObject.CompareTag("BossSlurm"))
+        {
+            restaVida(col.gameObject.GetComponent<IA_BossSlurm>().daño);
         }
     }
 
