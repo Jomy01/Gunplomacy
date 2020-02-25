@@ -250,6 +250,7 @@ MonoBehaviour:
   origenParticulas: {fileID: 2642496062423479214}
   prefabCadaver: {fileID: 392669333128922076, guid: 785d654ff9d1a674199b1406c4adff99,
     type: 3}
+  Muerto: 0
   _particulasMuerte: {fileID: 63429410766237101, guid: b54378ead4b15264ba3666f05f92c389,
     type: 3}
 --- !u!114 &6442397346779943123
@@ -264,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc9048a6d47ef74b944be2873ad573c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arma: {fileID: 0}
+  arma: {fileID: 191084360233531886}
 --- !u!1001 &5935918274529327812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -340,3 +341,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5935918274529327812}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &191084360233531886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5820409997779780394, guid: 0179d0c2af7bbc94b9fc49a28db43cd9,
+    type: 3}
+  m_PrefabInstance: {fileID: 5935918274529327812}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee52c5b2b7f6a4458149ce2dc43c1cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

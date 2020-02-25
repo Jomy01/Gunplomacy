@@ -152,10 +152,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 2
-  distanciaStop: 5
-  distanciaRetirada: 3
+  distanciaStop: 8.54
+  distanciaRetirada: 5.71
   detectandoPlayer: 0
-  vision: 10
+  vision: 14.21
   player: {fileID: 0}
   MySprite: {fileID: 5064596056432092266}
 --- !u!114 &5064596056432092270
@@ -189,6 +189,7 @@ MonoBehaviour:
   origenParticulas: {fileID: 7826990978716428708}
   prefabCadaver: {fileID: 2915481766184964544, guid: 3f0774d3786fc1e4d8de252f1b841295,
     type: 3}
+  Muerto: 0
   _particulasMuerte: {fileID: 4848394875137537718, guid: 01e5b7f430d2c30449f691d649a78da2,
     type: 3}
 --- !u!95 &5064596056432092271

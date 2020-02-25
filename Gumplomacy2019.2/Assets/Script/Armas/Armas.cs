@@ -29,7 +29,7 @@ public class Armas : MonoBehaviour
     {
         if (Time.time >proximoDisparo)
         { 
-        Instantiate(bala, _puntoSalida.position, _puntoSalida.rotation);
+            Instantiate(bala, _puntoSalida.position, _puntoSalida.rotation);
             proximoDisparo = Time.time + cadencia;
             //linea añadida para probar el script AudioEnemy
             //AudioEnemy.copia.SonidoAtaque();
