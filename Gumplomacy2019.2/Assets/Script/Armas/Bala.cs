@@ -11,7 +11,7 @@ public class Bala : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _rb.velocity = transform.right * -velocidad;
+        _rb.velocity = transform.right * velocidad;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

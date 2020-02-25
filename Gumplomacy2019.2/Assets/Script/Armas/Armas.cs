@@ -21,15 +21,19 @@ public class Armas : MonoBehaviour
 
     float proximoDisparo = 0;
     [Tooltip("Salida de la bala del arma")]
-    public Transform _puntoSalida;
+    Transform _puntoSalida;
 
     public GameObject bala;
 
+    private void Start()
+    {
+        _puntoSalida = transform.Find("PuntoSalida");
+    }
     public void Disparar()
     {
         if (Time.time >proximoDisparo)
         { 
-        Instantiate(bala, _puntoSalida.position, _puntoSalida.rotation);
+            Instantiate(bala, _puntoSalida.position, _puntoSalida.rotation);
             proximoDisparo = Time.time + cadencia;
             //linea añadida para probar el script AudioEnemy
             //AudioEnemy.copia.SonidoAtaque();

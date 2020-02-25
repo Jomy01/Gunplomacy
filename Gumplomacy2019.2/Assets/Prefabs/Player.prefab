@@ -210,7 +210,6 @@ GameObject:
   - component: {fileID: 6810819376410574445}
   - component: {fileID: 6810819376410574446}
   - component: {fileID: 763721533}
-  - component: {fileID: 791048278}
   - component: {fileID: 3371160350404059866}
   - component: {fileID: 2481088114019912105}
   - component: {fileID: 8698017320293418622}
@@ -388,24 +387,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad70ce3928776a449b890bea67c82e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _armaEnMano: 0
+  _armaSecundaria: 0
   _cogiendoArma: 0
   armaMano: {fileID: 0}
+  armaSecundaria: {fileID: 0}
   _mano: {fileID: 519694463}
   _player: {fileID: 6810819376410574443}
   _pivot: {fileID: 6810819377516850534}
---- !u!114 &791048278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6810819376410574443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39800e748afeabc4ebb0fa53945e11b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  armaPrincipal: {fileID: 0}
 --- !u!114 &3371160350404059866
 MonoBehaviour:
   m_ObjectHideFlags: 0

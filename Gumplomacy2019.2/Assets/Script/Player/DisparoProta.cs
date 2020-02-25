@@ -8,10 +8,13 @@ public class DisparoProta : MonoBehaviour
     bool puedoDisparar = true;
     GestionEter eter;
 
-    private void Start()
+
+
+    private void Awake()
     {
+        Debug.Log("DisparoProta");
         eter = gameObject.GetComponent<GestionEter>();
-        armaEquipada = GameObject.Find("Arma protagonista").GetComponent<Armas>();
+        armaEquipada = GetComponent<CogerSoltarArma>().armaPrincipal;
     }
     private void Update()
     {
