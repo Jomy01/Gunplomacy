@@ -31,12 +31,6 @@ public class MenuGP : MonoBehaviour
         SceneManager.LoadScene("Preload");
     }
 
-    //¿cómo funciona el sistema de guardado y cómo se llama a la partida salvada?
-    /*public void Continuar()
-    {
-        SceneManager.LoadScene("PartidaSalvada");
-    }
-    */
 
 
     public void Salir()

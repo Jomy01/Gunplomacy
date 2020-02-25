@@ -53,6 +53,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Inicio()
+    {
+        SceneManager.LoadScene("Inicio");
+    }
 
     void LoadScene(string sceneName)
     {
