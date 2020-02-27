@@ -991,7 +991,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 1f919b7111656694ca53560e37a2eb08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3dd42348fbeae74286bb45c6e51ec27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1011,7 +1011,7 @@ Transform:
   m_GameObject: {fileID: 1167247812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.083, y: -2.7397, z: 0}
-  m_LocalScale: {x: 5.2524924, y: 5.2708764, z: 5.2524924}
+  m_LocalScale: {x: 1, y: 1, z: 5.2524924}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1071,7 +1071,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 589b4528ee241a144ab66b8ee4a02ec7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1fc7ae14ea71484408dd76d3827ab916, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1434,12 +1434,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4571d304af9be5d49bbdbde024d0f52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mejoraNavegacion1: {fileID: 21300000, guid: 589b4528ee241a144ab66b8ee4a02ec7, type: 3}
-  mejoraNavegacion2: {fileID: 21300000, guid: 1d3d51f716129e14fb50023a7dfb6a1e, type: 3}
-  mejoraNavegacion3: {fileID: 21300000, guid: 1ee21450538347544b496387b647f9bf, type: 3}
-  mejoraMotor1: {fileID: 21300000, guid: 1f919b7111656694ca53560e37a2eb08, type: 3}
-  mejoraMotor2: {fileID: 21300000, guid: 3e5d0ceba4b56b846b3717ea506129b6, type: 3}
-  mejoraMotor3: {fileID: 21300000, guid: a7dcf3d497d5c1a469fe6bb4e1afa475, type: 3}
+  mejoraNavegacion1: {fileID: 21300000, guid: 1fc7ae14ea71484408dd76d3827ab916, type: 3}
+  mejoraNavegacion2: {fileID: 21300000, guid: 178fb3115826fc6408cdf47a85815952, type: 3}
+  mejoraNavegacion3: {fileID: 21300000, guid: a6c65a5942e302340a6240a82dfd9c73, type: 3}
+  mejoraMotor1: {fileID: 21300000, guid: a3dd42348fbeae74286bb45c6e51ec27, type: 3}
+  mejoraMotor2: {fileID: 21300000, guid: de7d8655c4095914ea809c5be0f87025, type: 3}
+  mejoraMotor3: {fileID: 21300000, guid: 44e69d18b8fe6554bb07f6afa7ab81e7, type: 3}
   mejoraFuselaje1: {fileID: 21300000, guid: 069c167ef180f08459a4c51a2e472914, type: 3}
   mejoraFuselaje2: {fileID: 21300000, guid: c1db764e596f54844824340e5e974a95, type: 3}
   mejoraFuselaje3: {fileID: 21300000, guid: b53f3fc9dbf364b41aff332c78a3dde9, type: 3}
