@@ -164,6 +164,8 @@ public class MejorarNave : MonoBehaviour
         EstadoBotonFuselaje();
         PlayerPrefs.SetInt("fuselaje",_fuselaje);
         Debug.Log(_mejoraFuselaje);
+        BloquePorMejora.nivelDeMejoras++;
+        PlayerPrefs.SetInt("nivelDeMejora", BloquePorMejora.nivelDeMejoras);
     }
     /// <summary>
     /// Actualiza los sprites del motor de la escena
@@ -229,6 +231,8 @@ public class MejorarNave : MonoBehaviour
         EstadoBotonMotor();
         PlayerPrefs.SetInt("motor", _motor);
         Debug.Log(_mejoraMotor);
+        BloquePorMejora.nivelDeMejoras++;
+        PlayerPrefs.SetInt("nivelDeMejora", BloquePorMejora.nivelDeMejoras);
     }
 
     /// <summary>
@@ -295,6 +299,8 @@ public class MejorarNave : MonoBehaviour
         EstadoBotonNavegacion();
         PlayerPrefs.SetInt("navegacion", _navegacion);
         Debug.Log(_mejoraNavegacion);
+        BloquePorMejora.nivelDeMejoras++;
+        PlayerPrefs.SetInt("nivelDeMejora", BloquePorMejora.nivelDeMejoras);
     }
 
     //El update estaba para hacer debug, por que se necesitaba una actualizacion inmediata de los valores, pero en el juego no hace falta que sea asi

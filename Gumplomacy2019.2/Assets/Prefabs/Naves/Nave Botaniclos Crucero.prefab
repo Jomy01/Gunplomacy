@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1881720746465022915}
   - component: {fileID: 7938443962827066700}
   - component: {fileID: 2809637045830241125}
+  - component: {fileID: 1258878911299762667}
   m_Layer: 0
   m_Name: Nave Botaniclos Crucero
   m_TagString: Untagged
@@ -114,3 +115,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.02, y: 0.02}
   m_Size: {x: 0.35, y: 0.16}
   m_Direction: 1
+--- !u!114 &1258878911299762667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774018789696087272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c43d2eb8c4791f4989badbcfa303474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nivel: 0
+  Accesible: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 993961940604568312}
   - component: {fileID: -6948262396112836370}
   - component: {fileID: 5541457269905866946}
+  - component: {fileID: 7188810037967073654}
   m_Layer: 0
   m_Name: Nave Ictioniclos Guerra
   m_TagString: Untagged
@@ -114,3 +115,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.005}
   m_Size: {x: 0.4, y: 0.26}
   m_Direction: 1
+--- !u!114 &7188810037967073654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980951303774358786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c43d2eb8c4791f4989badbcfa303474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nivel: 0
+  Accesible: 0

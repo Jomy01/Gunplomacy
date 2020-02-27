@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3607996946064448286}
   - component: {fileID: 2791446505501070976}
   - component: {fileID: 7300314835317483712}
+  - component: {fileID: 6667445801674571396}
   m_Layer: 0
   m_Name: Nave Mutanos Guerra
   m_TagString: Untagged
@@ -113,3 +114,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.39, y: 0.3}
   m_Direction: 1
+--- !u!114 &6667445801674571396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3447357006200657625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c43d2eb8c4791f4989badbcfa303474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nivel: 0
+  Accesible: 0

@@ -8,12 +8,13 @@ public class Zoom : MonoBehaviour
     //Añadido por ignacio para poder cargar niveles
     [Tooltip("Cada nave presentara un Id distinto para poder cargar el nivel correspondiente")]
     [Range(0, 11)]
-
     public int LevelId = 0;
 
+    BloquePorMejora bloqueo;
     Vector3 posInicialNave;
     Vector3 posInicialCam;
     Vector3 posPanel;
+    Vector3 zoomMouse;
 
     float sizeOriginal;
     //public Camera Cam;
@@ -25,6 +26,7 @@ public class Zoom : MonoBehaviour
 
     GameObject cExit;
     GameObject panel;
+    GameObject mejoraLaNave;
 
     public static bool zoom = false;
 
@@ -36,10 +38,12 @@ public class Zoom : MonoBehaviour
     {
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
         canvas = GameObject.Find("CanvasAsalto").GetComponent<CanvasElements>();
+        bloqueo = GetComponent<BloquePorMejora>();
 
         cExit = canvas.exit;
         panel = canvas.holo;
         textoPanel = canvas.texto;
+        mejoraLaNave = canvas.mejorLaNave;
 
 
 
@@ -48,25 +52,24 @@ public class Zoom : MonoBehaviour
         posInicialCam = cam.transform.position;
         posPanel = panel.transform.position;
 
+        zoomMouse = transform.localScale + new Vector3(0.3f,0.3f,0);
     }
     private void OnMouseOver()
     {
-        Debug.Log("Over");
         if (!zoom)
         { 
-        transform.localScale = new Vector3(10, 10, 0); 
+        transform.localScale = zoomMouse; 
         }
       
     }
     private void OnMouseExit()
     {
-        Debug.Log("Exit");
         transform.localScale = posInicialNave;
     }
     private void OnMouseDown()
     {
         Debug.Log("Down");
-        if (!zoom)
+        if (!zoom && bloqueo.Accesible)
         {
             cExit.SetActive(true);
             panel.SetActive(true);
@@ -80,9 +83,14 @@ public class Zoom : MonoBehaviour
             cam.transform.position = new Vector3(transform.position.x + 1.5f, transform.position.y, -10);
             cam.GetComponent<Camera>().orthographicSize = 1.25f;
         }
-
-
+        if(!zoom && !bloqueo.Accesible)
+        {
+            mejoraLaNave.SetActive(true);
+            Invoke("DesactivarMejoraLaNave", 2);
+        }
     }
-
-   
+    void DesactivarMejoraLaNave()
+    {
+        mejoraLaNave.SetActive(false);
+    }
 }

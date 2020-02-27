@@ -8,5 +8,5 @@ public class CanvasElements : MonoBehaviour
     public GameObject holo;
     public GameObject exit;
     public Text texto;
-
+    public GameObject mejorLaNave;
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3182673304278863173}
   - component: {fileID: 2471720056241390741}
   - component: {fileID: 2817559690967786849}
+  - component: {fileID: 2536958848766195480}
   m_Layer: 0
   m_Name: Nave Botaniclos Expedicion
   m_TagString: Untagged
@@ -113,3 +114,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.015}
   m_Size: {x: 0.39, y: 0.24}
   m_Direction: 1
+--- !u!114 &2536958848766195480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4642119568295894958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c43d2eb8c4791f4989badbcfa303474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nivel: 0
+  Accesible: 0

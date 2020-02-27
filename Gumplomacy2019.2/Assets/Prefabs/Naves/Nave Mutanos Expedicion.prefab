@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 239685841070147243}
   - component: {fileID: 6850742548437365229}
   - component: {fileID: 3707751916692315774}
+  - component: {fileID: 7512788893828420016}
   m_Layer: 0
   m_Name: Nave Mutanos Expedicion
   m_TagString: Untagged
@@ -113,3 +114,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.01}
   m_Size: {x: 0.24, y: 0.3}
   m_Direction: 1
+--- !u!114 &7512788893828420016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6876162717673667669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c43d2eb8c4791f4989badbcfa303474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nivel: 0
+  Accesible: 0

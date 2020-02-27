@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8243842866563587715}
   - component: {fileID: 9119145161528595516}
   - component: {fileID: 6261591876557248544}
+  - component: {fileID: -388816634260236911}
   m_Layer: 0
   m_Name: Nave Mutanos Crucero
   m_TagString: Untagged
@@ -95,11 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelId: 0
-  cam: {fileID: 0}
-  canvas: {fileID: 0}
   textoNave: "Nave crucero\nBlue sunset\nIna de las m\xE1s r\xE1pidas y comunes de
     su clase dada sus proporciones aerodin\xE1micas.\r\n"
-  textoPanel: {fileID: 0}
 --- !u!70 &6261591876557248544
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -116,3 +114,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.24, y: 0.12}
   m_Direction: 1
+--- !u!114 &-388816634260236911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7140224523417429339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c43d2eb8c4791f4989badbcfa303474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nivel: 0
+  Accesible: 0

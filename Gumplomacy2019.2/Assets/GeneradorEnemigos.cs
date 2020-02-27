@@ -5,9 +5,8 @@ using UnityEngine;
 public class GeneradorEnemigos : MonoBehaviour
 {
     float numeroRandom;
-    bool playerDetectado = false;
 
-    public GameObject player;
+    GameObject player;
 
     public int numeroEnemigos;
     public GameObject[] enemigos;
@@ -17,15 +16,11 @@ public class GeneradorEnemigos : MonoBehaviour
 
     private void Start()
     {
-        //player = GameObject.FindGameObjectWithTag("Player").GetComponent<GameObject>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<GameObject>();
     }
     private void Update()
     {
-        if (!playerDetectado)
-        {
             DetectarPlayer();
-        }
-
     }
 
     void DetectarPlayer()
@@ -34,7 +29,6 @@ public class GeneradorEnemigos : MonoBehaviour
         distanciaAlPlayer = Vector3.Distance(player.transform.position, transform.position);
         if (distanciaAlPlayer < 20)
         {
-            playerDetectado = true;
             GenerarEnemigoAhora();
         }
     }
@@ -53,6 +47,7 @@ public class GeneradorEnemigos : MonoBehaviour
                 Instantiate(enemigos[0], transform.position, Quaternion.identity);
             }
         }
+        Destroy(gameObject);
     }
 
     private void OnDrawGizmos()
