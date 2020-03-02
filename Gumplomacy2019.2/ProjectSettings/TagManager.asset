@@ -22,6 +22,8 @@ TagManager:
   - LlavesDemons
   - BalaImpurity
   - BossSlurm
+  - Bomba
+  - ArmaProtagonista
   layers:
   - Default
   - TransparentFX
