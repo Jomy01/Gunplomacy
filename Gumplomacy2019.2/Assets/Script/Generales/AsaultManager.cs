@@ -24,8 +24,9 @@ public class AsaultManager : MonoBehaviour
 
     void LoadScene(string sceneName)
     {
+        Debug.Log(sceneName);
         SceneManager.LoadScene(sceneName);
-        SceneManager.UnloadSceneAsync("Asalto");
+        //SceneManager.UnloadSceneAsync("Asalto");
     }
 
     private void Start()
@@ -43,9 +44,10 @@ public class AsaultManager : MonoBehaviour
     }
 
 
-    public void CargarNivel(int nivelID)
+    public void CargarNivel()
     {
-        switch(nivelID)
+        Debug.Log("NivelID:" + levelID);
+        switch(levelID)
             {
             //Nave Crucero Mutanos
             case 0:
