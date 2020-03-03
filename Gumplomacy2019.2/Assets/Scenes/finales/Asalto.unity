@@ -4108,7 +4108,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 606657293}
         m_MethodName: CargarNivel
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
