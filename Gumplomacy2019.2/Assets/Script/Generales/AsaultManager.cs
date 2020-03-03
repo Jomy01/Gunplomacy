@@ -43,9 +43,9 @@ public class AsaultManager : MonoBehaviour
     }
 
 
-    public void CargarNivel(int nivelID)
+    public void CargarNivel()
     {
-        switch(nivelID)
+        switch(levelID)
             {
             //Nave Crucero Mutanos
             case 0:

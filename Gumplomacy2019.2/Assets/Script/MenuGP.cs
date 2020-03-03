@@ -24,6 +24,7 @@ public class MenuGP : MonoBehaviour
         ResetPlayerPrefInt("fuselaje");
         ResetPlayerPrefInt("motor");
         ResetPlayerPrefInt("navegacion");
+        ResetPlayerPrefInt("nivelDeMejora");
     }
 
     public void Continuar()

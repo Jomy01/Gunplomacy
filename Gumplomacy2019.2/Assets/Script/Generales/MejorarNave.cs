@@ -64,6 +64,8 @@ public class MejorarNave : MonoBehaviour
     int _navegacion;
     int _mejoraNavegacion;
 
+    public Text textoMejora;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -94,6 +96,9 @@ public class MejorarNave : MonoBehaviour
         EstadoBotonFuselaje();
         EstadoBotonMotor();
         EstadoBotonNavegacion();
+        TextoMejora();
+        BloquePorMejora.nivelDeMejoras = PlayerPrefs.GetInt("nivelDeMejora");
+
     }
 
     /// <summary>
@@ -158,6 +163,7 @@ public class MejorarNave : MonoBehaviour
     /// </summary>
     public void BotonFuselaje()
     {
+        TextoMejora();
         _mejoraFuselaje = PlayerPrefs.GetInt("mejoras_fuselaje");
         _fuselaje = _mejoraFuselaje;
         EstadoFuselaje();
@@ -225,6 +231,7 @@ public class MejorarNave : MonoBehaviour
     /// </summary>
     public void BotonMotor()
     {
+        TextoMejora();
         _mejoraMotor = PlayerPrefs.GetInt("mejoras_motor");
         _motor = _mejoraMotor;
         EstadoMotor();
@@ -293,6 +300,7 @@ public class MejorarNave : MonoBehaviour
     /// </summary>
     public void BotonNavegacion()
     {
+        TextoMejora();
         _mejoraNavegacion = PlayerPrefs.GetInt("mejoras_navegacion");
         _navegacion = _mejoraNavegacion;
         EstadoNavegacion();
@@ -305,22 +313,35 @@ public class MejorarNave : MonoBehaviour
 
     //El update estaba para hacer debug, por que se necesitaba una actualizacion inmediata de los valores, pero en el juego no hace falta que sea asi
 
-    //private void Update()
-    //{
-    //    _mejoraFuselaje = PlayerPrefs.GetInt("mejoras_fuselaje");
-    //    EstadoBotonFuselaje();
+    private void Update()
+    {
+        _mejoraFuselaje = PlayerPrefs.GetInt("mejoras_fuselaje");
+        EstadoBotonFuselaje();
 
-    //    _mejoraMotor = PlayerPrefs.GetInt("mejoras_motor");
-    //    EstadoBotonMotor();
+        _mejoraMotor = PlayerPrefs.GetInt("mejoras_motor");
+        EstadoBotonMotor();
 
-    //    _mejoraNavegacion = PlayerPrefs.GetInt("mejoras_navegacion");
-    //    EstadoBotonNavegacion();
+        _mejoraNavegacion = PlayerPrefs.GetInt("mejoras_navegacion");
+        EstadoBotonNavegacion();
 
-    //}
+        TextoMejora();
+        Debug.Log(BloquePorMejora.nivelDeMejoras);
+    }
 
 
 
-
+    public void TextoMejora()
+    {
+        if (BloquePorMejora.nivelDeMejoras < 3)
+        {
+            textoMejora.text = "faltan " + (3 - BloquePorMejora.nivelDeMejoras) + " para siguiente nivel";
+        }
+        else if (BloquePorMejora.nivelDeMejoras < 6)
+        {
+            textoMejora.text = "faltan " + (6 - BloquePorMejora.nivelDeMejoras) + " para siguiente nivel";
+        }
+        else textoMejora.text = "nivel maximo de mejoras";
+    }
 
 
 }
