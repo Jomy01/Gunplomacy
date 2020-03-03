@@ -347,7 +347,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &191455639
@@ -382,13 +382,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: "Nave de guerra\nKurowake\nEs una de las m\xE1s poderosas del universo
     y pocos la desean ver en combate.\n-3-5 comandantes\r\n-50% de enemigos reclutas\r\n-50%
     de enemigos soldados\r"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &213565175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -433,13 +430,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: "Nave de guerra \nPenthessel\nConsiste en el bulbo de una gran planta
     carn\xEDvora, dise\xF1ada y modificada para arrasar por donde va.\n-3-5 comandantes\r\n-50%
     de enemigos reclutas\r\n-50% de enemigos soldados\r"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &221621204
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -830,14 +824,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: "Nave de guerra \nJellwar\nLa mas poderosa de las naves ictioniclas,
     la cual cuenta con tres ap\xE9ndicesforma de tent\xE1culo que conectan directamente
     con los pisos de la misma.\n*3-5 comandantes\r\n*50% de enemigos reclutas\r\n*50%
     de enemigos soldados"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &492316788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1032,13 +1023,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: "Nave crucero \nHayakyu\nEl crucero Hayakyu, fueron restos de una estaci\xF3n
     espacial abandonada hasta que los mecanos dieron con todos ella, lentas pero muy
     resistentes.\n*1 comandante\r\n*70% de enemigos reclutas\r\n*30% de enemigos soldados"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &583778681
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1301,13 +1289,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: "Nave crucero\nBlue sunset\nIna de las m\xE1s r\xE1pidas y comunes de
     su clase dada sus proporciones aerodin\xE1micas.\r\n-1 comandante\r\n-70% de enemigos
     reclutas\r\n-30% de enemigos soldados"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &607815381
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1545,7 +1530,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &686207557
@@ -1622,7 +1607,7 @@ PrefabInstance:
     - target: {fileID: 7286830161196507929, guid: eaddf24b50d90024797ade2ef87ccf8f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7286830161196507929, guid: eaddf24b50d90024797ade2ef87ccf8f,
         type: 3}
@@ -1679,13 +1664,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: "Nave de expedici\xF3n \nTwin dubio\nTiene dos hangares y una sala de
     mando que le permiten defenderse m\xE1s eficientemente.\r\n-1-2 comandantes\r\n-60%
     de enemigos reclutas\r\n-40% de enemigos soldados\r\n"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &820152036
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1909,7 +1891,7 @@ PrefabInstance:
     - target: {fileID: 3226149333991624422, guid: f4ed61abe7d5f6d4596b03efadec7ebb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3226149333991624422, guid: f4ed61abe7d5f6d4596b03efadec7ebb,
         type: 3}
@@ -2109,13 +2091,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: "Nave crucero \nBlosship\nLa m\xE1s r\xE1pida y com\xFAn entre su flota,
     esta es una flor de gran tama\xF1o, a la cual incluyeron la tecnolog\xEDa m\xE1s
     puntera.\r\n-1 comandante\r\n-70% de enemigos reclutas\r\n-30% de enemigos soldados\n"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &1137522288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2160,14 +2139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: " NAVE DE GUERRA \nWALNET\nEsta nave es la m\xE1s grande del universo,
     creada a partir de sat\xE9lites, asteroides y planetas enanos, esta nave arrasa
     todo a su paso, cuenta con anillas que rodean y protegen la nave.\n*3-5 comandantes\n*50%
     de enemigos reclutas\r\n*50% de enemigos soldados"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &1146221618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2212,13 +2188,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: "Nave de expedici\xF3n \nSishell\nLa nave intermedia de las tropas acu\xE1ticas,utilizaron
     grandes artefactos para dar una forma de concha a esta nave.\n*1-2 comandantes\r\n*60%
     de enemigos reclutas\r\n*40% de enemigos soldados"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &1237081083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2308,7 +2281,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1265699698
@@ -2452,7 +2425,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1654945242 stripped
 GameObject:
@@ -2472,13 +2445,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: "Nave de expedici\xF3n \nShitofune\nEsta nave en forma de hoja puede
     ver todo lo que rodea la nave y cuenta con una gran maniobrabilidad.\r\n-1-2 comandantes\r\n-60%
     de enemigos reclutas\r\n-40% de enemigos soldados\r\n\n"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &1654945246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2523,13 +2493,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac6af7722d3afd45a698e8d330b905c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 885707991}
-  cExit: {fileID: 538864061}
-  Panel: {fileID: 11166254}
+  LevelId: 0
   textoNave: "Nave crucero \nSepien\nEs la nave m\xE1s com\xFAn entre los ictioniclos,
     es la nave m\xE1s peque\xF1a entre sus flotas, aunque no se debe tomar a la ligera
     si no quieres caer antes de tiempo.\n*1 Comandante\n*70% Reclutas\n*30% Soldados"
-  textoPanel: {fileID: 395668713}
 --- !u!61 &1744310776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3070,7 +3037,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2003233496
 PrefabInstance:
@@ -3303,7 +3270,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2138860475
@@ -3383,7 +3350,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2140780787

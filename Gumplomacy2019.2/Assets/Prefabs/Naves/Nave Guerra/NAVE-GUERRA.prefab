@@ -121,6 +121,7 @@ Transform:
   - {fileID: 4931484538073224936}
   - {fileID: 4931484538357216345}
   - {fileID: 6170759662380365592}
+  - {fileID: 1534626345386049559}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -207,6 +208,81 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!1001 &1782575902481118612
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6689097922342017523}
+    m_Modifications:
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1381692759872743009, guid: 79a717a3b953bcb4680f3b086ee69227,
+        type: 3}
+      propertyPath: m_Name
+      value: --Decoracion_Nave_Guerra--
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79a717a3b953bcb4680f3b086ee69227, type: 3}
+--- !u!4 &1534626345386049559 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1004564200942466435, guid: 79a717a3b953bcb4680f3b086ee69227,
+    type: 3}
+  m_PrefabInstance: {fileID: 1782575902481118612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2612660704648674416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1047,17 +1123,17 @@ PrefabInstance:
     - target: {fileID: 8205831380072328485, guid: 03c33e0119d8d774da0bb1cb4117ea5c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.349023
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8205831380072328485, guid: 03c33e0119d8d774da0bb1cb4117ea5c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.767328
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8205831380072328485, guid: 03c33e0119d8d774da0bb1cb4117ea5c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -157
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8205831380072328485, guid: 03c33e0119d8d774da0bb1cb4117ea5c,
         type: 3}
