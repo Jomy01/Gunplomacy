@@ -37,7 +37,10 @@ public class AsaultManager : MonoBehaviour
         panel = canvas.holo;
     }
 
-
+    private void Update()
+    {
+        Debug.Log(levelID);
+    }
 
 
     public void CargarNivel(int nivelID)
@@ -46,40 +49,40 @@ public class AsaultManager : MonoBehaviour
             {
             //Nave Crucero Mutanos
             case 0:
-                LoadScene("Batalla_Mutanos_Crucero");
+                LoadScene("Mut.Crucero");
                 break;
             case 1:
-                LoadScene("Batalla_Mutanos_Expedicion");
+                LoadScene("Mut.Patrulla");
                 break;
             case 2:
-                LoadScene("Batalla_Mutanos_NaveGuerra");
+                LoadScene("Mut.Guerra");
                 break;
             case 3:
-                LoadScene("Batalla_Mecanos_Crucero");
+                LoadScene("Mec.Crucero");
                 break;
             case 4:
-                LoadScene("Batalla_Mecanos_Expedicion");
+                LoadScene("Mec.Patrulla");
                 break;
             case 5:
-                LoadScene("Batalla_Mecanos_NaveGuerra");
+                LoadScene("Mec.Guerra");
                 break;
             case 6:
-                LoadScene("Batalla_Botaniclos_Crucero");
+                LoadScene("Bot.Crucero");
                 break;
             case 7:
-                LoadScene("Batalla_Botaniclos_Expedicion");
+                LoadScene("Bot.Patrulla");
                 break;
             case 8:
-                LoadScene("Batalla_Botaniclos_NaveGuerra");
+                LoadScene("Bot.Guerra");
                 break;
             case 9:
-                LoadScene("Batalla_Ictioniclos_Crucero");
+                LoadScene("Ict.Crucero");
                 break;
             case 10:
-                LoadScene("Batalla_Ictioniclos_Expedicion");
+                LoadScene("Ict.Patrulla");
                 break;
             case 11:
-                LoadScene("Batalla_Ictioniclos_NaveGuerra");
+                LoadScene("Ict.Guerra");
                 break;
 
 

@@ -17,9 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/finales/Asalto.unity
     guid: 2524c974e3233e64a970519e63a2019d
-  - enabled: 1
-    path: Assets/Scenes/finales/Batalla_Mutanos_Crucero.unity
-    guid: 8c7ad06baa006f141a03b20f8766b2d4
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/finales/Inicio.unity
     guid: e60110616d377304e96e16eb63f7144f
@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/finales/Preload.unity
     guid: 77b10b5463451ea42bc59d903d3ad563
+  - enabled: 1
+    path: Assets/Scenes/finales/Naves/Mutanos/Mut.Crucero.unity
+    guid: 83e25c4239bd0a24885329098ef59ce2
+  - enabled: 1
+    path: Assets/Scenes/finales/Naves/Mutanos/Mut.Patrulla.unity
+    guid: 9d000b7c0ed4bad4fb65ab1334c57bb3
+  - enabled: 1
+    path: Assets/Scenes/finales/Naves/Mutanos/Mut.Guerra.unity
+    guid: d507b49281b0d3e4e87b74d676a98c64
   m_configObjects: {}

@@ -6,7 +6,7 @@ public class GeneradorEnemigos : MonoBehaviour
 {
     float numeroRandom;
 
-    GameObject player;
+    Transform player;
 
     public int numeroEnemigos;
     public GameObject[] enemigos;
@@ -14,11 +14,11 @@ public class GeneradorEnemigos : MonoBehaviour
     [Header("PROBABILIDAD")]
     public float Soldado;
 
-    private void Start()
+    void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<GameObject>();
+        player = GameObject.Find("Player").GetComponent<Transform>();
     }
-    private void Update()
+    void Update()
     {
             DetectarPlayer();
     }
@@ -26,7 +26,7 @@ public class GeneradorEnemigos : MonoBehaviour
     void DetectarPlayer()
     {
         float distanciaAlPlayer;
-        distanciaAlPlayer = Vector3.Distance(player.transform.position, transform.position);
+        distanciaAlPlayer = Vector3.Distance(player.position, transform.position);
         if (distanciaAlPlayer < 20)
         {
             GenerarEnemigoAhora();

@@ -122,11 +122,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd10f2f71c5f7b84a96d01f1f4f08505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 2
+  velocidad: 5
   distanciaStop: 5
   distanciaRetirada: 3
   detectandoPlayer: 0
-  vision: 10
+  vision: 14
   player: {fileID: 0}
   MySprite: {fileID: 7076515512341955852}
 --- !u!114 &7076515512341955848
@@ -160,6 +160,7 @@ MonoBehaviour:
   origenParticulas: {fileID: 0}
   prefabCadaver: {fileID: 4211364305687046336, guid: 0850c703816449b46acd0c917a8d4650,
     type: 3}
+  Muerto: 0
   _particulasMuerte: {fileID: 0}
 --- !u!95 &7076515512341955849
 Animator:
@@ -253,6 +254,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LanzaGranadas-Ictioniclos
+      objectReference: {fileID: 0}
+    - target: {fileID: 772385561006511134, guid: 2b435411bb060d84d81a1c7a04129ba3,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 665712297
+      objectReference: {fileID: 0}
+    - target: {fileID: 772385561006511134, guid: 2b435411bb060d84d81a1c7a04129ba3,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 772385561006511135, guid: 2b435411bb060d84d81a1c7a04129ba3,
         type: 3}

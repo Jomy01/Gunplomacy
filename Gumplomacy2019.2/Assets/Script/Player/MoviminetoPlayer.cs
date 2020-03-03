@@ -27,6 +27,7 @@ public class MoviminetoPlayer : MonoBehaviour
         mRb = GetComponent<Rigidbody2D>();
         mA = GetComponent<Animator>();
         mSr = GetComponent<SpriteRenderer>();
+        puntero = GameObject.Find("Puntero").GetComponent<Transform>();
     }
 
     void Update()

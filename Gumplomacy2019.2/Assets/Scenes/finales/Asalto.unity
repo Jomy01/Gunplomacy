@@ -234,6 +234,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1358803365}
     m_Modifications:
+    - target: {fileID: -209342069644414262, guid: 951275703352bcd45bf1fc9bc30bff33,
+        type: 3}
+      propertyPath: LevelId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3144361577046022814, guid: 951275703352bcd45bf1fc9bc30bff33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -642,6 +647,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nave Mutanos Crucero
       objectReference: {fileID: 0}
+    - target: {fileID: 9119145161528595516, guid: 7793f37fcd8fbb04f997daea0510c081,
+        type: 3}
+      propertyPath: LevelId
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7793f37fcd8fbb04f997daea0510c081, type: 3}
 --- !u!1001 &218774663
@@ -735,6 +745,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 951744667}
     m_Modifications:
+    - target: {fileID: 2791446505501070976, guid: bac00811a488d2d4ca3a8e55b92822c8,
+        type: 3}
+      propertyPath: LevelId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3447357006200657625, guid: bac00811a488d2d4ca3a8e55b92822c8,
         type: 3}
       propertyPath: m_Name
@@ -825,6 +840,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1358803365}
     m_Modifications:
+    - target: {fileID: -209342069644414262, guid: 951275703352bcd45bf1fc9bc30bff33,
+        type: 3}
+      propertyPath: LevelId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3144361577046022814, guid: 951275703352bcd45bf1fc9bc30bff33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -997,7 +1017,7 @@ RectTransform:
   - {fileID: 11166255}
   - {fileID: 877243256}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1031,7 +1051,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1988792934}
     m_Modifications:
     - target: {fileID: 4600768101142217775, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
         type: 3}
@@ -1046,32 +1066,32 @@ PrefabInstance:
     - target: {fileID: 9213706886819584650, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.62
+      value: -7.234024
       objectReference: {fileID: 0}
     - target: {fileID: 9213706886819584650, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.89
+      value: -3.8347797
       objectReference: {fileID: 0}
     - target: {fileID: 9213706886819584650, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 14.357422
       objectReference: {fileID: 0}
     - target: {fileID: 9213706886819584650, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9213706886819584650, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9213706886819584650, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9213706886819584650, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
         type: 3}
@@ -1081,7 +1101,7 @@ PrefabInstance:
     - target: {fileID: 9213706886819584650, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9213706886819584650, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
         type: 3}
@@ -1126,6 +1146,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Nivel
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 372301459542258469, guid: f4ed61abe7d5f6d4596b03efadec7ebb,
+        type: 3}
+      propertyPath: LevelId
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3226149333991624422, guid: f4ed61abe7d5f6d4596b03efadec7ebb,
         type: 3}
@@ -1723,7 +1748,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &606657293
 MonoBehaviour:
@@ -2127,6 +2152,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 951744667}
     m_Modifications:
+    - target: {fileID: 2791446505501070976, guid: bac00811a488d2d4ca3a8e55b92822c8,
+        type: 3}
+      propertyPath: LevelId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3447357006200657625, guid: bac00811a488d2d4ca3a8e55b92822c8,
         type: 3}
       propertyPath: m_Name
@@ -2421,6 +2451,11 @@ PrefabInstance:
       propertyPath: Nivel
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 372301459542258469, guid: f4ed61abe7d5f6d4596b03efadec7ebb,
+        type: 3}
+      propertyPath: LevelId
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3226149333991624422, guid: f4ed61abe7d5f6d4596b03efadec7ebb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2570,6 +2605,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nave Mutanos Crucero (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9119145161528595516, guid: 7793f37fcd8fbb04f997daea0510c081,
+        type: 3}
+      propertyPath: LevelId
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7793f37fcd8fbb04f997daea0510c081, type: 3}
 --- !u!1 &1138051791
@@ -2615,6 +2655,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 951744667}
     m_Modifications:
+    - target: {fileID: 6850742548437365229, guid: 963bb91704a7b9447b1a97eaea78a1a4,
+        type: 3}
+      propertyPath: LevelId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6876162717673667669, guid: 963bb91704a7b9447b1a97eaea78a1a4,
         type: 3}
       propertyPath: m_Name
@@ -3316,6 +3361,10 @@ PrefabInstance:
       propertyPath: Nivel
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1478390013, guid: 638b5271074a53442b2b1b653120d801, type: 3}
+      propertyPath: LevelId
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7047253411471677379, guid: 638b5271074a53442b2b1b653120d801,
         type: 3}
       propertyPath: m_Name
@@ -3626,7 +3675,7 @@ Transform:
   - {fileID: 1331954513}
   - {fileID: 1358803365}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1659410216
 PrefabInstance:
@@ -4291,6 +4340,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nave Mutanos Crucero
       objectReference: {fileID: 0}
+    - target: {fileID: 9119145161528595516, guid: 7793f37fcd8fbb04f997daea0510c081,
+        type: 3}
+      propertyPath: LevelId
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7793f37fcd8fbb04f997daea0510c081, type: 3}
 --- !u!4 &1933774698 stripped
@@ -4391,6 +4445,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1358803365}
     m_Modifications:
+    - target: {fileID: -209342069644414262, guid: 951275703352bcd45bf1fc9bc30bff33,
+        type: 3}
+      propertyPath: LevelId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3144361577046022814, guid: 951275703352bcd45bf1fc9bc30bff33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4586,8 +4645,9 @@ Transform:
   - {fileID: 1603134544}
   - {fileID: 842000065}
   - {fileID: 1906338196}
+  - {fileID: 2106903613}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2036470058
 PrefabInstance:
@@ -4704,6 +4764,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7710210191983497062, guid: 963bb91704a7b9447b1a97eaea78a1a4,
     type: 3}
   m_PrefabInstance: {fileID: 1138398500}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2106903613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9213706886819584650, guid: 3022628a4c4e87341b7ee87fcfe7bbf2,
+    type: 3}
+  m_PrefabInstance: {fileID: 360295361}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2112442071 stripped
 Transform:

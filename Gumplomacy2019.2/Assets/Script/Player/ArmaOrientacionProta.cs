@@ -18,6 +18,8 @@ public class ArmaOrientacionProta : MonoBehaviour
     private void Start()
     {
         scripDisparo = GameObject.FindGameObjectWithTag("Player").GetComponent<CogerSoltarArma>();
+        puntero = GameObject.Find("Puntero").GetComponent<Transform>();
+
     }
     void Update()
     {

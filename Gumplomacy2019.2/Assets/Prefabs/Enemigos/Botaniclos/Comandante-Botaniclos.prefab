@@ -171,7 +171,7 @@ MonoBehaviour:
   distanciaStop: 5
   distanciaRetirada: 3
   detectandoPlayer: 0
-  vision: 10
+  vision: 14
   player: {fileID: 0}
   MySprite: {fileID: 8779284394867796737}
 --- !u!114 &8779284394867796741
@@ -205,6 +205,7 @@ MonoBehaviour:
   origenParticulas: {fileID: 0}
   prefabCadaver: {fileID: 2072051526261123539, guid: 87ed20574d8bd00408e836f978034dc9,
     type: 3}
+  Muerto: 0
   _particulasMuerte: {fileID: 0}
 --- !u!95 &8779284394867796740
 Animator:
@@ -252,6 +253,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Banbum-Botaniclos
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383532479867279918, guid: 6656d8b32f54dc441b4a37d4dfbccf02,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 665712297
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383532479867279918, guid: 6656d8b32f54dc441b4a37d4dfbccf02,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8383532479867279919, guid: 6656d8b32f54dc441b4a37d4dfbccf02,
         type: 3}
@@ -307,21 +318,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8383532479867279919, guid: 6656d8b32f54dc441b4a37d4dfbccf02,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8383532479867279919, guid: 6656d8b32f54dc441b4a37d4dfbccf02,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8383532479867279919, guid: 6656d8b32f54dc441b4a37d4dfbccf02,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6656d8b32f54dc441b4a37d4dfbccf02, type: 3}

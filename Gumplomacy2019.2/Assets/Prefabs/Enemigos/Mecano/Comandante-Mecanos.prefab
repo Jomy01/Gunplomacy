@@ -120,8 +120,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 665712297
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1355004824868172302, guid: d3cfe2555dd29814a95c087229bfd6ef,
     type: 3}
@@ -203,11 +203,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd10f2f71c5f7b84a96d01f1f4f08505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 0
-  distanciaStop: 0
-  distanciaRetirada: 0
+  velocidad: 5
+  distanciaStop: 3
+  distanciaRetirada: 6
   detectandoPlayer: 0
-  vision: 0
+  vision: 14
   player: {fileID: 0}
   MySprite: {fileID: 0}
 --- !u!114 &1141987775029179159
@@ -235,12 +235,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91847f701965c55409d956f5625b294c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaEnemigo: 1000
+  vidaEnemigo: 20
   vidaEnemigoActual: 0
   golpe: 0
   origenParticulas: {fileID: 0}
   prefabCadaver: {fileID: 7218432846001984592, guid: 9539f94ef20da0f4d9d88c6d542b4d39,
     type: 3}
+  Muerto: 0
   _particulasMuerte: {fileID: 0}
 --- !u!1001 &5734947939644746063
 PrefabInstance:
@@ -249,6 +250,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3821377507641961767}
     m_Modifications:
+    - target: {fileID: 7257200563837044264, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 665712297
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257200563837044264, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7257200563837044265, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
         type: 3}
       propertyPath: m_LocalPosition.x
