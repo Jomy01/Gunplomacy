@@ -9,7 +9,11 @@ using UnityEngine;
 [RequireComponent(typeof(Drop))]
 public class ActivarDropCofre : MonoBehaviour
 {
+    SpriteRenderer mSr;
+
     bool contactoPlayer;
+
+    public Sprite cofreAbierto;
 
     Drop activarDrop;
     [Tooltip("Este colider se desactivará para que el personaje no pueda abrir dos veces el cofre")]
@@ -17,12 +21,14 @@ public class ActivarDropCofre : MonoBehaviour
 
     void Start()
     {
+        mSr = GetComponent<SpriteRenderer>();
         activarDrop = this.GetComponent<Drop>();  
     }
     void Update()
     {
         if(contactoPlayer && Input.GetButtonDown("Interactuar"))
         {
+            mSr.sprite = cofreAbierto;
             activarDrop.drop = true;
             colliderDetector.enabled = false;
         }

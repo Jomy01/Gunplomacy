@@ -9,38 +9,43 @@ using UnityEngine;
 /// </summary>
 public class Drop : MonoBehaviour
 {
-    [Tooltip("Aquí ponemos los objetos que dropeará el enemigo, cofre...")]
+    [Tooltip("Aquí ponemos los objetos que dropeará el enemigo, cofre...  1 saldrá con un 50% de posiblidades -- 2,3,4 saldrán con 18% y -- 5 con un 1% ")]
     public GameObject[] objetos;
     [Tooltip("Booleano que activará otro scrip depende de si es enemigo,cofre. Este activa la salida del objeto")]
     public bool drop;
     int numeroAleatorio;
+    public int numeroDeObjetosQueDropea = 0;
 
 
     void Update()
     {
         if(drop)
         {
-            numeroAleatorio = Random.Range(0, 100);
-            if(numeroAleatorio <= 50)
+            for (int i = 0; i < numeroDeObjetosQueDropea; i++)
             {
-                Instantiate(objetos[1], transform.position, Quaternion.identity);
+                numeroAleatorio = Random.Range(0, 100);
+                if (numeroAleatorio <= 50)
+                {
+                    Instantiate(objetos[1], transform.position, Quaternion.identity);
+                }
+                if (numeroAleatorio > 50 && numeroAleatorio < 65)
+                {
+                    Instantiate(objetos[2], transform.position, Quaternion.identity);
+                }
+                if (numeroAleatorio >= 65 && numeroAleatorio < 80)
+                {
+                    Instantiate(objetos[3], transform.position, Quaternion.identity);
+                }
+                if (numeroAleatorio >= 80 && numeroAleatorio < 99)
+                {
+                    Instantiate(objetos[4], transform.position, Quaternion.identity);
+                }
+                if (numeroAleatorio >= 99 && numeroAleatorio < 100)
+                {
+                    Instantiate(objetos[5], transform.position, Quaternion.identity);
+                }
             }
-            if (numeroAleatorio > 50 && numeroAleatorio < 65)
-            {
-                Instantiate(objetos[2], transform.position, Quaternion.identity);
-            }
-            if (numeroAleatorio >= 65 && numeroAleatorio < 80)
-            {
-                Instantiate(objetos[3], transform.position, Quaternion.identity);
-            }
-            if (numeroAleatorio >= 80 && numeroAleatorio < 95)
-            {
-                Instantiate(objetos[4], transform.position, Quaternion.identity);
-            }
-            if (numeroAleatorio >= 95 && numeroAleatorio < 100)
-            {
-                Instantiate(objetos[5], transform.position, Quaternion.identity);
-            }
+            drop = false;
         }
     }
 }
