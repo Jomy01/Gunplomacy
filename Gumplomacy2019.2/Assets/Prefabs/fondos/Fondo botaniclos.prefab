@@ -80,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 736082534655064245, guid: 47e5dd6b1f873b04abd9cca64177a62b,
         type: 3}
       propertyPath: m_Name
-      value: Fondo ictioniclos
+      value: Fondo botaniclos
       objectReference: {fileID: 0}
     - target: {fileID: 736082534655064245, guid: 47e5dd6b1f873b04abd9cca64177a62b,
         type: 3}
@@ -91,6 +91,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ecc2615d045d3d341a90bf75f6745afa, type: 2}
+      objectReference: {fileID: 2100000, guid: b557e32fdbaf9db44aa9aafca1dca9c3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47e5dd6b1f873b04abd9cca64177a62b, type: 3}
