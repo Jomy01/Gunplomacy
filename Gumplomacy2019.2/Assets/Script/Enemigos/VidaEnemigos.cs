@@ -12,6 +12,7 @@ public class VidaEnemigos : MonoBehaviour
 
     public bool Muerto = false;
 
+    Drop activarDrop;
 
     public ParticleSystem _particulasMuerte;
 
@@ -19,6 +20,7 @@ public class VidaEnemigos : MonoBehaviour
     void Awake()
     {
         vidaEnemigoActual = vidaEnemigo;
+        activarDrop = GetComponent<Drop>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -28,12 +30,6 @@ public class VidaEnemigos : MonoBehaviour
         }
 
     }
-
-    //Para Testeo
-    //private void Update()
-    //{
-    //    RecibeDaño(golpe);
-    //}
 
     public void RecibeDaño(int daño)
     {
@@ -58,6 +54,7 @@ public class VidaEnemigos : MonoBehaviour
         //_particulasMuerte.Play();
         Instantiate(prefabCadaver, transform.position, Quaternion.identity);
         Muerto = true;
-        //Destroy(gameObject);
+        activarDrop.drop = true;
+        Destroy(gameObject);
     }
 }

@@ -58,7 +58,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3262352116528695974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.113, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3262352117527973181}
@@ -178,6 +178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3262352116771951426}
+  - component: {fileID: 6350930733916438504}
   m_Layer: 10
   m_Name: PuntosDeGuardia_1 (1)
   m_TagString: Untagged
@@ -204,6 +205,22 @@ Transform:
   m_Father: {fileID: 9149952696028298622}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6350930733916438504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3262352116771951425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f2f61fbf5661f4981dbbb1b2b874c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xM: 11
+  xm: -11
+  yM: 11
+  ym: -11
 --- !u!1 &3262352117156591932
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,6 +267,7 @@ GameObject:
   - component: {fileID: 4584829533332066414}
   - component: {fileID: 6948781064325913553}
   - component: {fileID: 428571508339966976}
+  - component: {fileID: 7706646221867266593}
   m_Layer: 10
   m_Name: Recluta
   m_TagString: Untagged
@@ -423,6 +441,7 @@ MonoBehaviour:
   origenParticulas: {fileID: 0}
   prefabCadaver: {fileID: 4255602196664064682, guid: bb92f4da9d4c8834c872c6207bd0118b,
     type: 3}
+  Muerto: 0
   _particulasMuerte: {fileID: 0}
 --- !u!114 &428571508339966976
 MonoBehaviour:
@@ -436,7 +455,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc9048a6d47ef74b944be2873ad573c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arma: {fileID: 0}
+  arma: {fileID: 4951628550627041062}
+--- !u!114 &7706646221867266593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3262352117527973179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81abd22fb98b8a84badae37b7c981782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetos:
+  - {fileID: 1765818730997582549, guid: c8d2e8266488ee247944711b7a67655c, type: 3}
+  - {fileID: 1765818730997582549, guid: c8d2e8266488ee247944711b7a67655c, type: 3}
+  - {fileID: 1765818730997582549, guid: c8d2e8266488ee247944711b7a67655c, type: 3}
+  - {fileID: 1765818730997582549, guid: c8d2e8266488ee247944711b7a67655c, type: 3}
+  - {fileID: 1948056815839275122, guid: ff81bc5efb5ca474681aea0de7ec6c36, type: 3}
+  drop: 0
+  numeroDeObjetosQueDropea: 2
 --- !u!1 &3262352117789279980
 GameObject:
   m_ObjectHideFlags: 0

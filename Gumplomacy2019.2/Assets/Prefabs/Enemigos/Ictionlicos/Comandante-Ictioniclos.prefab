@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7076515512341955851}
   - component: {fileID: 7076515512341955849}
   - component: {fileID: 2629497563515471208}
+  - component: {fileID: 4563099401297562323}
   m_Layer: 10
   m_Name: Comandante-Ictioniclos
   m_TagString: Untagged
@@ -197,6 +198,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0.004901886, y: 0.11}
   m_Size: {x: 0.80583954, y: 1.13}
   m_Direction: 0
+--- !u!114 &4563099401297562323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7076515512341955842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81abd22fb98b8a84badae37b7c981782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetos:
+  - {fileID: 1765818730997582549, guid: c8d2e8266488ee247944711b7a67655c, type: 3}
+  - {fileID: 1765818730997582549, guid: c8d2e8266488ee247944711b7a67655c, type: 3}
+  - {fileID: 1765818730997582549, guid: c8d2e8266488ee247944711b7a67655c, type: 3}
+  - {fileID: 1765818730997582549, guid: c8d2e8266488ee247944711b7a67655c, type: 3}
+  - {fileID: 772385561006511131, guid: 2b435411bb060d84d81a1c7a04129ba3, type: 3}
+  drop: 0
+  numeroDeObjetosQueDropea: 2
 --- !u!1 &7076515514108276715
 GameObject:
   m_ObjectHideFlags: 0

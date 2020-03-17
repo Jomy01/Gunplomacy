@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 8779284394867796742}
   - component: {fileID: 8779284394867796740}
   - component: {fileID: 4584461989619624805}
+  - component: {fileID: 2306243354460304352}
   m_Layer: 10
   m_Name: Comandante-Botaniclos
   m_TagString: Untagged
@@ -242,6 +243,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0.004901886, y: -0.05}
   m_Size: {x: 0.80583954, y: 1.6}
   m_Direction: 0
+--- !u!114 &2306243354460304352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779284394867796751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81abd22fb98b8a84badae37b7c981782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetos:
+  - {fileID: 1765818730997582549, guid: 4d854037935593e4fa6655a541fb4bd0, type: 3}
+  - {fileID: 1765818730997582549, guid: 4d854037935593e4fa6655a541fb4bd0, type: 3}
+  - {fileID: 1765818730997582549, guid: 4d854037935593e4fa6655a541fb4bd0, type: 3}
+  - {fileID: 1765818730997582549, guid: 4d854037935593e4fa6655a541fb4bd0, type: 3}
+  - {fileID: 8383532479867279915, guid: 6656d8b32f54dc441b4a37d4dfbccf02, type: 3}
+  drop: 0
+  numeroDeObjetosQueDropea: 2
 --- !u!1001 &3808190093472207993
 PrefabInstance:
   m_ObjectHideFlags: 0

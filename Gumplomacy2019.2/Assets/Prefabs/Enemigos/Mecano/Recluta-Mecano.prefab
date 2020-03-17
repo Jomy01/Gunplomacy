@@ -155,6 +155,7 @@ MonoBehaviour:
   origenParticulas: {fileID: 0}
   prefabCadaver: {fileID: 2048736763747905735, guid: f4f7b828d0940b94389cffedd7cc2ceb,
     type: 3}
+  Muerto: 0
   _particulasMuerte: {fileID: 0}
 --- !u!114 &5611564750513134638
 MonoBehaviour:
