@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 665712297
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fb6775f20306d96409579fa38c186f1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -97,6 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cadencia: 4
   "da\xF1o": 1
+  raza: 
+  consumoEter: 0
   _puntoSalida: {fileID: 3646103088793928689}
   bala: {fileID: 3424772063676128637, guid: 59e7ceb247aaf314eba570c4097f53ce, type: 3}
 --- !u!61 &8032280051617201594
