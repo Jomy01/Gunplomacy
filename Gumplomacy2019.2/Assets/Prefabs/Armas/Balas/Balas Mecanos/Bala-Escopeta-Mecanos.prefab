@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8913646005500249688}
   - component: {fileID: 2135776671659940878}
   - component: {fileID: 2029504183544053033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bala-Escopeta-Mecanos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

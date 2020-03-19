@@ -25,10 +25,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861350963785653040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.73584366, y: 1.9722586, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3107591162109079398}
+  - {fileID: 3430657613436152034}
   m_Father: {fileID: 5578899444338271613}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  scripIaComandante: {fileID: 0}
-  spriteEnemigo: {fileID: 0}
+  scripIaComandante: {fileID: 7109834373862943546}
+  spriteEnemigo: {fileID: 1696049580360401193}
 --- !u!1 &6235422199793631782
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 7109834373862943546}
   - component: {fileID: 1141987775029179159}
   - component: {fileID: 749619128457365370}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Comandante-Mecanos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,14 +166,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!70 &4433724896896619555
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 5
-  distanciaStop: 3
-  distanciaRetirada: 6
+  distanciaStop: 6
+  distanciaRetirada: 3
   detectandoPlayer: 0
   vision: 14
   player: {fileID: 0}
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc9048a6d47ef74b944be2873ad573c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arma: {fileID: 3107591162109079393}
+  arma: {fileID: 3430657613436152037}
 --- !u!114 &749619128457365370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,37 +242,27 @@ MonoBehaviour:
     type: 3}
   Muerto: 0
   _particulasMuerte: {fileID: 0}
---- !u!1001 &5734947939644746063
+--- !u!1001 &5416393952219393739
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 3821377507641961767}
     m_Modifications:
-    - target: {fileID: 7257200563837044264, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 665712297
-      objectReference: {fileID: 0}
-    - target: {fileID: 7257200563837044264, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7257200563837044265, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.38
+      value: 0.52000046
       objectReference: {fileID: 0}
     - target: {fileID: 7257200563837044265, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.27
+      value: -0.25920105
       objectReference: {fileID: 0}
     - target: {fileID: 7257200563837044265, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7257200563837044265, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
         type: 3}
@@ -321,17 +311,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2, type: 3}
---- !u!4 &3107591162109079398 stripped
+--- !u!4 &3430657613436152034 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7257200563837044265, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
     type: 3}
-  m_PrefabInstance: {fileID: 5734947939644746063}
+  m_PrefabInstance: {fileID: 5416393952219393739}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3107591162109079393 stripped
+--- !u!114 &3430657613436152037 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7257200563837044270, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2,
     type: 3}
-  m_PrefabInstance: {fileID: 5734947939644746063}
+  m_PrefabInstance: {fileID: 5416393952219393739}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1

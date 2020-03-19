@@ -20,6 +20,11 @@ public class ArmaOrientacionEnemigosComandante : MonoBehaviour
     bool flippedY = false;
 
     Vector3 target;
+
+    private void Start()
+    {
+        player = GameObject.Find("Player").GetComponent<Transform>();
+    }
     void Update()
     {
         //Si el player está detectado
