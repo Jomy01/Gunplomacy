@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 672460013035080310}
   - component: {fileID: 7161096306377558526}
   - component: {fileID: 7421268451030375685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bala-Tridente-Ictioniclo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

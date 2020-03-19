@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1536991966500447570}
   - component: {fileID: 5194185267015788947}
   - component: {fileID: 5483568779945490916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bala-LanzaGranadas-Ictioniclos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

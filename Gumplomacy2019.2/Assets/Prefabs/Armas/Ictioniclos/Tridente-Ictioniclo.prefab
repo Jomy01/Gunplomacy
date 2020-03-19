@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6817109658087869417}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Punto Salida
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 6817109659910528420}
   - component: {fileID: 6817109659910528421}
   - component: {fileID: 6817109659910528422}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tridente-Ictioniclo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,5 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cadencia: 2
   "da\xF1o": 2
+  raza: 
+  consumoEter: 0
   _puntoSalida: {fileID: 6817109658087869417}
   bala: {fileID: 1093182591838701909, guid: b46591db07bf29e4583f191ff62d160a, type: 3}

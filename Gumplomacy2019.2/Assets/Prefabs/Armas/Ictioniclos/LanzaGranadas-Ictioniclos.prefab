@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 772385560997362030}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PuntoSalida
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 772385561006511134}
   - component: {fileID: 772385561006511129}
   - component: {fileID: 772385561006511128}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LanzaGranadas-Ictioniclos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

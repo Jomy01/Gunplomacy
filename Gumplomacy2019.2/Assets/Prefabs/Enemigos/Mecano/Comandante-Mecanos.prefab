@@ -63,6 +63,7 @@ GameObject:
   - component: {fileID: 7109834373862943546}
   - component: {fileID: 1141987775029179159}
   - component: {fileID: 749619128457365370}
+  - component: {fileID: 6189120433769669900}
   m_Layer: 10
   m_Name: Comandante-Mecanos
   m_TagString: Untagged
@@ -242,6 +243,26 @@ MonoBehaviour:
     type: 3}
   Muerto: 0
   _particulasMuerte: {fileID: 0}
+--- !u!114 &6189120433769669900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235422199793631782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81abd22fb98b8a84badae37b7c981782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetos:
+  - {fileID: 1765818730997582549, guid: 8371a93280da24948ad4907e9de53b0d, type: 3}
+  - {fileID: 1765818730997582549, guid: 8371a93280da24948ad4907e9de53b0d, type: 3}
+  - {fileID: 1765818730997582549, guid: 8371a93280da24948ad4907e9de53b0d, type: 3}
+  - {fileID: 1765818730997582549, guid: 8371a93280da24948ad4907e9de53b0d, type: 3}
+  - {fileID: 7257200563837044269, guid: aa1b4e2f2317ddf49bf5a56876d1d1e2, type: 3}
+  drop: 0
+  numeroDeObjetosQueDropea: 2
 --- !u!1001 &5416393952219393739
 PrefabInstance:
   m_ObjectHideFlags: 0

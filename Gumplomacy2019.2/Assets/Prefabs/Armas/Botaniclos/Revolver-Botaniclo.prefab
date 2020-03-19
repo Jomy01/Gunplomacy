@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6830039083424193841}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PuntoSalida
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 2683775852357166903}
   - component: {fileID: 2782240041528661230}
   - component: {fileID: 227650641618903930}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Revolver-Botaniclo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,6 +127,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cadencia: 5
   "da\xF1o": 2
+  raza: 
+  consumoEter: 0
   _puntoSalida: {fileID: 6830039083424193841}
   bala: {fileID: 3487567821899607854, guid: e73ce6e444d89ef4f92fb9230955d702, type: 3}
 --- !u!61 &227650641618903930

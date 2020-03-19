@@ -153,5 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cadencia: 2
   "da\xF1o": 1
+  raza: 
+  consumoEter: 0
   _puntoSalida: {fileID: 5857239764932182091}
-  bala: {fileID: 6874041557038004637, guid: 237dcab48f4c9a84582b3753e330cb10, type: 3}
+  bala: {fileID: 8393808370628642633, guid: a6b74f24cd6b4614f8b9f81781f9a7b9, type: 3}

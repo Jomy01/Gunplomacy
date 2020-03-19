@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6013308600420675608}
   - component: {fileID: 2166424200634061694}
   - component: {fileID: 4621901764263269318}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bala-Comandante-Botaniclos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,4 +133,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 20
-  "da\xF1o": 0
+  "da\xF1o": 1

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3660662497025351811}
   - component: {fileID: 7298806833887590983}
   - component: {fileID: 5930359183864001267}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bala-Recluta-Botaniclos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,4 +153,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 20
-  "da\xF1o": 0
+  "da\xF1o": 1

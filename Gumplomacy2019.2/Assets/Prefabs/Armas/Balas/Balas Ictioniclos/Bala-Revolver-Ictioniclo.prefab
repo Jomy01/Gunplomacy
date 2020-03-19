@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9083877713712553208}
   - component: {fileID: 7223440942855767312}
   - component: {fileID: 7194035525841126127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bala-Revolver-Ictioniclo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
