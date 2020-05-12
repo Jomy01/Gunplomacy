@@ -7,6 +7,7 @@ using UnityEngine;
 /// </summary>
 public class ArmaOrientacionProta : MonoBehaviour
 {
+    public Transform linterna;
     public Transform puntero;
     public MoviminetoPlayer movimientoPlayer;
     CogerSoltarArma scripDisparo;
@@ -19,6 +20,7 @@ public class ArmaOrientacionProta : MonoBehaviour
     {
         scripDisparo = GameObject.FindGameObjectWithTag("Player").GetComponent<CogerSoltarArma>();
         puntero = GameObject.Find("Puntero").GetComponent<Transform>();
+        linterna = GameObject.Find("Linterna").GetComponent<Transform>();
 
     }
     void Update()
@@ -36,6 +38,8 @@ public class ArmaOrientacionProta : MonoBehaviour
             CorrectRotationWeaponAxisX();
             CorrectRotationWeaponAxisY(AnguloGrados);
         }
+        print(transform.rotation);
+        linterna.rotation = transform.rotation;
     }
     void CorrectRotationWeaponAxisX()
     {
