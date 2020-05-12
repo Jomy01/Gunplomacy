@@ -38,7 +38,7 @@ public class ArmaOrientacionProta : MonoBehaviour
             CorrectRotationWeaponAxisX();
             CorrectRotationWeaponAxisY(AnguloGrados);
         }
-        print(transform.rotation);
+        //print(transform.rotation);
         linterna.rotation = transform.rotation;
     }
     void CorrectRotationWeaponAxisX()
